@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- L letter with gradient effect -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M36,26 L36,72 L54,72 L54,56 L62,56 L62,46 L54,46 L54,26 Z"/>
+
+    <!-- Chat bubble -->
+    <path
+        android:fillColor="#7C4DFF"
+        android:pathData="M58,30 Q58,26 62,26 L76,26 Q80,26 80,30 L80,40 Q80,44 76,44 L66,44 L62,48 L62,44 L62,44 Q58,44 58,40 Z"/>
+
+    <!-- Chat dots -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,35 A1.5,1.5 0 1,1 67,35 A1.5,1.5 0 1,1 64,35 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M69,35 A1.5,1.5 0 1,1 72,35 A1.5,1.5 0 1,1 69,35 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M74,35 A1.5,1.5 0 1,1 77,35 A1.5,1.5 0 1,1 74,35 Z"/>
+
+    <!-- Book pages -->
+    <path
+        android:fillColor="#64B5F6"
+        android:pathData="M56,52 Q68,48 80,52 L80,68 Q68,64 56,68 Z"/>
+    <path
+        android:fillColor="#90CAF9"
+        android:pathData="M56,52 Q68,56 80,52 L80,54 Q68,58 56,54 Z"/>
+
+</vector>

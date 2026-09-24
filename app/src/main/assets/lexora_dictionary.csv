@@ -1,0 +1,720 @@
+# Lexora Offline Dictionary
+# word|phonetic|pos|definition|persian|persianDefinition|synonyms|antonyms|example|exampleTranslation|level|tags
+hello|həˈloʊ|interjection|used as a greeting when meeting someone|سلام|درود و احوالپرسی|hi;hey|goodbye;farewell|Hello my friend!|سلام دوست من!|A1|greeting;basic
+goodbye|ɡʊdˈbaɪ|interjection|said when someone leaves|خداحافظ|الوداع هنگام ترک|bye;farewell;see you|hello;welcome|Goodbye and good luck!|خداحافظ و موفق باشی!|A1|greeting;basic
+please|pliːz|adverb|used to make a polite request|لطفاً|برای درخواست مؤدبانه|kindly|rudely|Please sit down.|لطفاً بنشین.|A1|politeness
+thanks|θæŋks|noun|expression of gratitude|متشکرم|سپاس و قدردانی|thank you;appreciation|ingratitude|Thanks for your help!|ممنون از کمکت!|A1|politeness
+sorry|ˈsɒri|adjective|feeling regret for a mistake|متأسفم|احساس پشیمانی برای اشتباه|apologetic;regretful|unapologetic|I am sorry for the delay.|بابت تأخیر متأسفم.|A1|politeness
+welcome|ˈwelkəm|interjection|a friendly greeting to a guest|خوش آمدید|استقبال گرم از مهمان|greeted;received|unwelcome|Welcome to our city!|به شهر ما خوش آمدی!|A1|greeting
+yes|jes|adverb|used to show agreement|بله|برای تأیید و موافقت|yeah;sure;okay|no|Yes I agree with you.|بله با تو موافقم.|A1|basic
+no|noʊ|adverb|used to refuse or deny|نه|برای رد و انکار|nope;never|yes;always|No I do not want tea.|نه چای نمی‌خواهم.|A1|basic
+name|neɪm|noun|the word a person or thing is called|نام|واژه‌ای که شخص یا شیء با آن خوانده می‌شود|title;label|anonymity|My name is Sara.|اسم من سارا است.|A1|basic
+friend|frend|noun|a person you know and like|دوست|شخصی که می‌شناسی و دوست داری|companion;pal;mate|enemy;stranger|She is my best friend.|او بهترین دوست من است.|A1|people
+family|ˈfæməli|noun|a group of parents and children|خانواده|گروهی از والدین و فرزندان|household;relatives|strangers|I love my family very much.|من عاشق خانواده‌ام هستم.|A1|people
+mother|ˈmʌðər|noun|a female parent|مادر|والده؛ مادر|mom;mama;parent|father;child|My mother cooks very well.|مادرم خیلی خوب آشپزی می‌کند.|A1|family
+father|ˈfɑːðər|noun|a male parent|پدر|والد؛ پدر|dad;papa;parent|mother;child|My father drives to work.|پدرم با ماشین سر کار می‌رود.|A1|family
+sister|ˈsɪstər|noun|a girl or woman with the same parents|خواهر|دختر یا زنِ هم‌پدر و مادر|sibling|brother|My sister studies English.|خواهرم انگلیسی می‌خواند.|A1|family
+brother|ˈbrʌðər|noun|a boy or man with the same parents|برادر|پسر یا مردِ هم‌پدر و مادر|sibling|sister|My brother plays football.|برادرم فوتبال بازی می‌کند.|A1|family
+son|sʌn|noun|a male child|پسر|فرزند پسر|boy;child|daughter|Their son is a doctor.|پسرشان پزشک است.|A1|family
+daughter|ˈdɔːtər|noun|a female child|دختر|فرزند دختر|girl;child|son|My daughter loves music.|دخترم عاشق موسیقی است.|A1|family
+baby|ˈbeɪbi|noun|a very young child|نوزاد|کودک خیلی کوچک|infant;toddler|adult|The baby is sleeping.|نوزاد خواب است.|A1|family
+child|tʃaɪld|noun|a young person|کودک|انسان جوان؛ بچه|kid;youngster|adult|Every child needs love.|هر کودکی به عشق نیاز دارد.|A1|people
+boy|bɔɪ|noun|a young male person|پسر|مرد جوان|lad;youth|girl|The boy rides a bicycle.|پسر دوچرخه‌سواری می‌کند.|A1|people
+girl|ɡɜːrl|noun|a young female person|دختر|زن جوان|lass;young lady|boy|The girl draws a picture.|دختر نقاشی می‌کشد.|A1|people
+man|mæn|noun|an adult male human|مرد|انسان مرد بالغ|gentleman;guy|woman|That man is my teacher.|آن مرد معلم من است.|A1|people
+woman|ˈwʊmən|noun|an adult female human|زن|انسان زن بالغ|lady|man|The woman works at a hospital.|آن زن در بیمارستان کار می‌کند.|A1|people
+people|ˈpiːpl|noun|more than one person|مردم|اشخاص؛ انسان‌ها|persons;humans|animals|Many people visit this park.|مردم زیادی به این پارک می‌آیند.|A1|people
+head|hed|noun|the part of the body with the brain|سر|بخشی از بدن که مغز در آن است|skull|feet|My head hurts a little.|سرم کمی درد می‌کند.|A1|body
+hand|hænd|noun|the body part used for holding things|دست|اندامی برای گرفتن اشیاء|palm|foot|Wash your hands before eating.|قبل از غذا دست‌هایت را بشوی.|A1|body
+eye|aɪ|noun|the organ of sight|چشم|اندام بینایی|organ of sight|blindness|Her eyes are green.|چشمان او سبز است.|A1|body
+ear|ɪr|noun|the organ of hearing|گوش|اندام شنوایی|organ of hearing|deafness|I hear music with my ears.|من با گوش‌هایم موسیقی می‌شنوم.|A1|body
+mouth|maʊθ|noun|the opening in the face for eating|دهان|بازای صورت برای خوردن|oral cavity|—|Open your mouth please.|لطفاً دهانت را باز کن.|A1|body
+nose|noʊz|noun|the organ of smell|بینی|اندام بویایی|snout|—|The dog has a wet nose.|سگ بینی خیس دارد.|A1|body
+foot|fʊt|noun|the body part you stand on|پا|اندامی که روی آن می‌ایستی|feet|head|My foot is tired.|پایم خسته است.|A1|body
+leg|leɡ|noun|the limb used for walking|پا|اندام راه رفتن|limb|arm|He broke his leg skiing.|او در اسکی پای خود را شکست.|A1|body
+arm|ɑːrm|noun|the limb from shoulder to hand|بازو|اندام از شانه تا دست|limb|leg|She carries the bag on her arm.|او کیف را روی بازویش حمل می‌کند.|A1|body
+heart|hɑːrt|noun|the organ that pumps blood|قلب|اندام تپنده خون|organ;core|—|Exercise is good for the heart.|ورزش برای قلب خوب است.|A1|body
+hair|her|noun|what grows on your head|مو|آنچه روی سر می‌روید|locks|baldness|She has long black hair.|او موهای بلند سیاه دارد.|A1|body
+day|deɪ|noun|24 hours; the time with light|روز|شبانه‌روز؛ زمان روشنایی|sunlight|night|Today is a beautiful day.|امروز روز زیبایی است.|A1|time
+night|naɪt|noun|the dark time between sunset and sunrise|شب|زمان تاریک بین غروب تا طلوع|darkness|day;morning|I sleep early at night.|من شب‌ها زود می‌خوابم.|A1|time
+morning|ˈmɔːrnɪŋ|noun|the early part of the day|صبح|زمان آغازین روز|dawn;sunrise|evening;night|Good morning teacher!|صبح بخیر استاد!|A1|time
+evening|ˈiːvnɪŋ|noun|the end of the day before night|عصر|پایان روز پیش از شب|dusk|morning|We walk in the evening.|ما عصرها پیاده‌روی می‌کنیم.|A1|time
+week|wiːk|noun|seven days|هفته|هفت روز|seven days|—|I will finish it this week.|این هفته تمامش می‌کنم.|A1|time
+month|mʌnθ|noun|about four weeks|ماه|حدود چهار هفته|—|—|June is my favorite month.|ژوئن ماه مورد علاقه من است.|A1|time
+year|jɪr|noun|twelve months|سال|دوازده ماه|—|—|She travels twice a year.|او سالی دو بار سفر می‌کند.|A1|time
+hour|ˈaʊər|noun|sixty minutes|ساعت|شصت دقیقه|—|—|The class lasts one hour.|کلاس یک ساعت طول می‌کشد.|A1|time
+minute|ˈmɪnɪt|noun|sixty seconds|دقیقه|شصت ثانیه|moment|—|Wait a minute please.|یک دقیقه صبر کنید لطفاً.|A1|time
+today|təˈdeɪ|adverb|this day|امروز|این روز|—|tomorrow;yesterday|Today the weather is nice.|امروز هوا خوب است.|A1|time
+tomorrow|təˈmɒroʊ|adverb|the day after today|فردا|روز بعد از امروز|—|yesterday|See you tomorrow!|فردا می‌بینمت!|A1|time
+yesterday|ˈjestərdeɪ|adverb|the day before today|دیروز|روز پیش از امروز|—|tomorrow|Yesterday I went to the park.|دیروز به پارک رفتم.|A1|time
+red|red|adjective|the color of blood|قرمز|رنگ خون|crimson;scarlet|blue|The apple is red.|سیب قرمز است.|A1|color
+blue|bluː|adjective|the color of the sky|آبی|رنگ آسمان|azure;sky-blue|red|The sea looks blue.|دریا آبی به نظر می‌رسد.|A1|color
+green|ɡriːn|adjective|the color of grass|سبز|رنگ علف|emerald|—|The leaves are green.|برگ‌ها سبز هستند.|A1|color
+yellow|ˈjeloʊ|adjective|the color of the sun|زرد|رنگ خورشید|gold|—|The sunflower is yellow.|آفتابگردان زرد است.|A1|color
+black|blæk|adjective|the darkest color|سیاه|تیره‌ترین رنگ|dark|white|The cat is black.|گربه سیاه است.|A1|color
+white|waɪt|adjective|the color of snow|سفید|رنگ برف|snowy;pale|black|The walls are white.|دیوارها سفید هستند.|A1|color
+orange|ˈɒrɪndʒ|adjective|the color between red and yellow|نارنجی|رنگ بین قرمز و زرد|tangerine|—|The juice is orange.|آبمیوه نارنجی است.|A1|color
+pink|pɪŋk|adjective|a light red color|صورتی|رنگ قرمز روشن|rose|—|She wears a pink dress.|او لباس صورتی پوشیده است.|A1|color
+purple|ˈpɜːrpl|adjective|a mix of red and blue|بنفش|ترکیب قرمز و آبی|violet;lilac|—|The flowers are purple.|گل‌ها بنفش هستند.|A1|color
+brown|braʊn|adjective|the color of earth|قهوه‌ای|رنگ خاک|chocolate;tan|—|The bear is brown.|خرس قهوه‌ای است.|A1|color
+one|wʌn|number|the number 1|یک|عدد ۱|single|many|I have one brother.|من یک برادر دارم.|A1|number
+two|tuː|number|the number 2|دو|عدد ۲|pair|—|Two coffees please.|دو قهوه لطفاً.|A1|number
+three|θriː|number|the number 3|سه|عدد ۳|—|—|The table has three legs.|میز سه پایه دارد.|A1|number
+four|fɔːr|number|the number 4|چهار|عدد ۴|—|—|The car has four doors.|ماشین چهار در دارد.|A1|number
+five|faɪv|number|the number 5|پنج|عدد ۵|—|—|My hand has five fingers.|دست من پنج انگشت دارد.|A1|number
+ten|ten|number|the number 10|ده|عدد ۱۰|—|—|Ten students are here.|ده دانش‌آموز اینجا هستند.|A1|number
+hundred|ˈhʌndrəd|number|the number 100|صد|عدد ۱۰۰|—|—|The book has one hundred pages.|کتاب صد صفحه دارد.|A1|number
+eat|iːt|verb|to put food in your mouth|خوردن|قرار دادن غذا در دهان|consume;dine|fast;starve|I eat breakfast at seven.|ساعت هفت صبحانه می‌خورم.|A1|verb
+drink|drɪŋk|verb|to take liquid into your mouth|نوشیدن|بردن مایع به دهان|sip;swallow|—|We drink tea every morning.|ما هر صبح چای می‌نوشیم.|A1|verb
+go|ɡoʊ|verb|to move from one place to another|رفتن|حرکت از جایی به جای دیگر|move;travel|come;stay|I go to school by bus.|با اتوبوس به مدرسه می‌روم.|A1|verb
+come|kʌm|verb|to move toward the speaker|آمدن|حرکت به سمت گوینده|arrive;approach|go;leave|Come here please.|اینجا بیا لطفاً.|A1|verb
+run|rʌn|verb|to move fast with your legs|دویدن|حرکت سریع با پاها|sprint;jog|walk;stop|He runs in the park daily.|او هر روز در پارک می‌دود.|A1|verb
+walk|wɔːk|verb|to move on foot slowly|قدم زدن|حرکت آهسته پیاده|stroll;step|run|We walk after dinner.|بعد از شام قدم می‌زنیم.|A1|verb
+sit|sɪt|verb|to rest on a chair|نشستن|قرار گرفتن روی صندلی|rest|stand|Please sit on this chair.|لطفاً روی این صندلی بنشین.|A1|verb
+stand|stænd|verb|to be on your feet|ایستادن|قرار گرفتن روی پاها|rise|sit|Stand up for the anthem.|برای سرود ملی بایستید.|A1|verb
+sleep|sliːp|verb|to rest with eyes closed|خوابیدن|استراحت با چشمان بسته|rest;nap|wake|Children sleep at nine.|بچه‌ها ساعت نه می‌خوابند.|A1|verb
+wake|weɪk|verb|to stop sleeping|بیدار شدن|پایان خواب|awaken;arise|sleep|I wake up at six every day.|هر روز ساعت شش بیدار می‌شوم.|A1|verb
+read|riːd|verb|to look at and understand words|خواندن|نگاه کردن و فهمیدن نوشته‌ها|study;scan|write|She reads a book every night.|او هر شب کتاب می‌خواند.|A1|verb
+write|raɪt|verb|to make words on paper|نوشتن|ایجاد کلمات روی کاغذ|note;compose|read|Write your name here.|اسم خودت اینجا بنویس.|A1|verb
+speak|spiːk|verb|to say words|صحبت کردن|گفتن کلمات|talk;say|listen;be silent|Do you speak English?|انگلیسی صحبت می‌کنی؟|A1|verb
+listen|ˈlɪsən|verb|to pay attention to sound|گوش دادن|توجه به صدا|hear|ignore|Listen to the teacher carefully.|با دقت به معلم گوش بده.|A1|verb
+see|siː|verb|to notice with your eyes|دیدن|توجه با چشم|watch;notice|be blind|I see a bird in the tree.|پرنده‌ای درخت را می‌بینم.|A1|verb
+look|lʊk|verb|to turn your eyes toward something|نگاه کردن|چرخاندن چشم به چیزی|watch;glance|ignore|Look at this photo!|به این عکس نگاه کن!|A1|verb
+hear|hɪr|verb|to notice sound with ears|شنیدن|درک صدا با گوش|perceive|be deaf|I hear a strange noise.|صدای عجیبی می‌شنوم.|A1|verb
+buy|baɪ|verb|to get something with money|خریدن|به دست آوردن با پول|purchase|sell|We buy fresh bread daily.|ما هر روز نان تازه می‌خریم.|A1|verb
+sell|sel|verb|to give something for money|فروختن|دادن چیزی در ازای پول|trade;market|buy|They sell fruit in the shop.|آن‌ها در مغازه میوه می‌فروشند.|A1|verb
+give|ɡɪv|verb|to hand something to someone|دادن|رساندن چیزی به کسی|offer;provide|take;receive|Give me the book please.|کتاب را به من بده لطفاً.|A1|verb
+take|teɪk|verb|to get or grab something|گرفتن|برداشتن یا در دست گرفتن|grab;seize|give|Take your umbrella.|چترت را بردار.|A1|verb
+make|meɪk|verb|to create or build something|ساختن|ایجاد یا ساختن چیزی|create;build|destroy|She makes beautiful cakes.|او کیک‌های زیبا می‌سازد.|A1|verb
+do|duː|verb|to perform an action|انجام دادن|عمل کردن|perform;execute|—|What do you do on Fridays?|جمعه‌ها چه کار می‌کنی؟|A1|verb
+have|hæv|verb|to own or possess|داشتن|مالک بودن|own;possess|lack|I have two books.|من دو کتاب دارم.|A1|verb
+want|wɒnt|verb|to desire something|خواستن|میل به چیزی|desire;wish|refuse|I want a glass of water.|یک لیوان آب می‌خواهم.|A1|verb
+need|niːd|verb|to require something|نیاز داشتن|ضرورت داشتن چیزی|require;demand|have|Plants need sunlight.|گیاهان به نور خورشید نیاز دارند.|A1|verb
+like|laɪk|verb|to enjoy or prefer|دوست داشتن|لذت بردن یا ترجیح دادن|enjoy;prefer|hate;dislike|I like this song.|این آهنگ را دوست دارم.|A1|verb
+help|help|verb|to assist someone|کمک کردن|یاری رساندن به کسی|assist;aid|hinder|Can you help me?|می‌توانی کمکم کنی؟|A1|verb
+open|ˈoʊpən|verb|to make something not closed|باز کردن|باز کردن چیزی|unlock|close;shut|Open the window please.|پنجره را باز کن لطفاً.|A1|verb
+close|kloʊz|verb|to shut something|بستن|بسته کردن چیزی|shut;fasten|open|Close the door quietly.|در را آهسته ببند.|A1|verb
+start|stɑːrt|verb|to begin something|شروع کردن|آغاز کردن چیزی|begin;commence|stop;finish|The movie starts at eight.|فیلم ساعت هشت شروع می‌شود.|A1|verb
+stop|stɒp|verb|to end an action|متوقف کردن|پایان دادن به کاری|halt;cease|start;continue|Stop the car here!|ماشین را اینجا نگه دار!|A1|verb
+work|wɜːrk|verb|to do a job|کار کردن|انجام دادن شغل|labor;toil|rest|My father works in a bank.|پدرم در بانک کار می‌کند.|A1|verb
+play|pleɪ|verb|to have fun with games|بازی کردن|سرگرمی با بازی‌ها|game;frolic|work|Kids play in the yard.|بچه‌ها در حیاط بازی می‌کنند.|A1|verb
+learn|lɜːrn|verb|to get knowledge|یاد گرفتن|کسب دانش|study;grasp|forget;teach|I learn English every day.|من هر روز انگلیسی یاد می‌گیرم.|A1|verb
+teach|tiːtʃ|verb|to give knowledge to others|آموزش دادن|رساندن دانش به دیگران|instruct;educate|learn|She teaches math at school.|او در مدرسه ریاضی تدریس می‌کند.|A1|verb
+teacher|ˈtiːtʃər|noun|a person who teaches|معلم|شخصی که آموزش می‌دهد|instructor;educator|student|Our teacher is very kind.|معلم ما خیلی مهربان است.|A1|school
+student|ˈstuːdənt|noun|a person who studies|دانش‌آموز|شخصی که درس می‌خواند|pupil;learner|teacher|The student answers correctly.|دانش‌آموز درست جواب می‌دهد.|A1|school
+school|skuːl|noun|a place where children learn|مدرسه|جایی که کودکان یاد می‌گیرند|academy;institution|—|I go to school by bus.|با اتوبوس به مدرسه می‌روم.|A1|school
+pen|pen|noun|a tool for writing with ink|خودکار|ابزار نوشتن با جوهر|ballpoint|—|This pen writes smoothly.|این خودکار روان می‌نویسد.|A1|school
+pencil|ˈpensl|noun|a wooden tool for writing|مداد|ابزار چوبی نوشتن|—|—|May I borrow your pencil?|می‌توانم مدادت را قرض بگیرم؟|A1|school
+book|bʊk|noun|pages with words for reading|کتاب|صفحات پر از نوشته برای خواندن|volume;publication|—|This book is very interesting.|این کتاب خیلی جالب است.|A1|school
+paper|ˈpeɪpər|noun|thin material for writing|کاغذ|ماده نازک برای نوشتن|sheet;page|—|Put the paper in the bag.|کاغذ را در کیف بگذار.|A1|school
+class|klæs|noun|a group of students|کلاس|گروهی از دانش‌آموزان|lesson;course|—|There are 25 students in our class.|در کلاس ما ۲۵ دانش‌آموز هست.|A1|school
+desk|desk|noun|a table for writing|میز تحریر|میز مخصوص نوشتن|table;workstation|—|My desk is near the window.|میز من نزدیک پنجره است.|A1|school
+house|haʊs|noun|a building where people live|خانه|ساختمانی که مردم در آن زندگی می‌کنند|home;residence|—|Their house has a big garden.|خانه‌شان باغ بزرگی دارد.|A1|home
+home|hoʊm|noun|the place where you live|منزل|جایی که زندگی می‌کنی|dwelling;abode|—|I stay home on Fridays.|جمعه‌ها در خانه می‌مانم.|A1|home
+room|ruːm|noun|a part of a house|اتاق|بخشی از خانه|chamber|—|My room is very tidy.|اتاق من خیلی مرتب است.|A1|home
+door|dɔːr|noun|the entrance to a room|در|ورودی اتاق|entrance;gate|—|Please close the door behind you.|لطفاً در را پشت سرت ببند.|A1|home
+window|ˈwɪndoʊ|noun|an opening in a wall with glass|پنجره|بازشوی دیوار با شیشه|—|—|Open the window for fresh air.|پنجره را برای هوای تازه باز کن.|A1|home
+bed|bed|noun|furniture for sleeping|تخت|مبلمان برای خواب|cot;berth|—|The bed is very soft.|تخت خیلی نرم است.|A1|home
+chair|tʃer|noun|a seat with a back|صندلی|جای نشستن با پشتی|seat;stool|—|This chair is comfortable.|این صندلی راحت است.|A1|home
+table|ˈteɪbl|noun|furniture with a flat top|میز|مبلمان با سطح صاف|—|—|The keys are on the table.|کلیدها روی میز هستند.|A1|home
+kitchen|ˈkɪtʃɪn|noun|the room for cooking|آشپزخانه|اتاق پخت غذا|cookhouse|—|Mom is in the kitchen.|مامان در آشپزخانه است.|A1|home
+city|ˈsɪti|noun|a large town|شهر|شهرستان بزرگ|town;metropolis|village|Tehran is a big city.|تهران شهر بزرگی است.|A1|place
+street|striːt|noun|a road in a city|خیابان|جاده‌ای در شهر|road;avenue|—|Our street is quiet at night.|خیابان ما شب‌ها ساکت است.|A1|place
+shop|ʃɒp|noun|a place that sells things|مغازه|جایی که کالا می‌فروشد|store;market|—|The shop opens at nine.|مغازه ساعت نه باز می‌شود.|A1|place
+money|ˈmʌni|noun|coins and notes for buying|پول|سکه و اسکناس برای خرید|cash;currency|—|I saved money for a trip.|برای سفر پول پس انداز کردم.|A1|basic
+price|praɪs|noun|how much something costs|قیمت|مقدار هزینه چیزی|cost;value|—|The price of bread went up.|قیمت نان بالا رفت.|A1|basic
+food|fuːd|noun|things people eat|غذا|چیزهایی که مردم می‌خورند|meal;dish|—|Iranian food is delicious.|غذای ایرانی خوشمزه است.|A1|food
+water|ˈwɔːtər|noun|the liquid we drink|آب|مایعی که می‌نوشیم|H2O;liquid|—|Drink more water in summer.|در تابستان آب بیشتری بنوش.|A1|food
+bread|bred|noun|basic baked food|نان|غذای پخته پایه‌ای|loaf|—|We buy fresh bread every morning.|هر صبح نان تازه می‌خریم.|A1|food
+milk|mɪlk|noun|a white drink from cows|شیر|نوشیدنی سفید از گاو|dairy|—|The child drinks milk daily.|کودک هر روز شیر می‌نوشد.|A1|food
+tea|tiː|noun|a hot drink from leaves|چای|نوشیدنی گرم از برگ|—|coffee|Iranians love strong tea.|ایرانی‌ها چای پررنگ دوست دارند.|A1|food
+coffee|ˈkɒfi|noun|a hot drink from beans|قهوه|نوشیدنی گرم از دانه|java;espresso|tea|I drink coffee to wake up.|برای بیدار شدن قهوه می‌نوشم.|A1|food
+rice|raɪs|noun|small white grains we cook|برنج|دانه‌های سفید کوچک برای پخت|grain|—|Persian rice is famous.|برنج ایرانی معروف است.|A1|food
+apple|ˈæpl|noun|a round red or green fruit|سیب|میوه گرد قرمز یا سبز|fruit|—|An apple a day keeps doctors away.|روزانه یک سیب دکتر را دور می‌کند.|A1|food
+fruit|fruːt|noun|sweet food from plants|میوه|غذای شیرین از گیاهان|produce|vegetable|Summer fruits are sweet.|میوه‌های تابستانی شیرین‌اند.|A1|food
+meat|miːt|noun|food from animals|گوشت|غذای حیوانی|flesh|vegetable|We cook meat on Fridays.|جمعه‌ها گوشت می‌پزیم.|A1|food
+egg|eɡ|noun|a round food from birds|تخم‌مرغ|غذای گرد از پرندگان|—|—|I eat eggs for breakfast.|صبحانه تخم‌مرغ می‌خورم.|A1|food
+fish|fɪʃ|noun|an animal that lives in water|ماهی|حیوانی که در آب زندگی می‌کند|seafood|—|Fish swim in the sea.|ماهی‌ها در دریا شنا می‌کنند.|A1|animal
+dog|dɒɡ|noun|a loyal pet animal|سگ|حیوان خانگی وفادار|puppy;canine|cat|The dog guards the house.|سگ از خانه محافظت می‌کند.|A1|animal
+cat|kæt|noun|a small soft pet animal|گربه|حیوان خانگی کوچک و نرم|kitten;feline|dog|The cat sleeps on the sofa.|گربه روی مبل می‌خوابد.|A1|animal
+bird|bɜːrd|noun|an animal with wings|پرنده|حیوانی با بال|fowl|—|Birds sing in the morning.|پرنده‌ها صبح‌ها آواز می‌خوانند.|A1|animal
+horse|hɔːrs|noun|a large animal for riding|اسب|حیوان بزرگ برای سوارکاری|steed;pony|—|The horse runs fast.|اسب تند می‌دود.|A1|animal
+cow|kaʊ|noun|an animal that gives milk|گاو|حیوانی که شیر می‌دهد|cattle|—|Cows eat grass.|گاوها علف می‌خورند.|A1|animal
+sheep|ʃiːp|noun|an animal with wool|گوسفند|حیوانی با پشم|lamb;ram|—|Sheep live in the meadow.|گوسفندها در چمنزار زندگی می‌کنند.|A1|animal
+sun|sʌn|noun|the star that gives us light|خورشید|ستاره‌ای که نور می‌دهد|sunshine|moon|The sun rises in the east.|خورشید از مشرق طلوع می‌کند.|A1|nature
+moon|muːn|noun|the light in the night sky|ماه|نور آسمان شب|satellite|sun|The moon is very bright tonight.|ماه امشب خیلی روشن است.|A1|nature
+star|stɑːr|noun|a point of light in the sky|ستاره|نقطه‌ای نورانی در آسمان|—|—|Stars appear at night.|ستاره‌ها شب ظاهر می‌شوند.|A1|nature
+sky|skaɪ|noun|the space above the earth|آسمان|فضای بالای زمین|heavens|—|The sky is clear today.|امروز آسمان صاف است.|A1|nature
+rain|reɪn|noun|water falling from clouds|باران|آبی که از ابر می‌بارد|shower;drizzle|drought|I love the smell of rain.|من عاشق بوی بارانم.|A1|weather
+snow|snoʊ|noun|white frozen water|برف|آب یخ‌زده سفید|flurry|heat|Snow covers the mountains.|برف کوه‌ها را می‌پوشاند.|A1|weather
+wind|wɪnd|noun|moving air|باد|هوای متحرک|breeze;gust|calm|The wind is strong by the sea.|باد کنار دریا قوی است.|A1|weather
+cloud|klaʊd|noun|white shapes in the sky|ابر|شکل‌های سفید آسمان|—|—|Dark clouds mean rain.|ابرهای تیره نشانه باران‌اند.|A1|weather
+sea|siː|noun|salt water covering much of earth|دریا|آب شور پوشاننده زمین|ocean;waves|land|We swim in the sea.|ما در دریا شنا می‌کنیم.|A1|nature
+beach|biːtʃ|noun|sandy land by the sea|ساحل|زمین شنی کنار دریا|shore;coast|—|We relax on the beach.|ما در ساحل استراحت می‌کنیم.|A1|nature
+mountain|ˈmaʊntən|noun|a very high hill|کوه|تپه بسیار بلند|peak;summit|valley|Damavand is Iran's highest mountain.|دموند بلندترین کوه ایران است.|A1|nature
+river|ˈrɪvər|noun|flowing water across land|رودخانه|آب جاری در سرزمین|stream;flow|—|The river flows to the sea.|رودخانه به دریا می‌ریزد.|A1|nature
+tree|triː|noun|a tall plant with a trunk|درخت|گیاه بلند با تنه|—|bush|Birds nest in the tree.|پرنده‌ها در درخت لانه می‌کنند.|A1|nature
+flower|ˈflaʊər|noun|the colorful part of a plant|گل|بخش رنگارنگ گیاه|blossom;bloom|weed|The garden is full of flowers.|باغ پر از گل است.|A1|nature
+summer|ˈsʌmər|noun|the hottest season|تابستان|گرم‌ترین فصل|—|winter|We travel every summer.|هر تابستان سفر می‌کنیم.|A1|time
+winter|ˈwɪntər|noun|the coldest season|زمستان|سردترین فصل|—|summer|Winter nights are long.|شب‌های زمستان بلندند.|A1|time
+spring|sprɪŋ|noun|the season after winter|بهار|فصل پس از زمستان|—|autumn|Flowers bloom in spring.|گل‌ها در بهار شکفته می‌شوند.|A1|time
+autumn|ˈɔːtəm|noun|the season after summer|پاییز|فصل پس از تابستان|fall|spring|Autumn leaves are golden.|برگ‌های پاییز طلایی‌اند.|A1|time
+hot|hɒt|adjective|having high temperature|گرم|دارای دمای بالا|warm;heated|cold;freezing|The soup is very hot.|سوپ خیلی گرم است.|A1|temperature
+cold|koʊld|adjective|having low temperature|سرد|دارای دمای پایین|chilly;freezing|hot;warm|The winter is very cold.|زمستان خیلی سرد است.|A1|temperature
+warm|wɔːrm|adjective|pleasantly hot|معتدل|گرمای دلپذیر|cozy;mild|cool|The room feels warm.|اتاق گرم و دلپذیر است.|A1|temperature
+cool|kuːl|adjective|pleasantly cold|خنک|سرمای دلپذیر|chilly;fresh|warm|The evening breeze is cool.|نسیم عصر خنک است.|A1|temperature
+big|bɪɡ|adjective|large in size|بزرگ|بزرگ در اندازه|large;huge;grand|small;tiny|Tehran is a big city.|تهران شهر بزرگی است.|A1|size
+small|smɔːl|adjective|little in size|کوچک|کوچک در اندازه|tiny;little;minor|big;large|They live in a small apartment.|آن‌ها در آپارتمان کوچکی زندگی می‌کنند.|A1|size
+good|ɡʊd|adjective|of high quality|خوب|با کیفیت بالا|fine;nice;great|bad;poor|This bread is really good.|این نان واقعاً خوب است.|A1|quality
+bad|bæd|adjective|of low quality|بد|با کیفیت پایین|poor;awful|good;great|The traffic is bad today.|ترافیک امروز بد است.|A1|quality
+new|nuː|adjective|recently made|جدید|تازه ساخته‌شده|fresh;modern|old;ancient|I bought a new phone.|تلفن جدید خریدم.|A1|quality
+old|oʊld|adjective|existing for a long time|قدیمی|مدت زیادی موجود|ancient;aged|new;young|This is an old photo.|این عکس قدیمی است.|A1|quality
+happy|ˈhæpi|adjective|feeling pleasure|خوشحال|احساس شادی|glad;joyful;cheerful|sad;unhappy|I am happy to see you!|از دیدنت خوشحالم!|A1|emotion
+sad|sæd|adjective|feeling sorrow|غمگین|احساس اندوه|unhappy;gloomy|happy;joyful|Why are you sad?|چرا غمگینی؟|A1|emotion
+angry|ˈæŋɡri|adjective|feeling strong displeasure|عصبانی|احساس نارضایتی شدید|mad;furious|calm;pleased|He gets angry very fast.|او خیلی زود عصبانی می‌شود.|A1|emotion
+tired|ˈtaɪərd|adjective|needing rest|خسته|نیاز به استراحت|sleepy;worn|energetic|I am tired after work.|بعد از کار خسته‌ام.|A1|emotion
+hungry|ˈhʌŋɡri|adjective|wanting food|گرسنه|خواستار غذا|famished|full;fed|The children are hungry.|بچه‌ها گرسنه‌اند.|A1|emotion
+thirsty|ˈθɜːrsti|adjective|wanting water|تشنه|خواستار آب|dry|hydrated|After running I was thirsty.|بعد از دویدن تشنه بودم.|A1|emotion
+easy|ˈiːzi|adjective|not difficult|آسان|غیر دشوار|simple;effortless|hard;difficult|This question is easy.|این سؤال آسان است.|A1|quality
+hard|hɑːrd|adjective|difficult to do|سخت|دشوار برای انجام|difficult;tough|easy;simple|Learning a language is hard.|یادگیری زبان سخت است.|A1|quality
+fast|fæst|adjective|moving with high speed|سریع|حرکت با سرعت زیاد|quick;rapid;speedy|slow|The train is very fast.|قطار خیلی سریع است.|A1|speed
+slow|sloʊ|adjective|moving with low speed|آهسته|حرکت با سرعت کم|sluggish;gradual|fast;quick|The turtle is slow.|لاک‌پشت آهسته است.|A1|speed
+beautiful|ˈbjuːtɪfl|adjective|very pretty|زیبا|بسیار خوش‌منظر|pretty;lovely;gorgeous|ugly|The garden is beautiful in spring.|باغ در بهار زیباست.|A1|appearance
+ugly|ˈʌɡli|adjective|unpleasant to look at|زشت|ناخوشایند در نگاه|hideous;unsightly|beautiful;pretty|That building is ugly.|آن ساختمان زشت است.|A1|appearance
+clean|kliːn|adjective|not dirty|تمیز|بدون کثیفی|spotless;tidy|dirty;filthy|Keep your room clean.|اتاقت را تمیز نگه دار.|A1|quality
+dirty|ˈdɜːrti|adjective|not clean|کثیف|نامتساوی؛ غیر تمیز|filthy;soiled|clean|My shoes got dirty in the rain.|کفش‌هایم در باران کثیف شد.|A1|quality
+full|fʊl|adjective|containing as much as possible|پر|حاوی بیشترین مقدار|packed;filled|empty|The glass is full of juice.|لیوان پر از آبمیوه است.|A1|quality
+empty|ˈempti|adjective|containing nothing|خالی|حاوی هیچ چیز|vacant;bare|full|The box is empty.|جعبه خالی است.|A1|quality
+light|laɪt|noun|brightness that lets us see|نور|روشنایی که دیدن ممکن می‌کند|brightness;glow|darkness|Sunlight is good for you.|نور خورشید برایت مفید است.|A1|basic
+dark|dɑːrk|adjective|with little light|تاریک|با نور کم|dim;gloomy|bright;light|The room is too dark.|اتاق خیلی تاریک است.|A1|quality
+long|lɒŋ|adjective|great in length|بلند|زیاد در طول|lengthy;extended|short|Her hair is long.|موی او بلند است.|A1|size
+short|ʃɔːrt|adjective|small in length|کوتاه|کم در طول|brief;little|long;tall|The movie is too short.|فیلم خیلی کوتاه است.|A1|size
+tall|tɔːl|adjective|great in height|قدبلند|زیاد در قد|high;lofty|short|My brother is tall.|برادرم قدبلند است.|A1|size
+young|jʌŋ|adjective|not old|جوان|غیر پیر|youthful|old;aged|The young man speaks four languages.|مرد جوان چهار زبان صحبت می‌کند.|A1|people
+rich|rɪtʃ|adjective|having much money|ثروتمند|دارای پول زیاد|wealthy;affluent|poor|The area is rich in history.|این منطقه از نظر تاریخ غنی است.|A1|quality
+poor|pʊr|adjective|having little money|فقیر|دارای پول کم|needy;broke|rich;wealthy|He grew up in a poor village.|او در روستایی فقیر بزرگ شد.|A1|quality
+question|ˈkwestʃən|noun|a sentence that asks|سؤال|جمله‌ای که می‌پرسد|inquiry;query|answer|Ask me a question.|از من سؤال بپرس.|A1|school
+answer|ˈænsər|noun|a reply to a question|پاسخ|جوابی به سؤال|reply;response|question|Your answer is correct.|پاسخ تو درست است.|A1|school
+word|wɜːrd|noun|a unit of language|کلمه|واحد زبان|term;expression|—|This word is hard to pronounce.|این کلمه تلفظش سخت است.|A1|school
+language|ˈlæŋɡwɪdʒ|noun|a system of communication|زبان|سیستم ارتباطی|tongue;speech|—|Persian is a poetic language.|فارسی زبانی شاعرانه است.|A1|school
+story|ˈstɔːri|noun|a telling of events|داستان|روایت وقایع|tale;narrative|—|Grandma tells beautiful stories.|مادربزرگ داستان‌های زیبا می‌گوید.|A1|school
+song|sɒŋ|noun|music with words|آهنگ|موسیقی با کلمات|tune;melody|—|This song is very popular.|این آهنگ خیلی محبوب است.|A1|culture
+music|ˈmjuːzɪk|noun|organized pleasant sound|موسیقی|صدای دلپذیر منظم|melody;harmony|silence|I listen to music while studying.|هنگام درس خواندن موسیقی گوش می‌دهم.|A1|culture
+game|ɡeɪm|noun|an activity for fun|بازی|فعالیتی برای سرگرمی|match;contest|—|Chess is a smart game.|شطرنج بازی هوشمندانه‌ای است.|A1|culture
+phone|foʊn|noun|a device for calling|تلفن|دستگاه تماس|mobile;cellphone|—|My phone battery is empty.|باتری تلفنم خالی است.|A1|technology
+computer|kəmˈpjuːtər|noun|an electronic machine for data|رایانه|دستگاه الکترونیکی داده|PC;laptop|—|She works on the computer.|او با رایانه کار می‌کند.|A1|technology
+key|kiː|noun|a metal tool that opens locks|کلید|ابزار فلزی بازکردن قفل|—|—|I lost my house keys.|کلیدهای خانه‌ام را گم کردم.|A1|basic
+gift|ɡɪft|noun|something given freely|هدیه|چیزی که رایگان داده می‌شود|present;donation|—|She received a beautiful gift.|او هدیه زیبایی دریافت کرد.|A1|culture
+party|ˈpɑːrti|noun|a fun social event|مهمانی|رویداد اجتماعی شاد|celebration;gathering|—|We had a birthday party.|مهمانی تولد گرفتیم.|A1|culture
+birthday|ˈbɜːrθdeɪ|noun|the day you were born|تولد|روز متولد شدن|—|—|Happy birthday to you!|تولدت مبارک!|A1|culture
+doctor|ˈdɒktər|noun|a person who treats patients|پزشک|شخصی که بیماران را درمان می‌کند|physician;medic|patient|The doctor examined the child.|پزشک کودک را معاینه کرد.|A1|job
+hospital|ˈhɒspɪtl|noun|a place for medical care|بیمارستان|جایی برای درمان پزشکی|clinic|—|Visiting hours end at eight.|ساعت ملاقات تا هشت است.|A1|place
+medicine|ˈmedsən|noun|a substance that treats illness|دارو|ماده‌ای که بیماری را درمان می‌کند|drug;remedy|poison|Take your medicine on time.|دارویت را سر وقت بخور.|A1|health
+sick|sɪk|adjective|not healthy|مریض|بدون سلامتی|ill;unwell|healthy;well|She stayed home because she was sick.|او مریض بود و در خانه ماند.|A1|health
+healthy|ˈhelθi|adjective|in good health|سالم|در سلامتی خوب|fit;well|sick;ill|Eat healthy food every day.|هر روز غذای سالم بخور.|A1|health
+travel|ˈtrævl|verb|to go from place to place|سفر کردن|رفتن از جایی به جای دیگر|journey;tour|stay|I love to travel by train.|من عاشق سفر با قطارم.|A1|verb
+drive|draɪv|verb|to control a car|رانندگی کردن|هدایت ماشین|steer|ride|He drives carefully in the rain.|او در باران با احتیاط رانندگی می‌کند.|A1|verb
+ride|raɪd|verb|to travel on a bike or animal|سوار شدن|سفر با دوچرخه یا حیوان|—|walk|Can you ride a bicycle?|می‌توانی دوچرخه‌سواری کنی؟|A1|verb
+fly|flaɪ|verb|to move through the air|پرواز کردن|حرکت در هوا|soar;glide|land|Birds fly south in winter.|پرنده‌ها زمستان به جنوب می‌روند.|A1|verb
+swim|swɪm|verb|to move through water|شنا کردن|حرکت در آب|float;dive|drown|We swim every morning.|ما هر صبح شنا می‌کنیم.|A1|verb
+cook|kʊk|verb|to prepare food with heat|آشپزی کردن|آماده‌کردن غذا با حرارت|prepare;bake|—|My father cooks on weekends.|پدرم آخر هفته‌ها آشپزی می‌کند.|A1|verb
+talk|tɔːk|verb|to speak with someone|صحبت کردن|گفتگو با کسی|chat;speak|listen|We talked for two hours.|دو ساعت صحبت کردیم.|A1|verb
+ask|æsk|verb|to say a question|پرسیدن|بیان سؤال|inquire;question|answer;reply|Ask the teacher for help.|از معلم کمک بخواه.|A1|verb
+call|kɔːl|verb|to phone someone|تماس گرفتن|زنگ زدن به کسی|phone;ring|—|Call me when you arrive.|وقتی رسیدی زنگ بزن.|A1|verb
+find|faɪnd|verb|to discover something lost|پیدا کردن|کشف چیزی گم‌شده|discover;locate|lose|I found my glasses!|عینکم را پیدا کردم!|A1|verb
+lose|luːz|verb|to be unable to find|گم کردن|قادر به یافتن نبودن|misplace|find;win|Don't lose your ticket.|بلیطت را گم نکن.|A1|verb
+win|wɪn|verb|to be the best in a game|بردن|بهترین بودن در بازی|triumph;conquer|lose|Our team won the match!|تیم ما مسابقه را برد!|A1|verb
+smile|smaɪl|verb|to make a happy face|لبخند زدن|صورت خوشحال ساخت|grin|frown|She smiles at everyone.|او به همه لبخند می‌زند.|A1|verb
+laugh|læf|verb|to show happiness with sound|خندیدن|نشان دادن شادی با صدا|giggle;chuckle|cry|The joke made everyone laugh.|جوک همه را خنداند.|A1|verb
+cry|kraɪ|verb|to shed tears|گریه کردن|ریختن اشک|weep;sob|laugh|Babies cry when hungry.|بچه‌ها وقتی گرسنه‌اند گریه می‌کنند.|A1|verb
+wait|weɪt|verb|to stay until something happens|صبر کردن|ماندن تا اتفاقی|stay;linger|go|Wait for me at the corner.|سر چهارراه منتظرم بمان.|A1|verb
+remember|rɪˈmembər|verb|to keep in mind|به یاد آوردن|نگه داشتن در ذهن|recall;memorize|forget|I remember my childhood days.|روزهای کودکی‌ام را به یاد دارم.|A1|verb
+forget|fərˈɡet|verb|to fail to remember|فراموش کردن|ناتوانی در یادآوری|omit|remember|Don't forget your keys.|کلیدهایت را فراموش نکن.|A1|verb
+understand|ˌʌndərˈstænd|verb|to know the meaning of|فهمیدن|دانستن معنای چیزی|comprehend;grasp|misunderstand|I understand the lesson now.|الان درس را می‌فهمم.|A1|verb
+think|θɪŋk|verb|to use your mind|فکر کردن|استفاده از ذهن|believe;consider|ignore|I think it will rain today.|فکر می‌کنم امروز باران ببارد.|A1|verb
+know|noʊ|verb|to have information|دانستن|داشتن اطلاعات|realize;be aware|ignore|Do you know his name?|اسمش را می‌دانی؟|A1|verb
+meet|miːt|verb|to come together with someone|ملاقات کردن|همراه شدن با کسی|encounter;greet|leave|Nice to meet you!|از آشنایی با شما خوشبختم!|A1|verb
+send|send|verb|to make something go to someone|فرستادن|رساندن چیزی به کسی|deliver;dispatch|receive|I will send you a message.|برایت پیام می‌فرستم.|A1|verb
+receive|rɪˈsiːv|verb|to get something given|دریافت کردن|گرفتن چیزی|get;accept|send;give|I received your email.|ایمیلت را دریافت کردم.|A1|verb
+try|traɪ|verb|to make an effort|تلاش کردن|کوشش کردن|attempt;endeavor|give up|Try again and don't give up.|دوباره تلاش کن و ناامید نشو.|A1|verb
+change|tʃeɪndʒ|verb|to make or become different|تغییر دادن|متفاوت کردن|alter;modify|keep|Seasons change the weather.|فصل‌ها هوا را تغییر می‌دهند.|A2|verb
+choose|tʃuːz|verb|to pick one from many|انتخاب کردن|برگزیدن یکی از چند|select;pick|reject|Choose your favorite color.|رنگ مورد علاقه‌ات را انتخاب کن.|A2|verb
+begin|bɪˈɡɪn|verb|to start|آغاز کردن|شروع کردن|start;commence|end;finish|Classes begin in September.|کلاس‌ها در سپتامبر شروع می‌شوند.|A2|verb
+finish|ˈfɪnɪʃ|verb|to complete something|تمام کردن|کامل کردن چیزی|complete;end|start;begin|I finished my homework.|تکالیفم را تمام کردم.|A2|verb
+wear|wer|verb|to have clothes on your body|پوشیدن|داشتن لباس روی بدن|dress;put on|remove|Wear a coat it is cold.|کاپشن بپوش هوا سرد است.|A1|verb
+buy something|—|phrase|to purchase an item|چیزی خریدن|خریدن یک کالا|—|—|I want to buy something nice.|می‌خواهم چیزی قشنگ بخرم.|A1|phrase
+live|lɪv|verb|to have your home somewhere|زندگی کردن|خانه داشتن در جایی|reside;dwell|die|They live near the sea.|آن‌ها نزدیک دریا زندگی می‌کنند.|A1|verb
+die|daɪ|verb|to stop living|مردن|پایان زندگی|pass away|live;be born|The plant died without water.|گیاه بدون آب مرد.|A2|verb
+grow|ɡroʊ|verb|to get bigger|رشد کردن|بزرگ‌تر شدن|develop;increase|shrink|Children grow very fast.|کودکان خیلی سریع رشد می‌کنند.|A2|verb
+build|bɪld|verb|to make a structure|ساختن|ایجاد سازه|construct;erect|destroy|They build bridges in the city.|آن‌ها در شهر پل می‌سازند.|A2|verb
+break|breɪk|verb|to separate into pieces|شکستن|جداشدن به قطعات|shatter;smash|repair;fix|Don't break the glass.|لیوان را نشکن.|A1|verb
+fix|fɪks|verb|to repair something|تعمیر کردن|درست کردن چیزی|repair;mend|break|The mechanic fixed my car.|مکانیک ماشینم را تعمیر کرد.|A2|verb
+pay|peɪ|verb|to give money for something|پرداخت کردن|دادن پول در ازای چیزی|spend;settle|—|You can pay by card.|می‌توانی با کارت پرداخت کنی.|A1|verb
+cost|kɒst|verb|to have a price|هزینه داشتن|قیمت داشتن|be priced|—|How much does it cost?|چقدر قیمت دارد؟|A1|basic
+ability|əˈbɪləti|noun|the skill to do something|توانایی|مهارت انجام کاری|capacity;skill|inability|She has the ability to lead.|او توانایی رهبری دارد.|B1|abstract
+accept|əkˈsept|verb|to agree to take|پذیرفتن|موافقت به گرفتن|agree;receive|reject;refuse|I accept your invitation.|دعوتت را می‌پذیرم.|A2|verb
+achieve|əˈtʃiːv|verb|to succeed in doing|دستیابی به|موفق شدن در انجام|accomplish;attain|fail|You can achieve your goals.|می‌توانی به اهدافت برسی.|B1|verb
+allow|əˈlaʊ|verb|to let something happen|اجازه دادن|رخصت دادن برای وقوع|permit;let|forbid;ban|Smoking is not allowed here.|اینجا سیگار کشیدن مجاز نیست.|A2|verb
+although|ɔːlˈðoʊ|conjunction|despite the fact that|اگرچه|با وجود اینکه|though;even though|—|Although it rained we went out.|اگرچه باران آمد بیرون رفتیم.|A2|connector
+ancient|ˈeɪnʃənt|adjective|very old|باستانی|خیلی قدیمی|old;antique|modern;new|Persepolis is an ancient site.|تخت جمشید محلی باستانی است.|B1|history
+announce|əˈnaʊns|verb|to say something publicly|اعلام کردن|عمومی گفتن چیزی|declare;proclaim|conceal|They announced the results today.|امروز نتایج را اعلام کردند.|B1|verb
+anxious|ˈæŋkʃəs|adjective|worried about the future|مضطرب|نگران آینده|worried;nervous|calm;relaxed|I feel anxious before exams.|قبل از امتحانات مضطرب می‌شوم.|B1|emotion
+appear|əˈpɪr|verb|to become visible|ظاهر شدن|دیدنی شدن|emerge;show|disappear|Stars appear after sunset.|ستاره‌ها بعد از غروب ظاهر می‌شوند.|A2|verb
+argue|ˈɑːrɡjuː|verb|to disagree loudly|بحث کردن|بلند مواجهه عقاید|dispute;debate|agree|They argued about politics.|آن‌ها درباره سیاست بحث کردند.|B1|verb
+arrive|əˈraɪv|verb|to reach a place|رسیدن|به جایی رسیدن|reach;get there|depart;leave|The train arrives at noon.|قطار ظهر می‌رسد.|A2|verb
+avoid|əˈvɔɪd|verb|to stay away from|دوری کردن|فاصله گرفتن از|evade;escape|face;confront|Avoid junk food.|از فست‌فود دوری کن.|A2|verb
+aware|əˈwer|adjective|knowing about something|آگاه|دانا درباره چیزی|conscious;informed|unaware|Be aware of the traffic.|مراقب ترافیک باش.|B1|quality
+borrow|ˈbɒroʊ|verb|to take with permission|قرض گرفتن|گرفتن با اجازه|take on loan|lend;give back|May I borrow your pen?|می‌توانم خودکارت را قرض بگیرم؟|A2|verb
+lend|lend|verb|to give for a short time|قرض دادن|دادن برای مدت کوتاه|loan|borrow|Can you lend me some money?|می‌توانی کمی پول قرض بدهی؟|A2|verb
+brave|breɪv|adjective|not afraid|شجاع|بی‌ترس|courageous;fearless|cowardly|The brave firefighter saved the child.|آتش‌نشان شجاع کودک را نجات داد.|A2|quality
+breathe|briːð|verb|to take air in and out|نفس کشیدن|بردن و دادن هوا|inhale;exhale|—|Breathe deeply and relax.|عمیق نفس بکش و آرام باش.|A2|verb
+calm|kɑːm|adjective|peaceful and relaxed|آرام|آسوده و بی‌تنش|peaceful;serene|stormy;agitated|The sea is calm today.|دریا امروز آرام است.|B1|quality
+careful|ˈkerfl|adjective|paying attention to avoid danger|مواظب|توجه به دور کردن خطر|cautious;watchful|careless|Be careful on the stairs.|روی پله‌ها مواظب باش.|A2|quality
+carry|ˈkæri|verb|to hold and move something|حمل کردن|نگه داشتن و جابه‌جایی|transport;bear|drop|He carries his bag to school.|او کیفش را به مدرسه می‌برد.|A2|verb
+celebrate|ˈselɪbreɪt|verb|to enjoy a special day|جشن گرفتن|شادمانی روز خاص|commemorate;party|mourn|We celebrate New Year with family.|نوروز را با خانواده جشن می‌گیریم.|A2|culture
+chance|tʃæns|noun|the possibility of something|شانس|احتمال وقوع چیزی|opportunity;probability|certainty|There is a chance of rain.|احتمال بارش باران هست.|A2|basic
+common|ˈkɒmən|adjective|found often; usual|رایج|پرکاربرد و معمول|usual;frequent|rare;unusual|This name is common in Iran.|این نام در ایران رایج است.|A2|quality
+compare|kəmˈper|verb|to look at differences|مقایسه کردن|نگاه به تفاوت‌ها|contrast;juxtapose|—|Compare the two prices.|دو قیمت را مقایسه کن.|B1|verb
+complete|kəmˈpliːt|adjective|with all parts|کامل|با تمام اجزا|entire;whole|incomplete|The list is now complete.|فهرست اکنون کامل است.|B1|quality
+confident|ˈkɒnfɪdənt|adjective|sure of yourself|مطمئن|خودباور|assured;self-assured|shy;doubtful|Be confident when you speak.|هنگام صحبت مطمئن باش.|B1|quality
+connect|kəˈnekt|verb|to join together|متصل کردن|پیوند دادن|link;join|disconnect|Connect the cable to the laptop.|کابل را به لپ‌تاپ وصل کن.|A2|verb
+consider|kənˈsɪdər|verb|to think about carefully|در نظر گرفتن|دقیق اندیشیدن|think about;ponder|ignore|Consider all the options.|همه گزینه‌ها را در نظر بگیر.|B1|verb
+continue|kənˈtɪnjuː|verb|to keep going|ادامه دادن|استمرار دادن|persist;proceed|stop;quit|Continue reading the story.|به خواندن داستان ادامه بده.|A2|verb
+control|kənˈtroʊl|verb|to direct or manage|کنترل کردن|هدایت یا مدیریت|manage;regulate|lose control|Control your speed in the city.|در شهر سرعتت را کنترل کن.|B1|verb
+conversation|ˌkɒnvərˈseɪʃn|noun|talk between people|گفتگو|صحبت میان مردم|dialog;chat|silence|The conversation was interesting.|گفتگو جالب بود.|A2|communication
+count|kaʊnt|verb|to say numbers in order|شمردن|گفتن اعداد به ترتیب|enumerate;calculate|guess|Count the books on the shelf.|کتاب‌های روی قفسه را بشمار.|A2|verb
+courage|ˈkɜːrɪdʒ|noun|the quality of being brave|شجاعت|ویژگی بی‌باکی بودن|bravery;valor|cowardice|It takes courage to apologize.|پوزش خواستن شجاعت می‌خواهد.|B1|abstract
+create|kriˈeɪt|verb|to make something new|خلق کردن|ساختن چیز جدید|make;produce|destroy|Artists create beautiful works.|هنرمندان آثار زیبا خلق می‌کنند.|B1|verb
+culture|ˈkʌltʃər|noun|the customs of a society|فرهنگ|رسم‌های یک جامعه|heritage;traditions|—|Iranian culture is very old.|فرهنگ ایرانی بسیار کهن است.|B1|society
+danger|ˈdeɪndʒər|noun|the possibility of harm|خطر|احتمال آسیب|peril;hazard|safety|Danger! Do not enter.|خطر! ورود ممنوع.|A2|safety
+decide|dɪˈsaɪd|verb|to choose after thinking|تصمیم گرفتن|انتخاب بعد از فکر|determine;choose|hesitate|We decided to travel by bus.|تصمیم گرفتیم با اتوبوس سفر کنیم.|A2|verb
+describe|dɪˈskraɪb|verb|to say what something is like|توصیف کردن|گفتن شباهت چیزی|depict;portray|—|Describe your best friend.|بهترین دوستت را توصیف کن.|A2|verb
+develop|dɪˈveləp|verb|to grow or improve|توسعه دادن|رشد یا بهبود بخشیدن|grow;advance|decline|Skill develops with practice.|مهارت با تمرین توسعه می‌یابد.|B1|verb
+discover|dɪˈskʌvər|verb|to find something new|کشف کردن|یافتن چیز تازه|find;uncover|hide|Scientists discovered a new planet.|دانشمندان سیاره جدیدی کشف کردند.|B1|verb
+discuss|dɪˈskʌs|verb|to talk about something|بحث کردن|گفتگو درباره چیزی|debate;talk over|ignore|Let's discuss the plan.|بیا درباره برنامه بحث کنیم.|A2|communication
+distance|ˈdɪstəns|noun|how far apart things are|فاصله|میزان دور بودن چیزها|gap;space|closeness|The distance is ten kilometers.|فاصله ده کیلومتر است.|A2|basic
+dream|driːm|noun|pictures in your mind while sleeping|خواب دیدن|تصاویر ذهن در خواب|vision;fantasy|reality|I had a strange dream last night.|دیشب خواب عجیبی دیدم.|A2|mind
+education|ˌedʒuˈkeɪʃn|noun|learning at schools|تحصیل|آموزش در مدارس|schooling;learning|ignorance|Education opens many doors.|تحصیل درهای زیادی را باز می‌کند.|B1|school
+effect|ɪˈfekt|noun|the result of an action|اثر|نتیجه یک عمل|result;consequence|cause|The medicine had a good effect.|دارو اثر خوبی داشت.|B1|abstract
+effort|ˈefərt|noun|hard work to do something|تلاش|کار سخت برای انجام کاری|attempt;endeavor|laziness|Success needs daily effort.|موفقیت نیازمند تلاش روزانه است.|B1|abstract
+encourage|ɪnˈkɜːrɪdʒ|verb|to give hope or support|تشویق کردن|دادن امید یا پشتیبانی|inspire;motivate|discourage|Teachers encourage students to ask.|معلمان دانش‌آموزان را به پرسش تشویق می‌کنند.|B1|verb
+energy|ˈenərdʒi|noun|the power to do things|انرژی|قدرت انجام کارها|power;vigor|tiredness|Exercise gives you energy.|ورزش به تو انرژی می‌دهد.|A2|science
+environment|ɪnˈvaɪrənmənt|noun|the natural world|محیط زیست|دنیای طبیعی|nature;surroundings|—|Protect the environment every day.|هر روز از محیط زیست محافظت کن.|B1|nature
+especially|ɪˈspeʃəli|adverb|more than usual|به‌ویژه|بیشتر از معمول|particularly;mainly|—|I love summer especially the beach.|تابستان را دوست دارم به‌ویژه ساحل را.|A2|adverb
+event|ɪˈvent|noun|something that happens|رویداد|چیزی که رخ می‌دهد|occasion;happening|—|The concert was a big event.|کنسرت رویداد بزرگی بود.|A2|basic
+example|ɪɡˈzæmpl|noun|a sample that shows the rule|مثال|نمونه‌ای که قاعده را نشان می‌دهد|sample;instance|—|Give an example of a verb.|یک مثال از فعل بزن.|A2|school
+excellent|ˈeksələnt|adjective|extremely good|عالی|بسیار خوب|outstanding;superb|poor;terrible|Your pronunciation is excellent.|تلفظ تو عالی است.|A2|quality
+exercise|ˈeksərsaɪz|noun|physical activity for health|ورزش|فعالیت بدنی برای سلامتی|workout;training|rest|Do exercise three times a week.|هفته سه بار ورزش کن.|A2|health
+experience|ɪkˈspɪriəns|noun|knowledge from doing things|تجربه|دانش از انجام کارها|background;practice|inexperience|Travel gives you great experience.|سفر تجربه عالی به تو می‌دهد.|B1|abstract
+explain|ɪkˈspleɪn|verb|to make something clear|توضیح دادن|روشن کردن چیزی|clarify;describe|confuse|Can you explain this grammar?|می‌توانی این گرامر را توضیح دهی؟|A2|verb
+fail|feɪl|verb|to not succeed|شکست خوردن|موفق نشدن|miscarry|succeed;pass|He failed the driving test.|او در آزمون رانندگی مردود شد.|A2|verb
+famous|ˈfeɪməs|adjective|known by many people|معروف|شناخته‌شده توسط افراد زیاد|well-known;renowned|unknown|Hafez is a famous poet.|حافظ شاعری معروف است.|A2|quality
+foreign|ˈfɒrən|adjective|from another country|خارجی|از کشور دیگر|overseas;alien|domestic;local|Learning foreign languages is useful.|یادگیری زبان‌های خارجی مفید است.|A2|quality
+forget it|—|phrase|never mind|مهم نیست|اشکالی ندارد|—|—|Forget it it is not important.|مهم نیست زیاد مهم نیست.|A2|phrase
+free|friː|adjective|not busy; no cost|آزاد؛ رایگان|بی‌کار یا بدون هزینه|unoccupied;gratis|busy;occupied|Are you free on Thursday?|پنجشنبه وقت آزاد داری؟|A2|quality
+fresh|freʃ|adjective|newly made or picked|تازه|تازه‌ساخت یا تازه‌چین|new;crisp|stale;old|Buy fresh vegetables from the market.|از بازار سبزیجات تازه بخر.|A2|quality
+goal|ɡoʊl|noun|something you want to achieve|هدف|چیزی که می‌خواهی به آن برسی|aim;objective|—|Set a goal for each week.|هر هفته یک هدف تعیین کن.|A2|abstract
+habit|ˈhæbɪt|noun|something you do often|عادت|کاری که زیاد انجام می‌دهی|routine;custom|—|Reading is a good habit.|کتاب خواندن عادت خوبی است.|A2|abstract
+happen|ˈhæpən|verb|to take place|اتفاق افتادن|رخ دادن|occur;take place|—|What happened yesterday?|دیروز چه اتفاقی افتاد؟|A2|verb
+health|helθ|noun|the state of your body|سلامتی|وضعیت بدن تو|wellness;fitness|illness|Sleep is important for health.|خواب برای سلامتی مهم است.|A2|health
+heavy|ˈhevi|adjective|hard to lift|سنگین|سخت برای بلند کردن|weighty|light|The bag is too heavy.|کیف خیلی سنگین است.|A2|quality
+history|ˈhɪstri|noun|events of the past|تاریخ|وقایع گذشته|past;chronicle|—|Iran has a rich history.|ایران تاریخ غنی دارد.|A2|school
+holiday|ˈhɒlədeɪ|noun|a day off from work|تعطیلات|روز استراحت از کار|vacation;break|workday|The holidays start next week.|تعطیلات هفته بعد شروع می‌شود.|A2|time
+honest|ˈɒnɪst|adjective|always telling the truth|صادق|همیشه راستگو|truthful;sincere|dishonest|Be honest with your friends.|با دوستانت صادق باش.|B1|quality
+hope|hoʊp|verb|to want something good to happen|امید داشتن|خواستن اتفاق خوب|wish;desire|despair|I hope you pass the exam.|امیدوارم امتحان را قبول شوی.|A2|emotion
+idea|aɪˈdiːə|noun|a thought or plan|ایده|فکر یا برنامه|thought;concept|—|That is a great idea!|آن ایده فوق‌العاده است!|A2|mind
+imagine|ɪˈmædʒɪn|verb|to picture in your mind|تصور کردن|ترسیم در ذهن|visualize;picture|—|Imagine life without phones.|زندگی بدون تلفن‌ها را تصور کن.|B1|mind
+important|ɪmˈpɔːrtnt|adjective|having great value|مهم|دارای ارزش زیاد|significant;vital|unimportant|Practice is important for learning.|تمرین برای یادگیری مهم است.|A2|quality
+improve|ɪmˈpruːv|verb|to make better|بهبود بخشیدن|بهتر کردن|enhance;upgrade|worsen|Your accent improves every week.|لهجه تو هر هفته بهتر می‌شود.|A2|verb
+include|ɪnˈkluːd|verb|to contain as a part|شامل بودن|دارا بودن به عنوان بخشی|contain;involve|exclude|The price includes breakfast.|قیمت شامل صبحانه است.|B1|verb
+increase|ɪnˈkriːs|verb|to become more|افزایش یافتن|بیشتر شدن|grow;rise|decrease;reduce|Prices increase every year.|قیمت‌ها هر سال افزایش می‌یابد.|B1|verb
+information|ˌɪnfərˈmeɪʃn|noun|facts about something|اطلاعات|حقایق درباره چیزی|data;facts|—|This book has useful information.|این کتاب اطلاعات مفیدی دارد.|A2|basic
+interest|ˈɪntrəst|noun|the feeling of wanting to know more|علاقه|احساس میل به دانستن بیشتر|curiosity;fascination|boredom|He shows interest in astronomy.|او به نجوم علاقه نشان می‌دهد.|B1|mind
+introduce|ˌɪntrəˈduːs|verb|to present someone by name|معرفی کردن|ارائه کسی با نام|present|—|Let me introduce my colleague.|همکارم را معرفی کنم.|A2|communication
+invite|ɪnˈvaɪt|verb|to ask someone to come|دعوت کردن|خواستن آمدن کسی|ask;summon|disinvite|We invite friends to dinner.|دوستان را به شام دعوت می‌کنیم.|A2|communication
+journey|ˈdʒɜːrni|noun|a long trip|سفر|مسافرت طولانی|trip;voyage|—|The journey took five hours.|سفر پنج ساعت طول کشید.|B1|travel
+joy|dʒɔɪ|noun|great happiness|شادی|خوشحالی بزرگ|delight;happiness|sorrow|The kids screamed with joy.|بچه‌ها از شادی جیغ کشیدند.|B1|emotion
+knowledge|ˈnɒlɪdʒ|noun|facts and understanding|دانش|حقایق و فهم|understanding;wisdom|ignorance|Knowledge grows when shared.|دانش با اشتراک رشد می‌کند.|B1|abstract
+laugh|læf|noun|the sound of happiness|خنده|صدای شادی|giggle;chuckle|cry|Her laugh is contagious.|خنده او مسری است.|B1|emotion
+law|lɔː|noun|official rules of a country|قانون|قواعد رسمی کشور|regulation;statute|—|Everyone must follow the law.|همه باید قانون را رعایت کنند.|B1|society
+lead|liːd|verb|to show the way|رهبری کردن|راهنمایی مسیر|guide;direct|follow|She leads the research team.|او تیم پژوهش را رهبری می‌کند.|B1|verb
+lesson|ˈlesn|noun|a period of teaching|درس|دوره آموزشی|class;session|—|Today's lesson is about tenses.|درس امروز درباره زمان‌هاست.|A2|school
+library|ˈlaɪbrəri|noun|a place full of books|کتابخانه|جایی پر از کتاب|—|—|I study at the library daily.|هر روز در کتابخانه درس می‌خوانم.|A2|place
+lie|laɪ|verb|to say something untrue|دروغ گفتن|گفتن چیز ناراست|fib|tell the truth|Never lie to your friends.|هرگز به دوستانت دروغ نگو.|B1|verb
+life|laɪf|noun|the state of being alive|زندگی|وضعیت زنده بودن|existence|death|Life is beautiful in spring.|زندگی در بهار زیباست.|A1|basic
+lonely|ˈloʊnli|adjective|sad because alone|تنها|غمگین به دلیل تنها بودن|isolated;alone|accompanied|He felt lonely in the new city.|او در شهر جدید احساس تنهایی می‌کرد.|B1|emotion
+luck|lʌk|noun|good or bad fortune|شانس|بخت خوب یا بد|fortune;chance|misfortune|Good luck on your test!|در آزمونت موفق باشی!|A2|abstract
+manage|ˈmænɪdʒ|verb|to succeed in doing something difficult|مدیریت کردن|موفق شدن در کار دشوار|handle;control|fail|She manages her time well.|او زمانش را خوب مدیریت می‌کند.|B1|verb
+market|ˈmɑːrkɪt|noun|a place to buy and sell|بازار|جایی برای خرید و فروش|bazaar;store|—|The market is busy on Fridays.|بازار جمعه‌ها شلوغ است.|A2|place
+marry|ˈmæri|verb|to become husband and wife|ازدواج کردن|زن و شوهر شدن|wed|divorce|They married last spring.|آن‌ها بهار پیش ازدواج کردند.|B1|family
+mistake|mɪˈsteɪk|noun|something done wrong|اشتباه|کاری که اشتباه انجام شد|error;fault|correctness|Everyone makes mistakes sometimes.|همه گاهی اشتباه می‌کنند.|A2|basic
+modern|ˈmɒdərn|adjective|of the present time|مدرن|متعلق به زمان حال|contemporary;current|ancient;old|This building looks very modern.|این ساختمان خیلی مدرن به نظر می‌رسد.|A2|quality
+moment|ˈmoʊmənt|noun|a very short time|لحظه|زمان خیلی کوتاه|instant;second|—|Wait a moment please.|یک لحظه صبر کن لطفاً.|A2|time
+nature|ˈneɪtʃər|noun|plants animals and landscapes|طبیعت|گیاهان جانوران و مناظر|wilderness;environment|—|We enjoy nature on weekends.|آخر هفته‌ها از طبیعت لذت می‌بریم.|A2|nature
+necessary|ˈnesəseri|adjective|needed; required|ضروری|لازم؛ مورد نیاز|essential;required|unnecessary|Water is necessary for life.|آب برای زندگی ضروری است.|B1|quality
+neighbor|ˈneɪbər|noun|a person living next to you|همسایه|شخصی که کنار تو زندگی می‌کند|—|—|Our neighbor is very kind.|همسایه ما خیلی مهربان است.|A2|people
+noise|nɔɪz|noun|loud unpleasant sound|سروصدا|صدای بلند ناخوشایند|din;racket|silence|The noise wakes the baby.|سروصدا بچه را بیدار می‌کند.|A2|basic
+notice|ˈnoʊtɪs|verb|to see or become aware of|متوجه شدن|دیدن یا آگاه شدن|observe;see|ignore|Did you notice the new sign?|تابلو جدید را دیدی؟|B1|verb
+opinion|əˈpɪnjən|noun|what you think about something|نظر|فکر تو درباره چیزی|view;belief|fact|In my opinion the movie was great.|به نظر من فیلم عالی بود.|A2|communication
+opportunity|ˌɒpərˈtuːnəti|noun|a chance to do something|فرصت|شانس انجام کاری|chance;opening|—|This job is a great opportunity.|این کار فرصت عالی است.|B1|abstract
+order|ˈɔːrdər|noun|a request for goods|سفارش|درخواست کالا|request;booking|—|I placed an order for pizza.|سفارش پیتزا دادم.|A2|basic
+organize|ˈɔːrɡənaɪz|verb|to arrange systematically|سازماندهی کردن|مرتب کردن سیستماتیک|arrange;sort|disorganize|Organize your notes by topic.|یادداشت‌هایت را موضوع‌بندی کن.|B1|verb
+pain|peɪn|noun|the feeling of hurting|درد|احساس آزار|ache;hurt|comfort;relief|I have a pain in my back.|کمردرد دارم.|A2|health
+patient|ˈpeɪʃnt|adjective|able to wait calmly|صبور|توانای انتظار آرام|tolerant|impatient|Be patient learning takes time.|صبور باش یادگیری زمان می‌برد.|B1|quality
+peace|piːs|noun|a time without war|صلح|دوران بدون جنگ|harmony;truce|war|Peace is precious.|صلح گران‌بهاست.|B1|society
+perfect|ˈpɜːrfɪkt|adjective|without any mistakes|بی‌نقص|بدون هیچ خطا|flawless;ideal|imperfect|Her accent is almost perfect.|لهجه او تقریباً بی‌نقص است.|B1|quality
+perhaps|pərˈhæps|adverb|maybe|شاید|احتمالاً|maybe;possibly|certainly|Perhaps we will travel tomorrow.|شاید فردا سفر کنیم.|A2|adverb
+plan|plæn|noun|an idea of what to do|برنامه|ایده کاری که باید انجام شود|scheme;strategy|—|Do you have plans for Friday?|جمعه برنامه داری؟|A2|basic
+polite|pəˈlaɪt|adjective|showing good manners|مؤدب|دارنده ادب خوب|courteous;mannerly|rude|The waiter is very polite.|گارسون خیلی مؤدب است.|A2|quality
+popular|ˈpɒpjələr|adjective|liked by many people|محبوب|پسندیده توسط افراد زیاد|well-liked;famous|unpopular|Tea is popular in Iran.|چای در ایران محبوب است.|A2|quality
+possible|ˈpɒsəbl|adjective|able to happen|ممکن|قابل وقوع|feasible;achievable|impossible|Is it possible to change the time?|ممکن است زمان را تغییر داد؟|A2|quality
+practice|ˈpræktɪs|noun|repeated exercise|تمرین|تمرین تکراری|training;drill|theory|Practice makes perfect.|تمرین انسان را کامل می‌کند.|A2|school
+prefer|prɪˈfɜːr|verb|to like one more than another|ترجیح دادن|بیشتر پسندیدن|favor;like better|dislike|I prefer tea to coffee.|چای را به قهوه ترجیح می‌دهم.|B1|verb
+prepare|prɪˈper|verb|to make ready|آماده کردن|رویه کردن|get ready;arrange|—|Prepare your bag tonight.|امشب کیف خودت را آماده کن.|A2|verb
+present|ˈpreznt|noun|a gift|هدیه|چیزی که داده می‌شود|gift;donation|—|He bought a present for his mom.|برای مادرش هدیه خرید.|A2|basic
+prevent|prɪˈvent|verb|to stop something from happening|جلوگیری کردن|نگه داشتن از رخ دادن|stop;block|allow|Exercise prevents illness.|ورزش از بیماری جلوگیری می‌کند.|B1|verb
+problem|ˈprɒbləm|noun|a difficult situation|مشکل|وضعیت دشوار|issue;difficulty|solution|There is a problem with my phone.|تلفنم مشکل دارد.|A2|basic
+promise|ˈprɒmɪs|verb|to say you will surely do|قول دادن|گفتن قطعی انجام|swear;vow|—|I promise to call you.|قول می‌دهم زنگ بزنم.|B1|communication
+protect|prəˈtekt|verb|to keep safe|محافظت کردن|امن نگه داشتن|guard;defend|harm|Sunglasses protect your eyes.|عینک آفتابی چشمانت را محافظت می‌کند.|B1|verb
+proud|praʊd|adjective|feeling good about something|مفتخر|احساس خوب درباره چیزی|honored;satisfied|ashamed|I am proud of your progress.|از پیشرفتت مفتخرم.|B1|emotion
+provide|prəˈvaɪd|verb|to give what is needed|فراهم کردن|دادن مورد نیاز|supply;offer|withhold|The app provides free lessons.|اپلیکیشن درس رایگان فراهم می‌کند.|B1|verb
+purpose|ˈpɜːrpəs|noun|the reason for doing something|هدف|دلیل انجام کاری|intention;aim|—|The purpose of review is memory.|هدف مرور تقویت حافظه است.|B1|abstract
+quality|ˈkwɒləti|noun|how good something is|کیفیت|میزان خوبی چیزی|standard;grade|quantity|Persian carpets have high quality.|فرش ایرانی کیفیت بالا دارد.|B1|basic
+quiet|ˈkwaɪət|adjective|with little noise|آرام|با صدای کم|silent;still|noisy;loud|The library must stay quiet.|کتابخانه باید آرام بماند.|A2|quality
+reach|riːtʃ|verb|to arrive at|رسیدن به|در رسیدن به|arrive at;get to|leave|We reach the hotel by noon.|تا ظهر به هتل می‌رسیم.|B1|verb
+ready|ˈredi|adjective|prepared for something|آماده|مشخص برای چیزی|prepared;set|unready|Dinner is almost ready.|شام تقریباً آماده است.|A2|quality
+reason|ˈriːzn|noun|why something happens|دلیل|چرایی اتفاق چیزی|cause;explanation|effect|Give me one good reason.|یک دلیل خوب بگو.|A2|basic
+recognize|ˈrekəɡnaɪz|verb|to know someone you have seen|شناختن|دانستن کسی که دیده‌ای|identify;know|—|I recognized her voice instantly.|صدایش را فوراً شناختم.|B1|verb
+recommend|ˌrekəˈmend|verb|to say something is good|توصیه کردن|گفتن خوب بودن چیزی|suggest;advise|—|Can you recommend a book?|می‌توانی کتابی توصیه کنی؟|B1|communication
+reduce|rɪˈduːs|verb|to make less|کاهش دادن|کمتر کردن|decrease;lower|increase|Reduce screen time at night.|زمان صفحه نمایش شب را کم کن.|B1|verb
+refuse|rɪˈfjuːz|verb|to say no|امتناع کردن|گفتن نه|decline;reject|accept|He refused the extra work.|او از کار اضافی امتناع کرد.|B1|verb
+relax|rɪˈlæks|verb|to become calm|آرام گرفتن|آرام شدن|unwind;rest|stress|Relax after a long day.|بعد از روز طولانی آرام بگیر.|A2|verb
+remain|rɪˈmeɪn|verb|to stay in place|ماندن|باقی ماندن در محل|stay;linger|leave|Only two tickets remain.|فقط دو بلیط باقی مانده.|B1|verb
+remind|rɪˈmaɪnd|verb|to help someone remember|یادآوری کردن|کمک به یادآوری|prompt;cue|forget|Please remind me about the meeting.|لطفاً من را از جلسه یادآوری کن.|B1|verb
+repair|rɪˈper|verb|to fix something broken|تعمیر کردن|درست کردن خرابی|fix;mend|damage|He repaired the broken chair.|او صندلی شکسته را تعمیر کرد.|B1|verb
+repeat|rɪˈpiːt|verb|to say or do again|تکرار کردن|دوباره گفتن یا کردن|redo;reiterate|—|Repeat the word three times.|کلمه را سه بار تکرار کن.|A2|verb
+reply|rɪˈplaɪ|verb|to answer|پاسخ دادن|جواب دادن|answer;respond|ignore|Reply to the email today.|امروز به ایمیل پاسخ بده.|A2|communication
+report|rɪˈpɔːrt|noun|a written description of events|گزارش|توصیف نوشتاری وقایع|account;summary|—|Write a report about your trip.|درباره سفرت گزارش بنویس.|B1|school
+respect|rɪˈspekt|noun|admiration for someone|احترام|تحسین کسی|esteem;regard|disrespect|Respect your parents.|به والدینت احترام بگذار.|B1|quality
+responsible|rɪˈspɒnsəbl|adjective|having a duty|مسئول|دارنده وظیفه|accountable;duty-bound|irresponsible|You are responsible for your learning.|تو مسئول یادگیری خودت هستی.|B1|quality
+result|rɪˈzʌlt|noun|what happens because of something|نتیجه|آنچه به دلیل چیزی رخ می‌دهد|outcome;consequence|cause|The result of hard work is success.|نتیجه سخت‌کوشی موفقیت است.|A2|basic
+return|rɪˈtɜːrn|verb|to come back|برگشتن|بازگشتن به عقب|come back;go back|depart|I return home at seven.|ساعت هفت به خانه برمی‌گردم.|A2|verb
+review|rɪˈvjuː|verb|to study again|مرور کردن|دوباره مطالعه کردن|revise;go over|skip|Review your words every morning.|هر صبح کلماتت را مرور کن.|A2|school
+reward|rɪˈwɔːrd|noun|something given for good work|پاداش|چیزی برای کار خوب|prize;praise|punishment|Small rewards keep you motivated.|پاداش کوچک انگیزه می‌دهد.|B1|abstract
+risk|rɪsk|noun|the chance of danger|ریسک|احتمال خطر|danger;hazard|safety|Every investment has some risk.|هر سرمایه‌گذاری ریسکی دارد.|B1|abstract
+rule|ruːl|noun|an official instruction|قاعده|دستور رسمی|regulation;law|—|Follow the rules of the game.|قواعد بازی را رعایت کن.|A2|society
+safe|seɪf|adjective|not in danger|ایمن|بدون خطر|secure;protected|dangerous|Wear a helmet to stay safe.|برای ایمنی کلاه بگذار.|A2|quality
+save|seɪv|verb|to keep for later; to rescue|پس‌انداز کردن|نگه داشتن برای بعد|store;rescue|spend|Save a little money each month.|هر ماه کمی پول پس‌انداز کن.|A2|verb
+search|sɜːrtʃ|verb|to look for something|جستجو کردن|دنبال چیزی گشتن|look for;hunt|ignore|Search the word in the dictionary.|کلمه را در دیکشنری جستجو کن.|A2|verb
+secret|ˈsiːkrət|noun|something you tell no one|راز|چیزی که به کسی نمی‌گویی|confidence|public knowledge|The secret stayed between friends.|راز میان دوستان ماند.|B1|abstract
+serious|ˈsɪriəs|adjective|not joking|جدی|شوخی نبودن|grave;solemn|funny;playful|Learning needs serious practice.|یادگیری نیازمند تمرین جدی است.|B1|quality
+share|ʃer|verb|to give a part to others|به اشتراک گذاشتن|دادن بخشی به دیگران|divide;partake|hoard|Share your notes with the class.|یادداشت‌هایت را با کلاس به اشتراک بگذار.|A2|verb
+similar|ˈsɪmələr|adjective|almost the same|مشابه|تقریباً یکسان|alike;comparable|different|These two words are similar.|این دو کلمه مشابه‌اند.|B1|quality
+simple|ˈsɪmpl|adjective|easy to understand|ساده|آسان برای فهم|easy;plain|complex;complicated|The recipe is very simple.|دستور پخت خیلی ساده است.|A2|quality
+situation|ˌsɪtʃuˈeɪʃn|noun|the state of things|وضعیت|حالت چیزها|circumstance;condition|—|The weather situation is changing.|وضعیت هوا در حال تغییر است.|B1|basic
+skill|skɪl|noun|the ability to do something well|مهارت|توانایی خوب انجام کار|ability;expertise|—|Listening is a learnable skill.|شنیدن مهارتی آموختنی است.|B1|abstract
+smell|smel|noun|what the nose notices|بو|آنچه بینی حس می‌کند|scent;odor|—|The smell of coffee is wonderful.|بوی قهوه فوق‌العاده است.|A2|sense
+solution|səˈluːʃn|noun|a way to fix a problem|راه‌حل|روش رفع مشکل|answer;remedy|problem|We found a simple solution.|راه‌حل ساده‌ای پیدا کردیم.|B1|basic
+sound|saʊnd|noun|what you hear|صدا|آنچه می‌شنوی|noise;tone|silence|The sound of waves is relaxing.|صدای موج آرامش‌بخش است.|A2|sense
+special|ˈspeʃl|adjective|different from usual|خاص|متفاوت از معمول|unique;exceptional|ordinary;common|Today is a special day.|امروز روز خاصی است.|A2|quality
+spend|spend|verb|to use money or time|صرف کردن|استفاده پول یا زمان|use;consume|save|Spend ten minutes on review daily.|هر روز ده دقیقه روی مرور صرف کن.|A2|verb
+spread|spred|verb|to open out or distribute|گسترش دادن|پخش کردن|distribute;extend|gather|News spreads fast on social media.|خبر در شبکه‌های اجتماعی سریع پخش می‌شود.|B1|verb
+stay|steɪ|verb|to remain somewhere|ماندن|باقی ماندن در جایی|remain;linger|leave;go|Stay in touch with your teacher.|با معلمت در ارتباط بمان.|A2|verb
+strange|streɪndʒ|adjective|unusual|عجیب|غیر معمول|odd;unusual|normal;usual|I heard a strange sound.|صدای عجیبی شنیدم.|A2|quality
+strong|strɒŋ|adjective|having much power|قوی|دارنده قدرت زیاد|powerful;mighty|weak|Coffee makes me feel strong.|قهوه مرا قوی حس می‌کند.|A1|quality
+suggest|səˈdʒest|verb|to offer an idea|پیشنهاد دادن|ارائه ایده|propose;recommend|—|I suggest reviewing before bed.|پیشنهاد می‌کنم قبل خواب مرور کنی.|B1|communication
+support|səˈpɔːrt|verb|to help someone|حمایت کردن|کمک به کسی|back;assist|oppose|Family support is very valuable.|حمایت خانواده خیلی ارزشمند است.|B1|verb
+surprise|sərˈpraɪz|noun|an unexpected event|سورپرایز|رویداد غیرمنتظره|shock;amazement|expectation|The gift was a big surprise.|هدیه سورپرایز بزرگی بود.|A2|emotion
+survive|sərˈvaɪv|verb|to stay alive|بقا یافتن|زنده ماندن|endure;last|perish|Camels survive in the desert.|شترها در صحرا بقا می‌یابند.|B2|verb
+system|ˈsɪstəm|noun|a set of connected parts|سیستم|مجموعه اجزای مرتبط|network;structure|—|The alarm system works well.|سیستم هشدار خوب کار می‌کند.|B1|technology
+task|tæsk|noun|a piece of work|کار|تکه‌ای از کار|job;assignment|—|Finish one task at a time.|هر بار یک کار را تمام کن.|B1|basic
+taste|teɪst|noun|the flavor of food|طعم|مزه غذا|flavor;savor|—|I like the taste of mint.|طعم نعناع را دوست دارم.|A2|sense
+terrible|ˈterəbl|adjective|very bad|فجیع|خیلی بد|awful;horrible|wonderful|The traffic was terrible today.|ترافیک امروز فجیع بود.|A2|quality
+thought|θɔːt|noun|an idea in your mind|فکر|ایده در ذهن|idea;notion|—|That thought made me smile.|آن فکر مرا خنداند.|B1|mind
+through|θruː|preposition|from one side to the other|از میان|از یک سمت تا سمت دیگر|via;across|—|We walked through the park.|از میان پارک پیاده رفتیم.|A2|preposition
+throw|θroʊ|verb|to send something through the air|انداختن|پر کردن چیزی در هوا|toss;hurl|catch|Throw the ball to me!|توپ را به من بینداز!|A2|verb
+tight|taɪt|adjective|held firmly|تنگ|محکم نگه داشته|firm;taut|loose|The lid is too tight.|درب خیلی تنگ است.|A2|quality
+tiny|ˈtaɪni|adjective|very small|ریز|خیلی کوچک|minute;little|huge;giant|A tiny spider was on the wall.|عنکبوت ریزی روی دیوار بود.|B1|size
+total|ˈtoʊtl|adjective|including everything|کل|شامل همه چیز|entire;whole|partial|The total price is fair.|قیمت کل منصفانه است.|B1|basic
+touch|tʌtʃ|verb|to put your hand on something|لمس کردن|دست گذاشتن روی چیزی|feel;tap|—|Do not touch the wet paint.|رنگ خیس را لمس نکن.|A2|verb
+tour|tʊr|noun|a trip to see places|تور|سفر برای دیدن مکان‌ها|trip;excursion|—|We took a city tour yesterday.|دیروز تور شهری گرفتیم.|B1|travel
+tradition|trəˈdɪʃn|noun|a custom passed through time|سنت|رسم انتقالی در زمان|custom;heritage|innovation|Yalda night is an Iranian tradition.|شب یلدا سنت ایرانی است.|B1|culture
+train|treɪn|noun|a vehicle on rails|قطار|وسیله نقلیه روی ریل|rail;locomotive|—|The train to Shiraz leaves at six.|قطار شیراز ساعت شش حرکت می‌کند.|A2|transport
+travel|ˈtrævl|noun|the activity of going places|سفر|فعالیت رفتن به مکان‌ها|trip;journey|—|Travel broadens the mind.|سفر ذهن را باز می‌کند.|A2|travel
+trust|trʌst|verb|to believe in someone|اعتماد کردن|باور داشتن به کسی|believe;rely|doubt|Trust yourself and keep going.|به خودت اعتماد کن و ادامه بده.|B1|emotion
+truth|truːθ|noun|what is real and correct|حقیقت|آنچه واقعی و درست است|reality;fact|lie;falsehood|Always speak the truth.|همیشه حقیقت را بگو.|B1|abstract
+useful|ˈjuːsfl|adjective|helpful|مفید|کمک‌کننده|helpful;beneficial|useless|This app is useful for review.|این اپلیکیشن برای مرور مفید است.|A2|quality
+value|ˈvæljuː|noun|how much something is worth|ارزش|میزان بها چیزی|worth;merit|—|Time has great value.|زمان ارزش بزرگی دارد.|B1|abstract
+various|ˈveriəs|adjective|several different kinds|متنوع|چند نوع مختلف|several;diverse|uniform|The app has various tests.|اپلیکیشن تست‌های متنوعی دارد.|B1|quality
+view|vjuː|noun|what you can see|منظره|آنچه می‌توانی ببینی|sight;scene|—|The view from the window is amazing.|منظره از پنجره خیره‌کننده است.|B1|basic
+village|ˈvɪlɪdʒ|noun|a small place in the countryside|روستا|مکانی کوچک در حومه|hamlet;settlement|city|The village is quiet and green.|روستا آرام و سرسبز است.|A2|place
+visit|ˈvɪzɪt|verb|to go and see a person or place|ملاقت کردن|رفتن و دیدن کسی یا جایی|see;call on|leave|We visit grandma on Fridays.|جمعه‌ها به دیدن مادربزرگ می‌رویم.|A2|verb
+voice|vɔɪs|noun|the sound you speak with|صدا|صدایی که با آن صحبت می‌کنی|tone;timbre|—|Her voice is very calm.|صدای او خیلی آرام است.|A2|sense
+wait for|weɪt fɔːr|phrase|to stay until someone comes|منتظر ماندن|ماندن تا آمدن کسی|await|—|Wait for the green light.|منتظر چراغ سبز بمان.|A2|phrase
+wave|weɪv|noun|water moving on the sea|موج|آب متحرک دریا|ripple;swell|—|The waves hit the rocks.|امواج به صخره‌ها می‌خورند.|B1|nature
+weather|ˈweðər|noun|the condition of the air|هوا|وضعیت جو|climate;conditions|—|Summer weather here is sunny.|هوای تابستان اینجا آفتابی است.|A2|weather
+weight|weɪt|noun|how heavy something is|وزن|میزان سنگینی چیزی|mass;heaviness|—|Check your weight once a month.|ماهی یک بار وزنت را چک کن.|B1|health
+whole|hoʊl|adjective|complete; entire|کامل|تمام؛ سراسر|entire;complete|partial|I read the whole book in two days.|کل کتاب را در دو روز خواندم.|B1|quality
+willing|ˈwɪlɪŋ|adjective|ready and happy to do|مایل|آماده و خوشحال برای انجام|ready;eager|unwilling|She is willing to practice daily.|او برای تمرین روزانه مایل است.|B1|quality
+wise|waɪz|adjective|having good judgment|فرزانه|دارنده داوری خوب|sage;prudent|foolish|A wise person listens first.|فرزانه اول گوش می‌دهد.|B2|quality
+wish|wɪʃ|noun|a desire for something|آرزو|میل به چیزی|desire;hope|—|My wish is to speak fluently.|آرزوی من روان صحبت کردن است.|A2|emotion
+wonder|ˈwʌndər|verb|to want to know|تعجب کردن|خواستن دانستن|question;ponder|—|I wonder how this word is used.|می‌خواهم بدانم این کلمه چطور استفاده می‌شود.|B1|verb
+worry|ˈwɜːri|verb|to feel anxious|نگران بودن|احساس اضطراب|fret;fear|relax|Don't worry about mistakes.|درباره اشتباه‌ها نگران نباش.|A2|emotion
+worth|wɜːrθ|adjective|having value|ارزشمند|دارنده بها|valuable|worthless|This course is worth your time.|این دوره ارزش وقت تو را دارد.|B1|quality
+write down|raɪt daʊn|phrase|to note on paper|یادداشت کردن|نوشتن روی کاغذ|note;record|—|Write down new words in a notebook.|کلمات جدید را در دفترچه یادداشت کن.|A2|phrase
+wrong|rɒŋ|adjective|not correct|اشتباه|نادرست|incorrect;false|right;correct|My answer was wrong.|جواب من اشتباه بود.|A1|quality
+ability to speak|—|phrase|capacity to talk|توانایی صحبت|قابلیت حرف زدن|—|—|Practice improves your ability to speak.|تمرین توانایی صحبتت را بهتر می‌کند.|B1|phrase
+youth|juːθ|noun|the time of being young|جوانی|دوران جوان بودن|young age|old age|Enjoy your youth by learning.|جوانی‌ات را با یادگیری سپری کن.|B2|time
+morning walk|—|phrase|walking in the early day|پیاده‌روی صبحگاهی|قدم زدن در آغاز روز|—|—|A morning walk gives energy.|پیاده‌روی صبحگاهی انرژی می‌دهد.|B1|health
+rain drop|—|phrase|a single bit of rain|قطره باران|ذره‌ای از باران|drop|—|Every rain drop counts.|هر قطره باران اهمیت دارد.|B1|weather
+sunlight|ˈsʌnlaɪt|noun|light from the sun|نور خورشید|روشنی از خورشید|sunshine|darkness|Plants need sunlight to grow.|گیاهان برای رشد به نور خورشید نیاز دارند.|B1|nature
+notebook|ˈnoʊtbʊk|noun|a book for writing notes|دفترچه|کتابی برای نوشتن یادداشت|pad;journal|—|Keep a notebook for new words.|برای کلمات جدید دفترچه‌ای داشته باش.|A2|school
+wallet|ˈwɒlɪt|noun|a small case for money|کیف پول|جعبه کوچک پول|purse|—|My wallet is in my bag.|کیف پولم در کیف است.|A2|basic
+umbrella|ʌmˈbrelə|noun|a tool against rain|چتر|وسیله محافظ باران|canopy|—|Take an umbrella it may rain.|چتر ببر شاید باران ببارد.|A2|weather
+passport|ˈpæspɔːrt|noun|a travel identity document|گذرنامه|سند هویتی سفر|ID document|—|Keep your passport safe at the airport.|گذرنامه‌ات را در فرودگاه امن نگه دار.|B1|travel
+luggage|ˈlʌɡɪdʒ|noun|bags used for travel|چمدان|کیف‌های سفر|baggage;suitcase|—|My luggage weighs twenty kilos.|چمدانم بیست کیلو وزن دارد.|B1|travel
+ticket|ˈtɪkɪt|noun|a paper that lets you enter|بلیط|کاغذ ورود|pass;fare|—|I bought a ticket online.|بلیط را آنلاین خریدم.|A2|travel
+airport|ˈerpɔːrt|noun|a place where planes land|فرودگاه|جایی که هواپیما فرود می‌آید|airfield|—|The airport is far from the city.|فرودگاه از شهر دور است.|A2|travel
+hotel|hoʊˈtel|noun|a place to stay on trips|هتل|جایی برای اقامت در سفر|inn;lodge|—|The hotel room has a sea view.|اتاق هتل منظره دریا دارد.|A2|travel
+map|mæp|noun|a drawing of places|نقشه|ترسیمی از مکان‌ها|chart;atlas|—|Use the map to find the street.|از نقشه برای یافتن خیابان استفاده کن.|A2|travel
+north|nɔːrθ|noun|the top direction on a map|شمال|جهت بالای نقشه|—|south|Tabriz is in the northwest.|تبریز در شمال غربی است.|A2|direction
+south|saʊθ|noun|the bottom direction on a map|جنوب|جهت پایین نقشه|—|north|They traveled south in winter.|آن‌ها زمستان به جنوب سفر کردند.|A2|direction
+east|iːst|noun|where the sun rises|شرق|جایی که خورشید طلوع می‌کند|—|west|The sun rises in the east.|خورشید از شرق طلوع می‌کند.|A2|direction
+west|west|noun|where the sun sets|غرب|جایی که خورشید غروب می‌کند|—|east|The sun sets in the west.|خورشید در غرب غروب می‌کند.|A2|direction
+fire|ˈfaɪər|noun|burning heat and light|آتش|حرارت و روشنی سوزان|flame;blaze|water|Never play with fire.|هرگز با آتش بازی نکن.|A1|nature
+air|er|noun|the gas we breathe|هوا|گازی که نفس می‌کشیم|oxygen;atmosphere|—|Mountain air is very fresh.|هوای کوه خیلی تازه است.|A1|nature
+earth|ɜːrθ|noun|the planet we live on|زمین|سیاره‌ای که زندگی می‌کنیم|planet;world|—|The earth moves around the sun.|زمین دور خورشید می‌چرخد.|A1|nature
+peaceful|ˈpiːsfl|adjective|calm and quiet|آرامش‌بخش|آرام و ساکت|serene;tranquil|chaotic|The village is peaceful at night.|روستا شب‌ها آرامش‌بخش است.|B1|quality
+dangerous|ˈdeɪndʒərəs|adjective|able to cause harm|خطرناک|قادر به ایجاد آسیب|risky;hazardous|safe|This road is dangerous at night.|این جاده شب‌ها خطرناک است.|A2|quality
+delicious|dɪˈlɪʃəs|adjective|very tasty|خوشمزه|خیلی لذیذ|tasty;yummy|disgusting|The stew smells delicious.|خورش بوی خوشمزه‌ای می‌دهد.|A2|food
+expensive|ɪkˈspensɪv|adjective|costing much money|گرانقیمت|هزینه‌بر|costly;pricey|cheap|This phone is too expensive.|این تلفن خیلی گران است.|A2|money
+cheap|tʃiːp|adjective|costing little money|ارزان|کم‌هزینه|inexpensive;affordable|expensive|Summer fruits are cheap.|میوه‌های تابستانی ارزان‌اند.|A2|money
+comfortable|ˈkʌmftəbl|adjective|giving ease and relaxation|راحت|دلپذیر و آسوده|cozy;comfy|uncomfortable|These shoes are very comfortable.|این کفش‌ها خیلی راحت‌اند.|A2|quality
+crowded|ˈkraʊdɪd|adjective|full of people|شلوغ|پر از مردم|packed;busy|empty|The bazaar is crowded on Fridays.|بازار جمعه‌ها شلوغ است.|A2|place
+quietly|ˈkwaɪətli|adverb|with little noise|آرام|با صدای کم|softly|loudly|The baby sleeps so walk quietly.|بچه می‌خوابد پس آرام راه برو.|A2|adverb
+quickly|ˈkwɪkli|adverb|with high speed|سریعاً|با سرعت زیاد|fast;rapidly|slowly|Speak clearly not quickly.|روان صحبت کن نه سریع.|A2|adverb
+carefully|ˈkerfəli|adverb|with attention|با دقت|با توجه و مراقبت|cautiously|carelessly|Listen carefully to the audio.|با دقت به صدا گوش بده.|A2|adverb
+almost|ˈɔːlmoʊst|adverb|nearly|تقریباً|تقریباً کامل|nearly;nearly almost|exactly|The class is almost over.|کلاس تقریباً تمام است.|A2|adverb
+already|ɔːlˈredi|adverb|before now|قبلاً|پیش از حالا|by now|not yet|I have already eaten.|قبلاً غذا خورده‌ام.|A2|adverb
+always|ˈɔːlweɪz|adverb|every time|همیشه|در هر زمان|constantly;forever|never|I always review before sleep.|همیشه قبل خواب مرور می‌کنم.|A1|adverb
+never|ˈnevər|adverb|at no time|هرگز|در هیچ زمانی|not once|always|Never give up learning.|هرگز یادگیری را رها نکن.|A1|adverb
+often|ˈɒfn|adverb|many times|اغلب|بسیاری از اوقات|frequently;regularly|rarely|I often walk by the river.|اغلب کنار رودخانه پیاده‌روی می‌کنم.|A1|adverb
+sometimes|ˈsʌmtaɪmz|adverb|at some times|گاهی|در بعضی اوقات|occasionally|always|Sometimes I study at night.|گاهی شب‌ها درس می‌خوانم.|A1|adverb
+usually|ˈjuːʒuəli|adverb|most of the time|معمولاً|بیشتر اوقات|normally;generally|rarely|I usually take the bus.|معمولاً اتوبوس می‌گیرم.|A1|adverb
+hardly|ˈhɑːrdli|adverb|almost not|به سختی|تقریباً نه|barely;scarcely|easily|He hardly ever watches TV.|او تقریباً هرگز تلویزیون نگاه نمی‌کند.|B1|adverb
+instead|ɪnˈsted|adverb|in place of that|به جای آن|جایگزین آن|rather|—|Walk instead of driving short distances.|برای مسافت کوتاه پیاده برو به جای رانندگی.|B1|adverb
+together|təˈɡeðər|adverb|with each other|با هم|در کنار هم|jointly|separately|We learn better together.|ما با هم بهتر یاد می‌گیریم.|A2|adverb
+alone|əˈloʊn|adjective|without other people|تنها|بدون افراد دیگر|solo;unaccompanied|together|She studies alone in her room.|او تنها در اتاقش درس می‌خواند.|A2|quality
+again|əˈɡen|adverb|one more time|دوباره|یک بار دیگر|once more|—|Listen again and repeat.|دوباره گوش بده و تکرار کن.|A1|adverb
+also|ˈɔːlsoʊ|adverb|in addition|همچنین|علاوه بر آن|too;as well|—|He speaks English and also French.|او انگلیسی و همچنین فرانسه صحبت می‌کند.|A1|adverb
+because|bɪˈkɒz|conjunction|for the reason that|چون|به این دلیل که|since;as|—|I stayed home because of the rain.|به دلیل باران در خانه ماندم.|A1|connector
+before|bɪˈfɔːr|adverb|earlier than|قبل از|پیش از آن|prior to;earlier|after|Wash your hands before eating.|قبل از غذا دست‌هایت را بشوی.|A1|time
+after|ˈæftər|adverb|later than|بعد از|پس از آن|later|before|We rest after lunch.|بعد از ناهار استراحت می‌کنیم.|A1|time
+early|ˈɜːrli|adjective|before the usual time|زود|پیش از زمان معمول|punctual|late|The early bird catches the worm.|سحرخیز باش تا کامروا باشی.|A1|time
+late|leɪt|adjective|after the usual time|دیر|پس از زمان معمول|delayed|early|Do not be late for class.|برای کلاس دیر نکن.|A1|time
+middle|ˈmɪdl|noun|the center point|وسط|نقطه میانی|center;midst|edge|The bank is in the middle of the street.|بانک وسط خیابان است.|A2|place
+corner|ˈkɔːrnər|noun|where two lines meet|گوشه|محل تلاقی دو خط|—|center|The shop is on the corner.|مغازه سر کوچه است.|A2|place
+side|saɪd|noun|a position left or right|سمت|جای چپ یا راست|edge;flank|center|The park is on the other side.|پارک سمت دیگر است.|A2|place
+outside|ˌaʊtˈsaɪd|adverb|not inside a building|بیرون|خارج ساختمان|outdoors|inside|The kids play outside.|بچه‌ها بیرون بازی می‌کنند.|A1|place
+inside|ɪnˈsaɪd|adverb|within a building|داخل|درون ساختمان|within|outside|It is warm inside the house.|داخل خانه گرم است.|A1|place
+behind|bɪˈhaɪnd|preposition|at the back of|پشت|در عقبِ|rear|in front|The garden is behind the house.|باغ پشت خانه است.|A1|place
+in front of|ɪn frʌnt əv|phrase|ahead of something|جلوِ|پیشِ|ahead of|behind|The bus stops in front of the school.|اتوبوس جلوی مدرسه توقف می‌کند.|A2|phrase
+between|bɪˈtwiːn|preposition|in the space separating two things|میان|در فاصله جداکننده دو چیز|amid|—|The pharmacy is between the bank and the park.|داروخانه میان بانک و پارک است.|A2|place
+near|nɪr|adjective|close in distance|نزدیک|کم در فاصله|close by|far|The metro station is near.|ایستگاه مترو نزدیک است.|A1|place
+far|fɑːr|adjective|a long distance away|دور|زیاد در فاصله|distant|near;close|The airport is not far.|فرودگاه دور نیست.|A1|place
+above|əˈbʌv|preposition|higher than|بالای|بالاتر از|over|below|The picture hangs above the sofa.|تابلو بالای مبل است.|A2|place
+below|bɪˈloʊ|preposition|lower than|زیرِ|پایین‌تر از|under|above|The temperature is below zero.|دما زیر صفر است.|A2|place
+both|boʊθ|adjective|the two together|هر دو|آن دو با هم|the two|neither|Both answers are correct.|هر دو جواب درست‌اند.|A2|basic
+all|ɔːl|adjective|every one|همه|هر کدام|every|none|All students passed the test.|همه دانش‌آموزان قبول شدند.|A1|basic
+some|sʌm|adjective|an amount but not all|بعضی|مقداری اما نه همه|a few;certain|none;all|Some words are difficult.|بعضی کلمات سخت‌اند.|A1|basic
+many|ˈmeni|adjective|a large number|زیاد|تعداد زیاد|numerous;countless|few|Many tourists visit Isfahan.|گردشگران زیادی اصفهان را می‌بینند.|A1|quantity
+few|fjuː|adjective|a small number|کم|تعداد کم|several|many|Few people know this word.|افراد کمی این کلمه را می‌دانند.|A1|quantity
+enough|ɪˈnʌf|adjective|as much as needed|کافی|به اندازه لازم|sufficient;adequate|insufficient|Ten minutes of review is enough.|ده دقیقه مرور کافی است.|A2|quantity
+more|mɔːr|adjective|a greater amount|بیشتر|مقدار بیشتر|additional|less|Practice more every day.|هر روز بیشتر تمرین کن.|A1|quantity
+less|les|adjective|a smaller amount|کمتر|مقدار کمتر|fewer|more|Drink less soda.|نوشابه کمتر بنوش.|A1|quantity
+best|best|adjective|the most good|بهترین|عالی‌ترین|finest;top|worst|This is my best memory.|این بهترین خاطره من است.|A1|quality
+worst|wɜːrst|adjective|the most bad|بدترین|افتضاح‌ترین|poorest|best|Sunday traffic is the worst.|ترافیک یکشنبه بدترین است.|A1|quality
+better|ˈbetər|adjective|more good|بهتر|خوب‌تر|improved|worse|Your English gets better daily.|انگلیسی‌ات هر روز بهتر می‌شود.|A1|quality
+worse|wɜːrs|adjective|more bad|بدتر|افتضاح‌تر|poorer|better|The weather got worse at night.|هوا شب بدتر شد.|A1|quality
+first|fɜːrst|adjective|coming before all others|اول|پیش از همه|initial;foremost|last|First listen then repeat.|اول گوش بده بعد تکرار کن.|A1|order
+last|læst|adjective|coming after all others|آخر|پس از همه|final|first|The last bus leaves at eleven.|آخرین اتوبوس ساعت یازده حرکت می‌کند.|A1|order
+next|nekst|adjective|coming right after|بعدی|درست پس از|following|previous|Our next lesson is on Monday.|درس بعدی ما دوشنبه است.|A1|order
+same|seɪm|adjective|not different|یکسان|غیر متفاوت|identical;alike|different|We start at the same time every day.|هر روز ساعت یکسانی شروع می‌کنیم.|A1|quality
+different|ˈdɪfrənt|adjective|not the same|متفاوت|نا برابر|distinct;unlike|same;similar|Every learner is different.|هر یادگیرنده‌ای متفاوت است.|A1|quality
+own|oʊn|adjective|belonging to yourself|مال خود|متعلق به خویش|personal|—|Make your own sentences.|جملات خودت را بساز.|A2|quality
+personal|ˈpɜːrsənl|adjective|belonging to a particular person|شخصی|متعلق به فرد خاص|private;individual|public|Add a personal note to each word.|به هر کلمه یادداشت شخصی اضافه کن.|B1|quality
+public|ˈpʌblɪk|adjective|for all people|عمومی|برای همه مردم|communal;open|private|Public libraries are free.|کتابخانه‌های عمومی رایگان‌اند.|B1|society
+private|ˈpraɪvət|adjective|not for everyone|خصوصی|غیر عمومی|personal;secret|public|Teaching is a private class now.|این کلاس اکنون خصوصی است.|B1|quality
+future|ˈfjuːtʃər|noun|the time that comes later|آینده|زمانی که بعداً می‌آید|time ahead|past|Plan for your future with practice.|برای آینده‌ات با تمرین برنامه بریز.|A2|time
+past|pæst|noun|the time before now|گذشته|زمان پیش از حال|history|future;present|Learn from the past.|از گذشته بیاموز.|A2|time
+present|ˈpreznt|noun|the time now|حال|زمان اکنون|now;current|past;future|Focus on the present moment.|روی لحظه حال تمرکز کن.|A2|time
+government|ˈɡʌvərnmənt|noun|the group that rules a country|دولت|گروه حاکم کشور|administration|—|The government builds new schools.|دولت مدارس جدید می‌سازد.|B1|society
+country|ˈkʌntri|noun|a nation with borders|کشور|ملتی با مرزها|nation;state|—|Iran is a country with four seasons.|ایران کشوری با چهار فصل است.|A1|place
+world|wɜːrld|noun|the whole earth|دنیا|تمام زمین|globe;earth|—|English connects the world.|انگلیسی دنیا را متصل می‌کند.|A1|place
+war|wɔːr|noun|fighting between countries|جنگ|نبرد میان کشورها|conflict;battle|peace|History remembers every war.|تاریخ هر جنگی را به یاد دارد.|B1|society
+decision|dɪˈsɪʒn|noun|a choice you make|تصمیم|انتخابی که می‌کنی|choice;resolution|hesitation|Learning daily is a good decision.|یادگیری روزانه تصمیم خوبی است.|B1|abstract
+attention|əˈtenʃn|noun|careful listening or watching|توجه|گوش دادن یا نگاه دقیق|focus;concentration|neglect|Pay attention to pronunciation.|به تلفظ توجه کن.|B1|mind
+choice|tʃɔɪs|noun|the act of picking|انتخاب|عمل برگزیدن|option;selection|—|You have three choices in this test.|در این تست سه انتخاب داری.|A2|basic
+impossible|ɪmˈpɒsəbl|adjective|not able to happen|غیرممکن|ناتوان از وقوع|impracticable|possible|Nothing is impossible with practice.|با تمرین هیچ چیز غیرممکن نیست.|B1|quality
+sudden|ˈsʌdn|adjective|happening quickly and unexpectedly|ناگهانی|سریع و غیرمنتظره|abrupt;unexpected|gradual|The rain was sudden.|باران ناگهانی بود.|B1|quality
+correct|kəˈrekt|adjective|right; without error|درست|صحیح؛ بی‌خطا|right;accurate|wrong;incorrect|The correct answer is B.|جواب درست گزینه B است.|A2|school
+right|raɪt|adjective|correct|درست|صحیح|correct;true|wrong|Your guess was right.|حدست درست بود.|A1|quality
+true|truː|adjective|based on fact|صادق|مبتنی بر واقعیت|real;factual|false|The story is true.|داستان صادق است.|A1|quality
+false|fɔːls|adjective|not true|غلط|نادرست|wrong;untrue|true|The first sentence is false.|جمله اول غلط است.|A2|school
+smart|smɑːrt|adjective|intelligent|باهوش|با هوش|intelligent;clever|dull|Smart practice beats long practice.|تمرین هوشمندانه از تمرین طولانی بهتر است.|A2|quality
+stupid|ˈstuːpɪd|adjective|not intelligent|احمق|فاقد هوش|foolish;dumb|smart;clever|There are no stupid questions.|سؤال احمقانه وجود ندارد.|A2|quality
+kind|kaɪnd|adjective|friendly and caring|مهربان|دوستانه و دلسوز|caring;friendly|cruel|Be kind to new learners.|با یادگیرندگان تازه مهربان باش.|A1|quality
+cruel|ˈkruːəl|adjective|causing pain without care|بی‌رحمانه|ایجاد درد بدون ملاحظه|harsh;brutal|kind|Cruel words hurt.|کلمات بی‌رحمانه آزار می‌دهند.|B2|quality
+politics|ˈpɒlətɪks|noun|activities of government|سیاست|فعالیت‌های حکومتی|government affairs|—|He follows world politics.|او سیاست جهانی را دنبال می‌کند.|B2|society
+science|ˈsaɪəns|noun|knowledge about the natural world|علم|دانش درباره دنیای طبیعی|research;study|—|Science explains the seasons.|علم فصل‌ها را توضیح می‌دهد.|A2|school
+art|ɑːrt|noun|creative works like painting|هنر|آثار خلاق مانند نقاشی|craft;creativity|—|Persian art is world famous.|هنر ایرانی در دنیا معروف است.|A2|culture
+method|ˈmeθəd|noun|a way of doing something|روش|راه انجام کاری|way;technique|—|Spaced repetition is a great method.|مرور با فاصله روش فوق‌العاده است.|B1|abstract
+technology|tekˈnɒlədʒi|noun|tools and machines of modern life|فناوری|ابزار و ماشین‌های زندگی مدرن|tech;innovation|—|Technology helps us learn faster.|فناوری یادگیری را سریع‌تر می‌کند.|B1|technology
+internet|ˈɪntərnet|noun|the global computer network|اینترنت|شبکه جهانی رایانه‌ای|web;net|—|Use the internet to find examples.|از اینترنت برای یافتن مثال استفاده کن.|A2|technology
+message|ˈmesɪdʒ|noun|words sent to someone|پیام|کلمات ارسالی به کسی|note;text|—|Send me a message after class.|بعد از کلاس پیام بفرست.|A2|communication
+email|ˈiːmeɪl|noun|electronic mail|ایمیل|نامه الکترونیکی|mail|—|Check your email tomorrow.|فردای ایمیلت را چک کن.|A2|technology
+website|ˈwebsaɪt|noun|a place on the internet|وب‌سایت|مکانی در اینترنت|site;page|—|This website has free lessons.|این وب‌سایت درس رایگان دارد.|A2|technology
+holiday trip|—|phrase|a journey during vacation|سفر تعطیلات|مسافرت در مرخصی|vacation trip|—|Our holiday trip starts on Thursday.|سفر تعطیلات ما پنجشنبه شروع می‌شود.|B1|travel
+good luck|ɡʊd lʌk|phrase|wishing success|موفق باشی|آرزوی موفقیت|best wishes|—|Good luck with your exam!|در امتحانت موفق باشی!|A1|phrase
+take care|teɪk ker|phrase|goodbye and stay well|مراقب خودت باش|خداحافظ و سالم بمان|farewell|—|Take care and see you soon!|مراقب باش بزودی می‌بینمت!|A1|phrase
+of course|əv kɔːrs|phrase|certainly|البته|قطعاً|certainly;surely|—|Of course I remember you!|البته یادم هست تو!|A1|phrase
+no problem|noʊ ˈprɒbləm|phrase|it is okay|مشکلی نیست|اشکالی ندارد|it's fine|—|No problem take your time.|مشکلی نیست معطل کن.|A1|phrase
+by the way|baɪ ðə weɪ|phrase|to add something extra|راستی|برای افزودن نکته|incidentally|—|By the way where is my pen?|راستی خودکام کو؟|B1|phrase
+look for|lʊk fɔːr|phrase|to search|دنبال چیزی گشتن|جستجو کردن|search;seek|—|I am looking for my notebook.|دنبال دفترچه‌ام می‌گردم.|A2|phrase
+pick up|pɪk ʌp|phrase|to lift; to learn informally|برداشتن|بلند کردن؛ یادگیری غیررسمی|lift;collect|drop|You pick up accents by listening.|لهجه را با گوش دادن می‌گیری.|B1|phrase
+give up|ɡɪv ʌp|phrase|to stop trying|رها کردن|توقف تلاش|quit;abandon|persist|Never give up on your dreams.|هرگز آرزوهایت را رها نکن.|B1|phrase
+find out|faɪnd aʊt|phrase|to learn a fact|فهمیدن|کشف کردن حقیقت|discover;learn|—|Find out how the word is used.|فهمیدن کاربرد کلمه مهم است.|B1|phrase
+turn on|tɜːrn ɒn|phrase|to start a machine|روشن کردن|شروع دستگاه|switch on|turn off|Turn on the light please.|چراغ را روشن کن لطفاً.|A2|phrase
+turn off|tɜːrn ɒf|phrase|to stop a machine|خاموش کردن|توقف دستگاه|switch off|turn on|Turn off your phone in class.|تلفنت را در کلاس خاموش کن.|A2|phrase
+get up|ɡet ʌp|phrase|to leave your bed|بلند شدن|برخاستن از تخت|rise;wake|lie down|I get up at six every morning.|هر صبح ساعت شش بیدار می‌شوم.|A2|phrase
+sit down|sɪt daʊn|phrase|to take a seat|نشستن|جای گرفتن|be seated|stand up|Sit down and relax.|بشین و آرام بگیر.|A2|phrase
+look at|lʊk æt|phrase|to direct eyes toward|نگاه کردن به|چرخاندن چشم به|watch|—|Look at the new words.|به کلمات جدید نگاه کن.|A1|phrase
+each other|iːtʃ ˈʌðər|phrase|one another|یکدیگر|متبادلاً|one another|—|Students help each other learn.|دانش‌آموزان به یکدیگر کمک می‌کنند.|A2|phrase
+a lot of|ə lɒt əv|phrase|much; many|بسیاری|مقدار زیاد|plenty of|a few|A lot of words need repetition.|بسیاری از کلمات نیاز به تکرار دارند.|A1|quantity
+in order to|ɪn ˈɔːrdər tuː|phrase|for the purpose of|برای اینکه|به منظورِ|so as to|—|In order to learn review daily.|برای اینکه یاد بگیری روزانه مرور کن.|B1|connector
+as soon as|æz suːn æz|phrase|immediately after|به محض اینکه|بلافاصله پس از|the moment that|—|Call me as soon as you arrive.|به محض رسیدن زنگ بزن.|B1|connector
+even though|iːvn ðoʊ|phrase|despite the fact that|حتی اگرچه|با وجود اینکه|although|—|Even though it was late we kept studying.|حتی اگرچه دیر بود درس خواندیم.|B1|connector
+so that|soʊ ðæt|phrase|for the purpose that|به طوری که|برای اینکه|in order that|—|I speak slowly so that you understand.|آهسته صحبت می‌کنم تا بفهمی.|B1|connector
+abroad|əˈbrɔːd|adverb|in a foreign country|خارج از کشور|در کشور بیگانه|overseas|home|Many students study abroad.|دانشجویان زیادی خارج تحصیل می‌کنند.|B1|travel
+accent|ˈæksent|noun|the way words are pronounced|لهجه|شیوه تلفظ کلمات|pronunciation;tone|—|A light accent is charming.|لهجه سبک جذاب است.|B1|language
+fluency|ˈfluːənsi|noun|speaking smoothly and easily|روانی|صحبت نرم و آسان|smoothness;ease|hesitation|Practice builds fluency over time.|تمرین در گذر زمان روانی می‌سازد.|B2|language
+vocabulary|vəˈkæbjəleri|noun|all the words a person knows|واژگان|تمام کلماتی که می‌دانی|word stock;lexicon|—|Read daily to grow vocabulary.|هر روز بخوان تا واژگان رشد کند.|B1|language
+grammar|ˈɡræmər|noun|the rules of a language|گرامر|قواعد یک زبان|syntax;rules|—|Grammar becomes easy with examples.|گرامر با مثال آسان می‌شود.|A2|language
+pronunciation|prəˌnʌnsiˈeɪʃn|noun|how a word is said|تلفظ|نحوه گفتن کلمه|accent;articulation|—|Listen to improve pronunciation.|برای بهبود تلفظ گوش بده.|B1|language
+translation|trænsˈleɪʃn|noun|words in another language|ترجمه|کلمات به زبان دیگر|interpretation|original|Good translation needs context.|ترجمه خوب زمینه می‌خواهد.|B1|language
+sentence|ˈsentəns|noun|a complete group of words|جمله|گروه کامل کلمات|phrase;statement|—|Make one sentence with each word.|با هر کلمه یک جمله بساز.|A2|language
+paragraph|ˈpærəɡræf|noun|a section of text|پاراگراف|بخشی از متن|section;passage|—|Write a short paragraph daily.|هر روز پاراگراف کوتاه بنویس.|B1|language
+essay|ˈeseɪ|noun|a short piece of writing|انشا|نوشته کوتاه|composition;article|—|Her essay won first place.|انشایش مقام اول را گرفت.|B2|school
+exam|ɪɡˈzæm|noun|a formal test|امتحان|آزمون رسمی|test;quiz|—|The final exam is next week.|امتحان پایان ترم هفته بعد است.|A2|school
+score|skɔːr|noun|the points gained|امتیاز|امتیازات کسب‌شده|points;marks|—|Your score improves every quiz.|امتیازت هر آزمون بهتر می‌شود.|A2|school
+level|ˈlevl|noun|a stage of ability|سطح|مرحله توانایی|stage;grade|—|This word is level B1.|این کلمه سطح B1 است.|A2|school
+progress|ˈprɒɡres|noun|movement toward a goal|پیشرفت|حرکت به سمت هدف|improvement;advancement|regression|Daily review shows real progress.|مرور روزانه پیشرفت واقعی نشان می‌دهد.|B1|abstract
+success|səkˈses|noun|reaching your goal|موفقیت|رسیدن به هدف|achievement;triumph|failure|Small habits create big success.|عادت‌های کوچک موفقیت بزرگ می‌سازند.|B1|abstract
+failure|ˈfeɪljər|noun|not reaching a goal|شکست|نرسیدن به هدف|defeat;flop|success|Failure teaches better than praise.|شکست بهتر از تحسین می‌آموزد.|B2|abstract
+goal keeper|—|noun|a player guarding the goal|دروازه‌بان|بازیکن محافظ دروازه|goalie|—|The goal keeper stopped the ball.|دروازه‌بان توپ را مهار کرد.|B1|sport
+team|tiːm|noun|a group playing together|تیم|گروه بازی مشترک|squad;side|—|Our team won the final.|تیم ما فینال را برد.|A2|sport
+match|mætʃ|noun|a sports game|مسابقه|بازی ورزشی|game;contest|—|The match starts at seven.|مسابقه ساعت هفت شروع می‌شود.|A2|sport
+player|ˈpleɪər|noun|a person in a game|بازیکن|شخص در بازی|athlete;competitor|—|She is the best player on the team.|او بهترین بازیکن تیم است.|A2|sport
+stadium|ˈsteɪdiəm|noun|a large sports building|ورزشگاه|ساختمان بزرگ ورزشی|arena|—|The stadium was full of fans.|ورزشگاه پر از هواداران بود.|B1|sport
+health club|—|noun|a place for exercise|باشگاه|مکانی برای ورزش|gym;fitness center|—|He goes to the health club twice a week.|او هفته دو بار به باشگاه می‌رود.|B1|health
+diet|ˈdaɪət|noun|the food you eat|رژیم غذایی|غذایی که می‌خوری|nutrition;menu|—|A balanced diet improves memory.|رژیم متعادل حافظه را بهتر می‌کند.|B1|health
+vitamin|ˈvaɪtəmɪn|noun|a substance good for health|ویتامین|ماده مفید سلامتی|nutrient|—|Fruit gives you vitamins.|میوه ویتامین می‌دهد.|B1|health
+sleep well|sliːp wel|phrase|to have good sleep|خواب خوب|خوابیدن عالی|rest well|—|Sleep well before the exam.|قبل از امتحان خوب بخواب.|B1|health
+headache|ˈhedeɪk|noun|pain in the head|سردرد|درد سر|migraine|—|Too much screen time causes headaches.|زمان زیاد صفحه سردرد می‌آورد.|A2|health
+fever|ˈfiːvər|noun|high body temperature|تب|دمای بالای بدن|temperature|—|The child has a mild fever.|کودک تب خفیف دارد.|A2|health
+medicine cabinet|—|noun|storage for medicines|کابینت دارو|محل نگهداری دارو|drug cabinet|—|The medicine cabinet is in the bathroom.|کابینت دارو در دستشویی است.|B1|health
+appointment|əˈpɔɪntmənt|noun|a fixed meeting time|وقت ملاقات|زمان ثابت دیدار|meeting;booking|—|I have a dentist appointment at five.|ساعت پنج وقت دندانپزشک دارم.|B1|time
+schedule|ˈskedʒuːl|noun|a plan of times|برنامه زمانی|طرح زمان‌ها|timetable;agenda|—|A study schedule keeps you consistent.|برنامه زمانی مطالعه استمرار می‌دهد.|B1|time
+deadline|ˈdedlaɪn|noun|the last time to finish|ضرب‌الاجل|آخرین زمان تحویل|due date;limit|—|Set a deadline for each goal.|برای هر هدف ضرب‌الاجل بگذار.|B2|time
+delay|dɪˈleɪ|noun|a period of waiting longer|تأخیر|زمان انتظار بیشتر|postponement|punctuality|The flight has a two-hour delay.|پرواز دو ساعت تأخیر دارد.|B1|time
+early morning|—|phrase|the first hours of day|سحرگاه|ساعات آغاز روز|dawn|late evening|Early morning is the best time to review.|سحرگاه بهترین زمان مرور است.|B1|time
+midnight|ˈmɪdnaɪt|noun|twelve at night|نیمه‌شب|ساعت دوازده شب|twelve|noon|The city sleeps at midnight.|شهر در نیمه‌شب می‌خوابد.|A2|time
+noon|nuːn|noun|twelve in the day|ظهر|ساعت دوازده روز|midday|midnight|We eat lunch at noon.|ظهر ناهار می‌خوریم.|A2|time
+decade|ˈdekeɪd|noun|ten years|دهه|ده سال|ten years|—|The city changed in a decade.|شهر در یک دهه تغییر کرد.|B2|time
+century|ˈsentʃəri|noun|one hundred years|قرن|صد سال|hundred years|—|This palace is from the last century.|این کاخ از قرن گذشته است.|B2|time
+memory|ˈmeməri|noun|the ability to remember|حافظه|توانایی یادآوری|recall;remembrance|forgetfulness|Review strengthens memory.|مرور حافظه را تقویت می‌کند.|B1|mind
+mind|maɪnd|noun|the place where you think|ذهن|محل اندیشیدن|brain;intellect|—|A calm mind learns faster.|ذهن آرام سریع‌تر یاد می‌گیرد.|A2|mind
+brain|breɪn|noun|the organ of thinking|مغز|اندام اندیشه|intellect;mind|—|Exercise feeds the brain.|ورزش مغز را تغذیه می‌کند.|A2|body
+feeling|ˈfiːlɪŋ|noun|an emotion|احساس|یک هیجان|emotion;sensation|—|Writing helps organize feelings.|نوشتن به سازماندهی احساسات کمک می‌کند.|A2|emotion
+mood|muːd|noun|how you feel now|حال و هوا|احساس فعلی|temper;spirit|—|Music changes my mood fast.|موسیقی حال و هوایم را سریع عوض می‌کند.|B1|emotion
+happiness|ˈhæpinəs|noun|the state of being happy|شادی|وضعیت خوشحالی|joy;delight|sadness|Small wins bring happiness.|بردهای کوچک شادی می‌آورند.|B1|emotion
+excited|ɪkˈsaɪtɪd|adjective|very happy and eager|هیجان‌زده|خیلی خوشحال و مشتاق|thrilled;eager|bored|I am excited about the trip!|از سفر هیجان‌زده‌ام!|A2|emotion
+bored|bɔːrd|adjective|not interested|خسته و کسل|بدون علاقه|uninterested|excited|Bored? Try a quick quiz.|کسل؟ یک کویز سریع امتحان کن.|A2|emotion
+afraid|əˈfreɪd|adjective|feeling fear|ترسیده|احساس ترس|scared;frightened|brave|Do not be afraid of mistakes.|از اشتباه نترس.|A2|emotion
+brave heart|—|noun|a courageous person|قلب شجاع|شخص بی‌باک|fearless one|coward|A brave heart learns new languages.|قلب شجاع زبان‌های جدید می‌آموزد.|B2|quality
+confident speaker|—|noun|someone sure when talking|گویشور مطمئن|شخص مطمئن در گفتگو|assured talker|shy speaker|Daily speaking builds a confident speaker.|صحبت روزانه گویشور مطمئن می‌سازد.|B2|language
+landscape|ˈlændskeɪp|noun|a view of land scenery|چشم‌انداز|نمای طبیعی زمین|scenery;vista|—|Northern landscapes are green.|چشم‌اندازهای شمال سرسبزند.|B2|nature
+sunshine|ˈsʌnʃaɪn|noun|light and heat from the sun|آفتاب|نور و گرمای خورشید|sunlight|darkness|Plants grow fast in sunshine.|گیاهان در آفتاب سریع رشد می‌کنند.|B1|weather
+seaside|ˈsiːsaɪd|noun|the area next to the sea|ساحل دریا|ناحیه کنار دریا|coast;shore|inland|Summer holidays at the seaside are great.|تعطیلات تابستانی ساحل دریا عالی است.|B1|nature
+tide|taɪd|noun|the sea rising and falling|جزر و مد|بالا و پایین رفتن دریا|current|—|The tide changes every six hours.|جزر و مد هر شش ساعت تغییر می‌کند.|B2|nature
+breeze|briːz|noun|a light gentle wind|نسیم|باد سبک و ملایم|gust;draft|gale|A sea breeze cools the evening.|نسیم دریا عصر را خنک می‌کند.|B1|weather
+storm|stɔːrm|noun|very bad weather|طوفان|هوای خیلی بد|tempest;gale|calm|The storm broke many branches.|طوفان شاخه‌های زیادی شکست.|B1|weather
+lightning|ˈlaɪtnɪŋ|noun|a flash of light in a storm|رعد و برق|جرقه نور در طوفان|thunderbolt|—|Lightning lit the whole sky.|برق تمام آسمان را روشن کرد.|B2|weather
+thunder|ˈθʌndər|noun|the sound after lightning|رعد|صدای پس از برق|boom|—|Thunder shook the windows.|رعد پنجره‌ها را لرزاند.|B2|weather
+rainbow|ˈreɪnboʊ|noun|colors in the sky after rain|رنگین‌کمان|رنگ‌های آسمان بعد از باران|arc of colors|—|A rainbow appeared after the rain.|بعد از باران رنگین‌کمان ظاهر شد.|B1|weather
+sunrise|ˈsʌnraɪz|noun|when the sun comes up|طلوع آفتاب|زمان بالاآمدن خورشید|dawn|sunset|Sunrise over the sea is beautiful.|طلوع آفتاب روی دریا زیباست.|B1|time
+sunset|ˈsʌnset|noun|when the sun goes down|غروب آفتاب|زمان پایین‌رفتن خورشید|dusk|sunrise|We watch the sunset at the beach.|غروب را در ساحل تماشا می‌کنیم.|B1|time
+horizon|həˈraɪzn|noun|where earth and sky meet|افق|محل تلاقی زمین و آسمان|skyline|—|The sun sinks below the horizon.|خورشید زیر افق فرو می‌رود.|B2|nature
+island|ˈaɪlənd|noun|land surrounded by water|جزیره|سرزمین احاطه‌شده با آب|isle|mainland|Kish is a beautiful island.|کیش جزیره زیبایی است.|A2|place
+desert|ˈdezərt|noun|a very dry land|بیابان|سرزمین خیلی خشک|wasteland|forest|Camels cross the desert.|شترها از بیابان عبور می‌کنند.|B1|nature
+forest|ˈfɒrɪst|noun|a large area of trees|جنگل|ناحیه وسیع درختان|woods;jungle|desert|Hiking in the forest is peaceful.|پیاده‌روی در جنگل آرامش‌بخش است.|A2|nature
+field|fiːld|noun|open land for crops|مزرعه|زمین باز برای کشت|farm;meadow|city|Wheat fields turn gold in summer.|مزارع گندم در تابستان طلایی می‌شوند.|A2|nature
+garden|ˈɡɑːrdn|noun|land for growing flowers|باغ|زمین پرورش گل|yard;park|—|Grandma grows roses in the garden.|مادربزرگ در باغ رز می‌کارد.|A1|nature
+grass|ɡræs|noun|green plants covering ground|چمن|گیاهان سبز پوشش زمین|turf;lawn|—|The grass is wet with dew.|چمن با شبنم خیس است.|A1|nature
+leaf|liːf|noun|the flat green part of a plant|برگ|بخش صاف سبز گیاه|—|—|One leaf fell from the tree.|یک برگ از درخت افتاد.|A1|nature
+root|ruːt|noun|the part of a plant underground|ریشه|بخش زیرزمینی گیاه|base;origin|branch|Good roots make strong trees.|ریشه خوب درخت قوی می‌سازد.|B1|nature
+seed|siːd|noun|a small thing that grows into a plant|دانه|چیز کوچکی که گیاه می‌شود|grain;kernel|—|Plant a seed of learning daily.|هر روز دانه‌ای از یادگیری بکار.|B1|nature
+stone|stoʊn|noun|a piece of rock|سنگ|قطعه‌ای از صخره|rock;pebble|—|The old bridge is made of stone.|پل قدیمی از سنگ است.|A2|nature
+sand|sænd|noun|tiny stones on the beach|شن|سنگ‌ریزه‌های ساحل|grit|—|Warm sand feels good in summer.|شن گرم در تابستان حس خوبی دارد.|A1|nature
+wave after wave|—|phrase|one after another|موج پس از موج|یکی پس از دیگری|succession|—|Ideas came wave after wave.|ایده‌ها موج پس از موج آمدند.|B2|phrase
+deep|diːp|adjective|going far down|عمیق|بسیار پایین‌رو|profound|shallow|The lake is very deep.|دریاچه خیلی عمیق است.|A2|quality
+shallow|ˈʃæloʊ|adjective|not deep|کم‌عمق|عمیق نبودن|surface-level|deep|Children swim in the shallow water.|کودکان در آب کم‌عمق شنا می‌کنند.|B2|quality
+wide|waɪd|adjective|measuring a lot across|پهناور|زیاد در عرض|broad;spacious|narrow|The river is wide here.|رودخانه اینجا پهناور است.|A2|size
+narrow|ˈnæroʊ|adjective|not wide|باریک|پهنا نبودن|slim;tight|wide|The old alley is very narrow.|کوچه قدیمی خیلی باریک است.|B1|size
+high|haɪ|adjective|great in height|بلند|زیاد در ارتفاع|tall;lofty|low|The ceiling is very high.|سقف خیلی بلند است.|A1|size
+low|loʊ|adjective|not high|پایین|بلند نبودن|bottom;short|high|Speak in a low voice at night.|شب‌ها با صدای کم صحبت کن.|A1|size
+deep breath|—|phrase|a long slow breath in|نفس عمیق|دم آرام و بلند|—|—|Take a deep breath and begin.|نفس عمیق بکش و شروع کن.|B1|health
+quiet place|—|phrase|a calm area|مکان آرام|فضای ساکت|calm spot|—|Find a quiet place to study.|برای درس خواندن مکان آرام پیدا کن.|B1|place
+crowd|kraʊd|noun|many people together|جمعیت|مردم زیاد با هم|mob;throng|—|The crowd cheered loudly.|جمعیت بلند تشویق کرد.|B1|people
+queue|kjuː|noun|a line of waiting people|صف|ردیف انتظار مردم|line;row|—|There is a long queue at the bakery.|صف طولانی در نانوایی است.|B1|people
+guest|ɡest|noun|a person you invite|مهمان|شخص دعوت‌شده|visitor|host|The guest arrived with flowers.|مهمان با گل آمد.|A2|people
+host|hoʊst|noun|a person who receives guests|میزبان|شخص پذیرنده مهمان|receiver|guest|The host offered warm tea.|میزبان چای گرم تعارف کرد.|B1|people
+stranger|ˈstreɪndʒər|noun|a person you do not know|غریبه|شخصی که نمی‌شناسی|unknown person|acquaintance|Be kind but careful with strangers.|با غریبه‌ها مهربان اما مواظب باش.|A2|people
+neighborhood|ˈneɪbərhʊd|noun|the area around your home|محله|ناحیه اطراف خانه|district;area|—|Our neighborhood has a small park.|محله ما پارک کوچکی دارد.|A2|place
+address|əˈdres|noun|where someone lives|نشانی|محل زندگی کسی|location|—|Write your address on the form.|نشانی‌ات را در فرم بنویس.|A2|basic
+market day|—|phrase|the day of a local market|روز بازار|روز بازار محلی|bazaar day|—|Saturday is market day here.|شنبه روز بازار اینجاست.|B1|time
+discount|ˈdɪskaʊnt|noun|a lower price|تخفیف|قیمت کمتر|reduction;deal|—|Books have a discount this week.|کتاب‌ها این هفته تخفیف دارند.|B1|money
+salary|ˈsæləri|noun|money paid for work|حقوق|پول پرداختی برای کار|wage;pay|—|Teachers receive salary monthly.|معلمان ماهانه حقوق می‌گیرند.|B1|money
+bill|bɪl|noun|a paper showing what to pay|صورت‌حساب|کاغذ نمایش پرداخت|invoice;check|—|The dinner bill was reasonable.|صورت‌حساب شام منطقی بود.|B1|money
+free time|friː taɪm|phrase|time with no work|وقت آزاد|زمان بدون کار|leisure;spare time|work time|Use free time for quick review.|وقت آزاد را برای مرور سریع استفاده کن.|A2|time
+hobby|ˈhɒbi|noun|a fun regular activity|سرگرمی|فعالیت منظم شاد|pastime;interest|—|Photography is a relaxing hobby.|عکاسی سرگرمی آرامش‌بخشی است.|A2|culture
+holiday season|—|phrase|the time of many holidays|فصل تعطیلات|دوره تعطیلات زیاد|festive season|—|The holiday season brings families together.|فصل تعطیلات خانواده‌ها را جمع می‌کند.|B1|time
+new year|—|noun|the start of a year|نوروز|آغاز سال|New Year|—|We clean the house before New Year.|قبل از نوروز خانه را تمیز می‌کنیم.|A1|culture
+tradition food|—|noun|classic local dishes|غذای سنتی|غذاهای محلی کلاسیک|local cuisine|fast food|Try traditional food in every city.|در هر شهر غذای سنتی امتحان کن.|B1|food
+skill up|—|phrase|to improve skills|مهارت افزایی|بهبود مهارت‌ها|level up|—|Listen daily to skill up your ear.|هر روز گوش بده تا گوشت مهارت بگیرد.|B2|phrase
+level up|ˈlevl ʌp|phrase|to rise to a higher stage|ارتقای سطح|صعود به مرحله بالاتر|advance;progress|—|Review every day to level up.|هر روز مرور کن تا سطحت بالا برود.|B2|phrase
+smart review|—|phrase|an intelligent way of revising|مرور هوشمند|روش هوشمند بازبینی|clever revision|—|Smart review uses spaced repetition.|مرور هوشمند از تکرار با فاصله استفاده می‌کند.|B2|school
+mistake list|—|phrase|a record of errors|فهرست اشتباهات|ثبت خطاها|error log|—|Check your mistake list before the quiz.|قبل از کویز فهرست اشتباهاتت را ببین.|B2|school
+daily goal|—|phrase|a target for each day|هدف روزانه|هدف هر روز|everyday target|—|Set a daily goal of ten words.|هدف روزانه ده کلمه تعیین کن.|B1|abstract
+study plan|—|phrase|a schedule for learning|برنامه درسی|طرح مطالعه|learning schedule|—|A study plan keeps lessons organized.|برنامه درسی درس‌ها را مرتب نگه می‌دارد.|B1|school
+flash card|—|noun|a card for quick learning|فلش‌کارت|کارت یادگیری سریع|learning card|—|Flash cards make review fun.|فلش‌کارت‌ها مرور را شاد می‌کنند.|B1|school
+quick quiz|—|phrase|a fast short test|آزمون سریع|تست کوتاه و سریع|mini test|—|Take a quick quiz every night.|هر شب آزمون سریع بده.|B1|school
+final answer|—|phrase|the last choice given|پاسخ نهایی|انتخاب آخر|last reply|—|Check twice then give the final answer.|دو بار چک کن بعد پاسخ نهایی بده.|B1|school
+correct answer|—|phrase|the right choice|پاسخ صحیح|انتخاب درست|right answer|wrong answer|The correct answer surprised me.|پاسخ صحیح مرا غافلگیر کرد.|A2|school
+wrong answer|—|phrase|an incorrect choice|پاسخ غلط|انتخاب نادرست|incorrect answer|correct answer|Wrong answers become lessons.|پاسخ‌های غلط درس می‌شوند.|A2|school
+voice assistant|—|noun|a talking computer helper|دستیار صوتی|کمک‌رایانه گویا|speech assistant|—|A voice assistant can read words aloud.|دستیار صوتی می‌تواند کلمات را بخواند.|B2|technology
+audio player|—|noun|a device for sound files|پخش‌کننده صدا|دستگاه فایل‌های صوتی|music player|—|The audio player repeats the word.|پخش‌کننده صدا کلمه را تکرار می‌کند.|B1|technology
+headphones|ˈhedfoʊnz|noun|speakers worn on ears|هدفون|بلندگوهای گوش|earphones|speakers|Use headphones in the library.|در کتابخانه از هدفون استفاده کن.|A2|technology
+volume|ˈvɒljuːm|noun|how loud sound is|صدا|بلندی صدا|loudness|—|Turn the volume up a little.|صدا را کمی بلند کن.|A2|technology
+speaker|ˈspiːkər|noun|a device that plays sound|بلندگو|دستگاه پخش صدا|loudspeaker|listener|The speaker plays clear audio.|بلندگو صدای شفاف پخش می‌کند.|A2|technology
+battery|ˈbætəri|noun|stored electric power|باتری|برق ذخیره‌شده|cell;power pack|—|Charge the battery before class.|قبل از کلاس باتری را شارژ کن.|A2|technology
+screen|skriːn|noun|the display of a device|صفحه نمایش|نمایشگر دستگاه|display;monitor|—|Too much screen time tires the eyes.|زمان زیاد صفحه چشم‌ها را می‌خواباند.|A2|technology
+download|ˈdaʊnloʊd|verb|to get files from the internet|دانلود کردن|گرفتن فایل از اینترنت|fetch|upload|Download the lesson audio.|صدای درس را دانلود کن.|A2|technology
+upload|ˈʌploʊd|verb|to send files to the internet|بارگذاری کردن|فرستادن فایل به اینترنت|send|download|Upload your essay for review.|انشایت را برای بازبینی بارگذاری کن.|B1|technology
+update|ʌpˈdeɪt|noun|a newer version|به‌روزرسانی|نسخه تازه‌تر|upgrade|downgrade|The app update adds new quizzes.|به‌روزرسانی اپ کویزهای جدید می‌آورد.|B1|technology
+password|ˈpæswɜːrd|noun|a secret word for access|گذرواژه|کلمه رمزی ورود|passcode|—|Never share your password.|هرگز گذرواژه‌ات را به اشتراک نگذار.|A2|technology
+account|əˈkaʊnt|noun|a personal record on a system|حساب|سابقه شخصی در سیستم|profile|—|Log in to your account to sync.|برای همگام‌سازی به حسابت وارد شو.|B1|technology
+setting|ˈsetɪŋ|noun|a changeable option|تنظیمات|گزینه قابل تغییر|option;preference|—|Dark theme is in the settings.|تم تاریک در تنظیمات است.|A2|technology
+theme|θiːm|noun|a visual style|تم|سبک بصری|style;skin|—|The summer light theme feels fresh.|تم روشن تابستانی تازه است.|B1|technology
+notification|ˌnoʊtɪfɪˈkeɪʃn|noun|a message from an app|اعلان|پیامی از اپلیکیشن|alert;notice|—|A daily notification reminds you to review.|اعلان روزانه یادت می‌آورد مرور کنی.|B1|technology
+reminder|rɪˈmaɪndər|noun|something that helps you remember|یادآور|کمک‌کننده یادآوری|cue;prompt|—|Set a reminder for night review.|برای مرور شب یادآور بگذار.|B1|time
