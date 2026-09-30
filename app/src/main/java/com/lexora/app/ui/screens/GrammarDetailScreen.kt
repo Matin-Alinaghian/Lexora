@@ -15,11 +15,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -103,7 +105,7 @@ fun GrammarDetailScreen(
 
                                 if (grammar.explanation.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Explanation", style = MaterialTheme.typography.titleMedium, color = PurpleAccent)
+                        Text(stringResource(R.string.explanation), style = MaterialTheme.typography.titleMedium, color = PurpleAccent)
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(grammar.explanation, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onBackground)
                     }
@@ -112,26 +114,26 @@ fun GrammarDetailScreen(
                         IconButton(onClick = { viewModel.speakText(grammar.explanation) }) {
                             Icon(Icons.Filled.VolumeUp, contentDescription = "Listen", tint = PrimaryBlue, modifier = Modifier.size(20.dp))
                         }
-                        Text("Tap to listen", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(stringResource(R.string.detail_tap_listen), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                     }
                     Spacer(modifier = Modifier.height(12.dp))
                 }
 
                                 if (grammar.positiveForm.isNotBlank() || grammar.negativeForm.isNotBlank() || grammar.questionForm.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Formula", style = MaterialTheme.typography.titleMedium, color = Cyan)
+                        Text(stringResource(R.string.formula), style = MaterialTheme.typography.titleMedium, color = Cyan)
                         Spacer(modifier = Modifier.height(12.dp))
 
                         if (grammar.positiveForm.isNotBlank()) {
-                            FormulaBox(label = "✅ Positive", content = grammar.positiveForm, color = Success)
+                            FormulaBox(label = stringResource(R.string.form_positive), content = grammar.positiveForm, color = Success)
                             Spacer(modifier = Modifier.height(8.dp))
                         }
                         if (grammar.negativeForm.isNotBlank()) {
-                            FormulaBox(label = "❌ Negative", content = grammar.negativeForm, color = Error)
+                            FormulaBox(label = stringResource(R.string.form_negative), content = grammar.negativeForm, color = Error)
                             Spacer(modifier = Modifier.height(8.dp))
                         }
                         if (grammar.questionForm.isNotBlank()) {
-                            FormulaBox(label = "❓ Question", content = grammar.questionForm, color = Warning)
+                            FormulaBox(label = stringResource(R.string.form_question), content = grammar.questionForm, color = Warning)
                         }
                     }
                     Spacer(modifier = Modifier.height(12.dp))
@@ -146,7 +148,7 @@ fun GrammarDetailScreen(
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Filled.FlashOn, contentDescription = null, tint = SunsetGradientStart)
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Leitner Review", style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
+                            Text(stringResource(R.string.leitner_review), style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
                         }
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -166,7 +168,7 @@ fun GrammarDetailScreen(
                             }
                             Spacer(modifier = Modifier.width(12.dp))
                             Text(
-                                text = "Currently in Box ${grammar.leitnerBox}",
+                                text = stringResource(R.string.detail_leitner_box, grammar.leitnerBox),
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onBackground
                             )
@@ -180,7 +182,7 @@ fun GrammarDetailScreen(
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Filled.Lightbulb, contentDescription = null, tint = Gold)
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Tips", style = MaterialTheme.typography.titleMedium, color = Gold)
+                            Text(stringResource(R.string.form_tips), style = MaterialTheme.typography.titleMedium, color = Gold)
                         }
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(grammar.tips, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onBackground)
@@ -190,7 +192,7 @@ fun GrammarDetailScreen(
 
                                 if (grammar.examples.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Examples", style = MaterialTheme.typography.titleMedium, color = Mint)
+                        Text(stringResource(R.string.dict_examples), style = MaterialTheme.typography.titleMedium, color = Mint)
                         Spacer(modifier = Modifier.height(8.dp))
                         grammar.examples.split("|").map { it.trim() }.filter { it.isNotBlank() }.forEach { example ->
                             Text(

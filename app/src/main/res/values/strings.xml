@@ -79,7 +79,7 @@
     <string name="review_mistakes">Review Mistakes</string>
     <string name="lets_review">Let\'s review your mistakes</string>
     <string name="complete">Complete!</string>
-    <string name="score_format">You got %d out of %d correct</string>
+    <string name="score_format">You got %1$d out of %2$d correct</string>
     <string name="ask_ai">Auto-fill</string>
     <string name="ai_welcome">How can I help you with English?</string>
     <string name="ai_placeholder">Type your question…</string>
@@ -89,4 +89,247 @@
     <string name="reminder_message">📚 Lexora is waiting for you!</string>
     <string name="confirm_delete_title">Delete Item</string>
     <string name="confirm_delete_message">Are you sure you want to delete this item? This action cannot be undone.</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Learn. Practice. Become Fluent.</string>
+    <string name="home_progress">Today\'s progress</string>
+    <string name="home_minutes">Minutes</string>
+    <string name="home_words">Words</string>
+    <string name="home_reviewed">Reviewed</string>
+    <string name="home_streak_title">%d day streak</string>
+    <string name="home_streak_active">%1$d%% active • %2$d days total</string>
+    <string name="home_quick_review">Quick Review</string>
+    <string name="home_quick_review_subtitle">Random words</string>
+    <string name="home_dictionary">Dictionary</string>
+    <string name="home_dictionary_subtitle">Bilingual search</string>
+    <string name="home_quiz">Quiz</string>
+    <string name="home_quiz_subtitle">Test yourself</string>
+    <string name="home_mistakes">Mistakes</string>
+    <string name="home_mistakes_subtitle">Fix weak spots</string>
+
+    <!-- Learn -->
+    <string name="learn_title">Learn</string>
+    <string name="learn_subtitle">Master English step by step</string>
+    <string name="learn_vocabulary">Vocabulary</string>
+    <string name="learn_vocabulary_subtitle">Build your word bank</string>
+    <string name="learn_grammar">Grammar</string>
+    <string name="learn_grammar_subtitle">Learn grammar rules</string>
+    <string name="learn_notes">Teacher Notes</string>
+    <string name="learn_notes_subtitle">Class notes &amp; tips</string>
+    <string name="learn_favorites">Favorites</string>
+    <string name="learn_favorites_subtitle">Your starred words</string>
+    <string name="learn_quick_review">Quick Review</string>
+    <string name="learn_quick_review_subtitle">Random mix of your library</string>
+    <string name="learn_review_mistakes">Review Mistakes</string>
+    <string name="learn_review_mistakes_subtitle">Practice what you got wrong</string>
+    <string name="learn_quiz">Quiz</string>
+    <string name="learn_quiz_subtitle">Test your knowledge (4 options)</string>
+    <string name="learn_dictionary">Offline Dictionary</string>
+    <string name="learn_dictionary_subtitle">300,000+ bilingual entries</string>
+
+    <!-- Add -->
+    <string name="add_screen_title">Add new</string>
+    <string name="add_screen_subtitle">Choose what you want to add</string>
+    <string name="add_word_add">Add Word</string>
+    <string name="add_word_add_subtitle">Add a new vocabulary word with meanings, examples, and more</string>
+    <string name="add_grammar_add">Add Grammar</string>
+    <string name="add_grammar_add_subtitle">Add grammar rules, formulas, and examples</string>
+    <string name="add_note_add">Add Note</string>
+    <string name="edit_word_title">Edit Word</string>
+    <string name="edit_grammar_title">Edit Grammar</string>
+    <string name="edit_note_title">Edit Note</string>
+    <string name="add_note_add_subtitle">Add teacher notes and class tips</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_mode">Theme Mode</string>
+    <string name="theme_mode_subtitle">Select light or dark theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_animations">Animations</string>
+    <string name="settings_animations_subtitle">Enable smooth animations</string>
+    <string name="settings_sound">Sound Effects</string>
+    <string name="settings_sound_subtitle">Play sounds on interactions</string>
+    <string name="settings_music">Background Music</string>
+    <string name="settings_music_subtitle">Play relaxing ambient music</string>
+    <string name="settings_music_volume">Music Volume</string>
+    <string name="settings_notifications_blocked_title">Notifications are blocked</string>
+    <string name="settings_notifications_blocked_subtitle">Study reminders can\'t reach you. Tap to allow notifications in system settings.</string>
+    <string name="settings_notifications_blocked_allow">Allow</string>
+    <string name="settings_section_notifications">Notifications</string>
+    <string name="settings_reminders">Daily Reminders</string>
+    <string name="settings_reminders_subtitle">Get a daily reminder to practice</string>
+    <string name="settings_section_review">Smart Review Reminder</string>
+    <string name="settings_review_reminder">Review Reminder</string>
+    <string name="settings_review_reminder_subtitle">Reminder when your words are ready for review</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_about">About Lexora</string>
+    <string name="settings_about_version">Version 1.0.0</string>
+    <string name="settings_about_close">Close</string>
+    <string name="settings_about_creator">Created by Matin Alinaghian</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_subtitle">App display language</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_persian">فارسی</string>
+
+    <!-- About dialog -->
+    <string name="about_version">Version 1.0.0</string>
+    <string name="about_creator">Created by Matin Alinaghian</string>
+    <string name="about_desc">A professional English learning app with an offline bilingual dictionary, quick review, quizzes, and a beautiful modern design.</string>
+    <string name="about_features">📦 Offline Dictionary — 300,000+ bilingual entries with phonetics\n🧠 Quick Review — Practice random words or a single list, any time\n🔑 Review Reminder — We notify you when words are ready to revisit\n📚 Vocabulary, Grammar &amp; Notes — Your full learning library\n❓ Quiz — Test yourself with 4-choice questions\n🔑 Mistakes — Re-practice the words you got wrong\n⭐ Favorites — Star and revisit your important words\n📊 Statistics — Streaks, accuracy breakdown and progress tracking\n🔔 Smart Reminders — Daily study plus timely review notifications\n🔊 Text-to-Speech &amp; Sound Effects — Pronunciation and interactive sounds\n🎨 Light &amp; Dark Themes — A clean, modern look</string>
+
+    <!-- Shared / list screens -->
+    <string name="view">View</string>
+    <string name="chip_all">All</string>
+    <string name="empty_no_words_title">No words yet</string>
+    <string name="empty_no_words_msg">Start building your vocabulary</string>
+    <string name="add_first_word">Add First Word</string>
+    <string name="count_words">%d words</string>
+    <string name="count_notes">%d notes</string>
+    <string name="count_items">%d items</string>
+    <string name="empty_no_grammar_title">No grammar rules yet</string>
+    <string name="empty_no_grammar_msg">Add your first grammar rule</string>
+    <string name="empty_no_notes_title">No notes yet</string>
+    <string name="empty_no_notes_msg">Add your first teacher note</string>
+    <string name="search_words_hint">Search words…</string>
+    <string name="search_grammar_hint">Search grammar…</string>
+    <string name="search_notes_hint">Search notes…</string>
+    <string name="search_all_hint">Search words, grammar, notes…</string>
+    <string name="no_words_found">No words found</string>
+    <string name="no_grammar_found">No grammar found</string>
+    <string name="no_notes_found">No notes found</string>
+    <string name="try_different_search">Try a different search term</string>
+    <string name="no_mistakes_title">No mistakes yet!</string>
+    <string name="no_mistakes_msg">You\'re doing great! Keep reviewing to improve.</string>
+    <string name="no_fav_words">No favorite words</string>
+    <string name="no_fav_grammar">No favorite grammar</string>
+    <string name="no_fav_notes">No favorite notes</string>
+    <string name="star_words_msg">Star words to add them here</string>
+    <string name="star_grammar_msg">Star grammar rules to add them here</string>
+    <string name="star_notes_msg">Star notes to add them here</string>
+    <string name="empty_default_title">Nothing here yet</string>
+    <string name="empty_default_msg">Add your first item to get started</string>
+    <string name="error_generic">Something went wrong</string>
+    <string name="common_retry">Retry</string>
+
+    <!-- Forms -->
+    <string name="form_basics">The basics (mandatory)</string>
+    <string name="form_details">Additional details</string>
+    <string name="form_show_more">Show more fields</string>
+    <string name="form_save">Save</string>
+    <string name="form_list_category">List / Category</string>
+    <string name="form_spaced_review">Spaced review (auto)</string>
+    <string name="form_spaced_review_msg">This word will come back for review on a schedule</string>
+    <string name="form_autofill">Search &amp; Auto-fill from Dictionary</string>
+    <string name="form_english_word">English Word *</string>
+    <string name="form_persian_meaning">Persian Meaning *</string>
+    <string name="form_title_req">Title *</string>
+    <string name="form_content_req">Content *</string>
+    <string name="form_word_type">Word Type</string>
+    <string name="form_example_translation">Example Translation</string>
+    <string name="form_synonyms_comma">Synonyms (comma separated)</string>
+    <string name="form_antonyms_comma">Antonyms (comma separated)</string>
+    <string name="form_word_family_comma">Word Family (comma separated)</string>
+    <string name="form_tags_comma">Tags (comma separated)</string>
+    <string name="form_bullets">Bullet Points (separate with |)</string>
+    <string name="form_examples_sep">Examples (separate with |)</string>
+    <string name="form_tips">Tips</string>
+    <string name="form_positive">✅ Positive Form</string>
+    <string name="form_negative">❌ Negative Form</string>
+    <string name="form_question">❓ Question Form</string>
+    <string name="form_tips_hint">Add useful tips…</string>
+
+    <!-- List picker -->
+    <string name="list_untapped">Uncategorized (Tap to select)</string>
+    <string name="list_select">Select List</string>
+    <string name="list_create_new">Create New List</string>
+    <string name="list_none_yet">No lists created yet.</string>
+    <string name="list_uncategorized">Uncategorized</string>
+    <string name="list_new">New List</string>
+    <string name="list_name">List Name</string>
+    <string name="list_create">Create</string>
+    <string name="list_rename">Rename List</string>
+    <string name="list_new_name">New Name</string>
+    <string name="list_rename_action">Rename</string>
+    <string name="close">Close</string>
+
+    <!-- Details -->
+    <string name="detail_meaning">Meaning</string>
+    <string name="detail_type">Type</string>
+    <string name="detail_tap_listen">Tap to listen</string>
+    <string name="detail_key_points">Key Points</string>
+    <string name="detail_leitner_box">Currently in Box %d</string>
+    <string name="leitner_review">Leitner Review</string>
+
+    <!-- Dictionary -->
+    <string name="dict_searching">Searching…</string>
+    <string name="dict_min_chars">Type at least 2 characters to search</string>
+    <string name="dict_definitions">Definitions</string>
+    <string name="dict_persian_meanings">Persian meanings</string>
+    <string name="dict_search_hint">Search English word…</string>
+    <string name="dict_examples">Examples</string>
+    <string name="dict_other_meanings">Other meanings (%s)</string>
+    <string name="dict_loading">Loading offline dictionary…</string>
+    <string name="dict_offline_count">%d words available offline</string>
+
+    <!-- Quiz -->
+    <string name="quiz_select_source">Select Quiz Source</string>
+    <string name="quiz_all_words">All Words (Random)</string>
+    <string name="quiz_due_words">Due Words</string>
+    <string name="quiz_preparing">Preparing questions…</string>
+    <string name="quiz_need_words">Add at least 4 words to start a quiz!</string>
+    <string name="quiz_correct_next">Correct! Tap for next</string>
+    <string name="quiz_wrong_next">Wrong! Tap for next</string>
+    <string name="quiz_wrong">Wrong</string>
+    <string name="quiz_retry">Retry</string>
+    <string name="quiz_done">Done</string>
+    <string name="quiz_en_fa">🌐 English → Persian</string>
+    <string name="quiz_fa_en">🇮🇷 Persian → English</string>
+    <string name="quiz_perfect">Perfect! 🌟</string>
+    <string name="quiz_well_done">Well Done! 👍</string>
+    <string name="quiz_good_effort">Good Effort! 💪</string>
+    <string name="quiz_keep_practicing">Keep Practicing! 📚</string>
+    <string name="quiz_streak">🔥 %d streak</string>
+
+    <!-- Quick review -->
+    <string name="qr_missed_it">Missed it</string>
+    <string name="qr_knew_it">Knew it</string>
+    <string name="qr_nothing_title">Nothing to review</string>
+    <string name="qr_nothing_msg">Add a few words and come back for a quick review session.</string>
+    <string name="qr_select_list">Select a list</string>
+    <string name="qr_all_random">All words (random mix)</string>
+    <string name="qr_position">%1$d of %2$d</string>
+    <string name="qr_knew_count">Knew %d</string>
+    <string name="qr_missed_count">Missed %d</string>
+    <string name="qr_tap_reveal">Tap to reveal</string>
+    <string name="qr_tap_flip">Tap to flip back</string>
+    <string name="qr_perfect">Perfect!</string>
+    <string name="qr_well_done">Well done!</string>
+    <string name="qr_keep_practicing">Keep practicing!</string>
+    <string name="qr_word">WORD</string>
+    <string name="qr_grammar">GRAMMAR</string>
+    <string name="qr_note">NOTE</string>
+    <string name="qr_meaning">MEANING</string>
+    <string name="qr_explanation">EXPLANATION</string>
+    <string name="qr_content">CONTENT</string>
+    <string name="qr_list_review">List review</string>
+    <string name="qr_mistakes_review">Mistakes Review</string>
+
+    <!-- Statistics -->
+    <string name="reminder_picker_title">Set Reminder Time</string>
+    <string name="reminder_picker_msg">Select a time for your daily study reminder</string>
+    <string name="reminder_picker_hour">Hour</string>
+    <string name="reminder_picker_minute">Minute</string>
+    <string name="max_level">Max Level! 👑</string>
+
+    <string name="stats_week">This Week</string>
+    <string name="stats_overall">Overall</string>
+    <string name="stats_best_active">Best: %1$d days • Active: %2$d days</string>
+    <string name="stats_day_streak">%d Day Streak</string>
+
+    <!-- Screen titles -->
+    <string name="dictionary_title">Dictionary</string>
+    <string name="quiz_title">Quiz</string>
+    <string name="teacher_notes">Teacher Notes</string>
 </resources>

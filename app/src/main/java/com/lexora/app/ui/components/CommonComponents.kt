@@ -13,8 +13,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import com.lexora.app.R
 import com.lexora.app.ui.theme.*
 import com.lexora.app.utils.LocalSoundManager
 import com.lexora.app.utils.SoundManager
@@ -67,8 +69,8 @@ fun LexoraIconButton(
 @Composable
 fun EmptyState(
     icon: ImageVector = Icons.Outlined.Inbox,
-    title: String = "Nothing here yet",
-    message: String = "Add your first item to get started",
+    title: String = stringResource(R.string.empty_default_title),
+    message: String = stringResource(R.string.empty_default_msg),
     actionText: String? = null,
     onActionClick: (() -> Unit)? = null,
     modifier: Modifier = Modifier
@@ -124,7 +126,7 @@ fun EmptyState(
 @Composable
 fun LoadingState(
     modifier: Modifier = Modifier,
-    message: String = "Loading…"
+    message: String = stringResource(R.string.loading)
 ) {
     Column(
         modifier = modifier.fillMaxWidth(),
@@ -146,7 +148,7 @@ fun LoadingState(
 
 @Composable
 fun ErrorState(
-    message: String = "Something went wrong",
+    message: String = stringResource(R.string.error_generic),
     onRetryClick: (() -> Unit)? = null,
     modifier: Modifier = Modifier
 ) {
@@ -185,7 +187,7 @@ fun ErrorState(
                     modifier = Modifier.size(18.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Retry")
+                Text(stringResource(R.string.common_retry))
             }
         }
     }
@@ -194,8 +196,8 @@ fun ErrorState(
 @Composable
 fun ConfirmDeleteDialog(
     show: Boolean,
-    title: String = "Delete Item",
-    message: String = "Are you sure you want to delete this item? This action cannot be undone.",
+    title: String = stringResource(R.string.confirm_delete_title),
+    message: String = stringResource(R.string.confirm_delete_message),
     onConfirm: () -> Unit,
     onDismiss: () -> Unit
 ) {
@@ -227,7 +229,7 @@ fun ConfirmDeleteDialog(
                     ),
                     shape = RoundedCornerShape(8.dp)
                 ) {
-                    Text("Delete")
+                    Text(stringResource(R.string.delete))
                 }
             },
             dismissButton = {
@@ -235,7 +237,7 @@ fun ConfirmDeleteDialog(
                     onClick = onDismiss,
                     shape = RoundedCornerShape(8.dp)
                 ) {
-                    Text("Cancel", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(stringResource(R.string.cancel), color = MaterialTheme.colorScheme.onSurfaceVariant)
                 }
             }
         )

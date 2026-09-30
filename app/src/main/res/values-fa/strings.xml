@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lexora</string>
+    <string name="tagline">یاد بگیر. تمرین کن. مسلط شو.</string>
+    <string name="home">خانه</string>
+    <string name="learn">یادگیری</string>
+    <string name="add">افزودن</string>
+    <string name="statistics">آمار</string>
+    <string name="settings">تنظیمات</string>
+    <string name="vocabulary">واژگان</string>
+    <string name="grammar">قواعد</string>
+    <string name="notes">یادداشت‌ها</string>
+    <string name="review">مرور</string>
+    <string name="mistakes">خطاها</string>
+    <string name="favorites">محبوب‌ها</string>
+    <string name="search">جستجو</string>
+    <string name="dark_theme">تم تاریک</string>
+    <string name="notifications">اعلان‌ها</string>
+    <string name="reminder_time">زمان یادآوری</string>
+    <string name="ai_settings">تنظیمات هوش مصنوعی</string>
+    <string name="api_provider">ارائه‌دهنده API</string>
+    <string name="sound">صدا</string>
+    <string name="animation">انیمیشن</string>
+    <string name="data_management">مدیریت داده‌ها</string>
+    <string name="export_data">خروجی گرفتن</string>
+    <string name="import_data">درون‌ریزی</string>
+    <string name="about_lexora">درباره Lexora</string>
+    <string name="delete">حذف</string>
+    <string name="edit">ویرایش</string>
+    <string name="save">ذخیره</string>
+    <string name="cancel">انصراف</string>
+    <string name="confirm">تأیید</string>
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="loading">در حال بارگذاری…</string>
+    <string name="error">خطا</string>
+    <string name="retry">تلاش دوباره</string>
+    <string name="empty_state">هنوز چیزی اینجا نیست</string>
+    <string name="add_first_item">اولین مورد خود را اضافه کنید</string>
+    <string name="today">امروز</string>
+    <string name="words">کلمات</string>
+    <string name="tests">آزمون‌ها</string>
+    <string name="accuracy">دقت</string>
+    <string name="streak">روزهای پیاپی</string>
+    <string name="best_streak">بهترین رکورد</string>
+    <string name="current_streak">رکورد فعلی</string>
+    <string name="active_days">روزهای فعال</string>
+    <string name="study_time">زمان مطالعه</string>
+    <string name="minutes_format">%d دقیقه</string>
+    <string name="correct">درست</string>
+    <string name="incorrect">نادرست</string>
+    <string name="welcome_title">به Lexora خوش آمدید</string>
+    <string name="welcome_subtitle">سفر یادگیری انگلیسی شما اینجا شروع می‌شود</string>
+    <string name="add_word">افزودن کلمه</string>
+    <string name="add_grammar">افزودن قاعده</string>
+    <string name="add_note">افزودن یادداشت</string>
+    <string name="english_word">کلمه انگلیسی</string>
+    <string name="persian_meaning">معنای فارسی</string>
+    <string name="pronunciation">تلفظ</string>
+    <string name="example">مثال</string>
+    <string name="example_translation">ترجمه مثال</string>
+    <string name="word_type">نوع کلمه</string>
+    <string name="category">دسته‌بندی</string>
+    <string name="synonyms">مترادف‌ها</string>
+    <string name="antonyms">متضادها</string>
+    <string name="word_family">خانواده کلمه</string>
+    <string name="personal_note">یادداشت شخصی</string>
+    <string name="level">سطح</string>
+    <string name="tags">برچسب‌ها</string>
+    <string name="title">عنوان</string>
+    <string name="content">محتوا</string>
+    <string name="explanation">توضیح</string>
+    <string name="formula">فرمول</string>
+    <string name="grammar_title">عنوان قاعده</string>
+    <string name="grammar_explanation">توضیح</string>
+    <string name="positive_form">صورت مثبت</string>
+    <string name="negative_form">صورت منفی</string>
+    <string name="question_form">صورت سؤال</string>
+    <string name="review_mistakes">مرور خطاها</string>
+    <string name="lets_review">بیایید خطاها را مرور کنیم</string>
+    <string name="complete">تمام شد!</string>
+    <string name="score_format">از %1$d سؤال، %2$d پاسخ درست داده‌اید</string>
+    <string name="ask_ai">تکمیل خودکار</string>
+    <string name="ai_welcome">چطور می‌توانم در یادگیری انگلیسی کمکتان کنم؟</string>
+    <string name="ai_placeholder">سؤال خود را بنویسید…</string>
+    <string name="generate_with_ai">تکمیل خودکار از دیکشنری</string>
+    <string name="notification_channel_name">یادآوری‌های مطالعه</string>
+    <string name="notification_channel_description">یادآوری برای مطالعه انگلیسی</string>
+    <string name="reminder_message">📚 Lexora منتظر شماست!</string>
+    <string name="confirm_delete_title">حذف مورد</string>
+    <string name="confirm_delete_message">آیا از حذف این مورد مطمئن هستید؟ این عمل قابل بازگشت نیست.</string>
+
+    <!-- Home -->
+    <string name="home_tagline">یاد بگیر. تمرین کن. مسلط شو.</string>
+    <string name="home_progress">پیشرفت امروز</string>
+    <string name="home_minutes">دقیقه</string>
+    <string name="home_words">کلمه</string>
+    <string name="home_reviewed">مرورشده</string>
+    <string name="home_streak_title">%d روز پیاپی</string>
+    <string name="home_streak_active">%1$d%% فعال • %2$d روز در مجموع</string>
+    <string name="home_quick_review">مرور سریع</string>
+    <string name="home_quick_review_subtitle">کلمات تصادفی</string>
+    <string name="home_dictionary">دیکشنری</string>
+    <string name="home_dictionary_subtitle">جستجوی دوزبانه</string>
+    <string name="home_quiz">آزمون</string>
+    <string name="home_quiz_subtitle">خودت را امتحان کن</string>
+    <string name="home_mistakes">خطاها</string>
+    <string name="home_mistakes_subtitle">نقاط ضعف را برطرف کن</string>
+
+    <!-- Learn -->
+    <string name="learn_title">یادگیری</string>
+    <string name="learn_subtitle">انگلیسی را قدم‌به‌قدم یاد بگیر</string>
+    <string name="learn_vocabulary">واژگان</string>
+    <string name="learn_vocabulary_subtitle">دایره لغات خود را بساز</string>
+    <string name="learn_grammar">قواعد</string>
+    <string name="learn_grammar_subtitle">قواعد دستوری را یاد بگیر</string>
+    <string name="learn_notes">یادداشت‌های معلم</string>
+    <string name="learn_notes_subtitle">یادداشت‌ها و نکات کلاس</string>
+    <string name="learn_favorites">محبوب‌ها</string>
+    <string name="learn_favorites_subtitle">کلمات ستاره‌دار شما</string>
+    <string name="learn_quick_review">مرور سریع</string>
+    <string name="learn_quick_review_subtitle">ترکیب تصادفی از کتابخانه شما</string>
+    <string name="learn_review_mistakes">مرور خطاها</string>
+    <string name="learn_review_mistakes_subtitle">مطالبی را که اشتباه کرده‌اید تمرین کنید</string>
+    <string name="learn_quiz">آزمون</string>
+    <string name="learn_quiz_subtitle">دانش خود را با ۴ گزینه بسنجید</string>
+    <string name="learn_dictionary">دیکشنری آفلاین</string>
+    <string name="learn_dictionary_subtitle">بیش از ۳۰۰ هزار مدخل دوزبانه</string>
+
+    <!-- Add -->
+    <string name="add_screen_title">افزودن جدید</string>
+    <string name="add_screen_subtitle">چیزی را که می‌خواهید اضافه کنید انتخاب کنید</string>
+    <string name="add_word_add">افزودن کلمه</string>
+    <string name="add_word_add_subtitle">یک کلمه جدید با معنا، مثال و موارد دیگر اضافه کنید</string>
+    <string name="add_grammar_add">افزودن قاعده</string>
+    <string name="add_grammar_add_subtitle">قاعده، فرمول و مثال اضافه کنید</string>
+    <string name="add_note_add">افزودن یادداشت</string>
+    <string name="edit_word_title">ویرایش کلمه</string>
+    <string name="edit_grammar_title">ویرایش قاعده</string>
+    <string name="edit_note_title">ویرایش یادداشت</string>
+    <string name="add_note_add_subtitle">یادداشت‌ها و نکات معلم را اضافه کنید</string>
+
+    <!-- Settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_theme">پوسته</string>
+    <string name="theme_mode">حالت پوسته</string>
+    <string name="theme_mode_subtitle">حالت روشن یا تاریک را انتخاب کنید</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="settings_animations">انیمیشن‌ها</string>
+    <string name="settings_animations_subtitle">انیمیشن‌های نرم را فعال کنید</string>
+    <string name="settings_sound">جلوه‌های صوتی</string>
+    <string name="settings_sound_subtitle">پخش صدا هنگام تعامل</string>
+    <string name="settings_music">موسیقی پس‌زمینه</string>
+    <string name="settings_music_subtitle">پخش موسیقی آرامش‌بخش</string>
+    <string name="settings_music_volume">صدای موسیقی</string>
+    <string name="settings_notifications_blocked_title">اعلان‌ها مسدود شده‌اند</string>
+    <string name="settings_notifications_blocked_subtitle">یادآوری‌های مطالعه به شما نمی‌رسد. برای مجوز دادن به اعلان‌ها به تنظیمات سیستم بروید.</string>
+    <string name="settings_notifications_blocked_allow">اجازه دادن</string>
+    <string name="settings_section_notifications">اعلان‌ها</string>
+    <string name="settings_reminders">یادآوری روزانه</string>
+    <string name="settings_reminders_subtitle">هر روز یادآوری برای تمرین دریافت کنید</string>
+    <string name="settings_section_review">یادآوری مرور هوشمند</string>
+    <string name="settings_review_reminder">یادآوری مرور</string>
+    <string name="settings_review_reminder_subtitle">یادآوری وقتی کلمات برای مرور آماده شدند</string>
+    <string name="settings_section_about">درباره</string>
+    <string name="settings_about">درباره Lexora</string>
+    <string name="settings_about_version">نسخه ۱.۰.۰</string>
+    <string name="settings_about_close">بستن</string>
+    <string name="settings_about_creator">Created by Matin Alinaghian</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_language_subtitle">زبان نمایش برنامه</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_persian">فارسی</string>
+
+    <!-- About dialog -->
+    <string name="about_version">نسخه ۱.۰.۰</string>
+    <string name="about_creator">Created by Matin Alinaghian</string>
+    <string name="about_desc">یک برنامه حرفه‌ای یادگیری انگلیسی با دیکشنری دوزبانه آفلاین، مرور سریع، آزمون و طراحی مدرن و زیبا.</string>
+    <string name="about_features">📦 دیکشنری آفلاین — بیش از ۳۰۰ هزار مدخل دوزبانه با تلفظ\n🧠 مرور سریع — هر وقت کلمات تصادفی یا یک فهرست را تمرین کنید\n🔑 یادآوری مرور — وقتی کلمات برای مرور آماده شدند به شما اطلاع می‌دهیم\n📚 واژگان، قواعد و یادداشت‌ها — کتابخانه کامل یادگیری شما\n❓ آزمون — خود را با سؤالات چهارگزینه‌ای بسنجید\n🔑 خطاها — کلماتی را که اشتباه کرده‌اید دوباره تمرین کنید\n⭐ محبوب‌ها — کلمات مهم را ستاره‌دار کنید و دوباره ببینید\n📊 آمار — رکوردها، تفکیک دقت و پیگیری پیشرفت\n🔔 یادآوری‌های هوشمند — مطالعه روزانه به‌همراه یادآوری‌های به‌موقع مرور\n🔊 تبدیل متن به گفتار و جلوه‌های صوتی — تلفظ و صداهای تعاملی\n🎨 پوسته‌های روشن و تاریک — ظاهری تمیز و مدرن</string>
+
+    <!-- Shared / list screens -->
+    <string name="view">مشاهده</string>
+    <string name="chip_all">همه</string>
+    <string name="empty_no_words_title">هنوز کلمه‌ای نیست</string>
+    <string name="empty_no_words_msg">ساختن دایره لغات خود را شروع کنید</string>
+    <string name="add_first_word">افزودن اولین کلمه</string>
+    <string name="count_words">%d کلمه</string>
+    <string name="count_notes">%d یادداشت</string>
+    <string name="count_items">%d مورد</string>
+    <string name="empty_no_grammar_title">هنوز قاعده‌ای نیست</string>
+    <string name="empty_no_grammar_msg">اولین قاعده خود را اضافه کنید</string>
+    <string name="empty_no_notes_title">هنوز یادداشتی نیست</string>
+    <string name="empty_no_notes_msg">اولین یادداشت معلم خود را اضافه کنید</string>
+    <string name="search_words_hint">جستجوی کلمات…</string>
+    <string name="search_grammar_hint">جستجوی قواعد…</string>
+    <string name="search_notes_hint">جستجوی یادداشت‌ها…</string>
+    <string name="search_all_hint">جستجوی کلمات، قواعد، یادداشت‌ها…</string>
+    <string name="no_words_found">کلمه‌ای پیدا نشد</string>
+    <string name="no_grammar_found">قاعده‌ای پیدا نشد</string>
+    <string name="no_notes_found">یادداشتی پیدا نشد</string>
+    <string name="try_different_search">عبارت دیگری را امتحان کنید</string>
+    <string name="no_mistakes_title">هنوز خطایی نیست!</string>
+    <string name="no_mistakes_msg">عالی پیش می‌روید! برای بهتر شدن به مرور ادامه دهید.</string>
+    <string name="no_fav_words">کلمه مورد علاقه‌ای نیست</string>
+    <string name="no_fav_grammar">قاعده مورد علاقه‌ای نیست</string>
+    <string name="no_fav_notes">یادداشت مورد علاقه‌ای نیست</string>
+    <string name="star_words_msg">کلمات را ستاره‌دار کنید تا اینجا اضافه شوند</string>
+    <string name="star_grammar_msg">قواعد را ستاره‌دار کنید تا اینجا اضافه شوند</string>
+    <string name="star_notes_msg">یادداشت‌ها را ستاره‌دار کنید تا اینجا اضافه شوند</string>
+    <string name="empty_default_title">هنوز چیزی اینجا نیست</string>
+    <string name="empty_default_msg">برای شروع، اولین مورد خود را اضافه کنید</string>
+    <string name="error_generic">مشکلی پیش آمد</string>
+    <string name="common_retry">تلاش دوباره</string>
+
+    <!-- Forms -->
+    <string name="form_basics">مهم‌ترین‌ها (الزامی)</string>
+    <string name="form_details">جزئیات بیشتر</string>
+    <string name="form_show_more">نمایش فیلدهای بیشتر</string>
+    <string name="form_save">ذخیره</string>
+    <string name="form_list_category">فهرست / دسته‌بندی</string>
+    <string name="form_spaced_review">مرور فاصله‌دار (خودکار)</string>
+    <string name="form_spaced_review_msg">این کلمه طبق برنامه دوباره برای مرور می‌آید</string>
+    <string name="form_autofill">جستجو و تکمیل خودکار از دیکشنری</string>
+    <string name="form_english_word">کلمه انگلیسی *</string>
+    <string name="form_persian_meaning">معنای فارسی *</string>
+    <string name="form_title_req">عنوان *</string>
+    <string name="form_content_req">محتوا *</string>
+    <string name="form_word_type">نوع کلمه</string>
+    <string name="form_example_translation">ترجمه مثال</string>
+    <string name="form_synonyms_comma">مترادف‌ها (جدا شده با ویرگول)</string>
+    <string name="form_antonyms_comma">متضادها (جدا شده با ویرگول)</string>
+    <string name="form_word_family_comma">خانواده کلمه (جدا شده با ویرگول)</string>
+    <string name="form_tags_comma">برچسب‌ها (جدا شده با ویرگول)</string>
+    <string name="form_bullets">نکات کلیدی (جدا شده با |)</string>
+    <string name="form_examples_sep">مثال‌ها (جدا شده با |)</string>
+    <string name="form_tips">نکات</string>
+    <string name="form_positive">✅ صورت مثبت</string>
+    <string name="form_negative">❌ صورت منفی</string>
+    <string name="form_question">❓ صورت سؤال</string>
+    <string name="form_tips_hint">نکات مفید را اضافه کنید…</string>
+
+    <!-- List picker -->
+    <string name="list_untapped">بدون دسته (برای انتخاب بزنید)</string>
+    <string name="list_select">انتخاب فهرست</string>
+    <string name="list_create_new">ایجاد فهرست جدید</string>
+    <string name="list_none_yet">هنوز فهرستی ساخته نشده است.</string>
+    <string name="list_uncategorized">بدون دسته</string>
+    <string name="list_new">فهرست جدید</string>
+    <string name="list_name">نام فهرست</string>
+    <string name="list_create">ایجاد</string>
+    <string name="list_rename">تغییر نام فهرست</string>
+    <string name="list_new_name">نام جدید</string>
+    <string name="list_rename_action">تغییر نام</string>
+    <string name="close">بستن</string>
+
+    <!-- Details -->
+    <string name="detail_meaning">معنا</string>
+    <string name="detail_type">نوع</string>
+    <string name="detail_tap_listen">برای شنیدن بزنید</string>
+    <string name="detail_key_points">نکات کلیدی</string>
+    <string name="detail_leitner_box">هم‌اکنون در جعبه %d</string>
+    <string name="leitner_review">مرور لایتنر</string>
+
+    <!-- Dictionary -->
+    <string name="dict_searching">در حال جستجو…</string>
+    <string name="dict_min_chars">حداقل ۲ حرف وارد کنید</string>
+    <string name="dict_definitions">تعریف‌ها</string>
+    <string name="dict_persian_meanings">معانی فارسی</string>
+    <string name="dict_search_hint">جستجوی کلمه انگلیسی…</string>
+    <string name="dict_examples">مثال‌ها</string>
+    <string name="dict_other_meanings">معانی دیگر (%s)</string>
+    <string name="dict_loading">در حال بارگذاری دیکشنری آفلاین…</string>
+    <string name="dict_offline_count">%d کلمه به‌صورت آفلاین در دسترس است</string>
+
+    <!-- Quiz -->
+    <string name="quiz_select_source">منبع آزمون را انتخاب کنید</string>
+    <string name="quiz_all_words">همه کلمات (تصادفی)</string>
+    <string name="quiz_due_words">کلمات آماده مرور</string>
+    <string name="quiz_preparing">در حال آماده‌سازی سؤالات…</string>
+    <string name="quiz_need_words">برای شروع آزمون حداقل ۴ کلمه اضافه کنید!</string>
+    <string name="quiz_correct_next">درست! برای ادامه بزنید</string>
+    <string name="quiz_wrong_next">غلط! برای ادامه بزنید</string>
+    <string name="quiz_wrong">غلط</string>
+    <string name="quiz_retry">تلاش دوباره</string>
+    <string name="quiz_done">پایان</string>
+    <string name="quiz_en_fa">🌐 انگلیسی ← فارسی</string>
+    <string name="quiz_fa_en">🇮🇷 فارسی ← انگلیسی</string>
+    <string name="quiz_perfect">عالی! 🌟</string>
+    <string name="quiz_well_done">آفرین! 👍</string>
+    <string name="quiz_good_effort">تلاش خوبی بود! 💪</string>
+    <string name="quiz_keep_practicing">ادامه بده! 📚</string>
+    <string name="quiz_streak">🔥 %d پیاپی</string>
+
+    <!-- Quick review -->
+    <string name="qr_missed_it"> بلد نبودم</string>
+    <string name="qr_knew_it"> بلد بودم</string>
+    <string name="qr_nothing_title">چیزی برای مرور نیست</string>
+    <string name="qr_nothing_msg">چند کلمه اضافه کنید و برای یک جلسه مرور سریع برگردید.</string>
+    <string name="qr_select_list">یک فهرست انتخاب کنید</string>
+    <string name="qr_all_random">همه کلمات (ترکیب تصادفی)</string>
+    <string name="qr_position">%1$d از %2$d</string>
+    <string name="qr_knew_count">%d بلد بودم</string>
+    <string name="qr_missed_count">%d بلد نبودم</string>
+    <string name="qr_tap_reveal">برای دیدن بزنید</string>
+    <string name="qr_tap_flip">برای برگرداندن بزنید</string>
+    <string name="qr_perfect">عالی!</string>
+    <string name="qr_well_done">آفرین!</string>
+    <string name="qr_keep_practicing">ادامه بده!</string>
+    <string name="qr_word">کلمه</string>
+    <string name="qr_grammar">قاعده</string>
+    <string name="qr_note">یادداشت</string>
+    <string name="qr_meaning">معنا</string>
+    <string name="qr_explanation">توضیح</string>
+    <string name="qr_content">محتوا</string>
+    <string name="qr_list_review">مرور فهرست</string>
+    <string name="qr_mistakes_review">مرور خطاها</string>
+
+    <!-- Statistics -->
+    <string name="reminder_picker_title">تنظیم زمان یادآوری</string>
+    <string name="reminder_picker_msg">زمان یادآوری روزانه مطالعه را انتخاب کنید</string>
+    <string name="reminder_picker_hour">ساعت</string>
+    <string name="reminder_picker_minute">دقیقه</string>
+    <string name="max_level">حداکثر سطح! 👑</string>
+
+    <string name="stats_week">این هفته</string>
+    <string name="stats_overall">مجموع</string>
+    <string name="stats_best_active">بهترین: %1$d روز • فعال: %2$d روز</string>
+    <string name="stats_day_streak">%d روز پیاپی</string>
+
+    <!-- Screen titles -->
+    <string name="dictionary_title">دیکشنری</string>
+    <string name="quiz_title">آزمون</string>
+    <string name="teacher_notes">یادداشت‌های معلم</string>
+</resources>

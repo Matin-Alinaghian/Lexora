@@ -4,6 +4,7 @@ import androidx.compose.animation.*
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.ui.res.stringResource
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.automirrored.outlined.MenuBook
 import androidx.compose.material.icons.filled.*
@@ -24,6 +25,7 @@ import androidx.navigation.navArgument
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.screens.*
 import com.lexora.app.ui.theme.*
+import com.lexora.app.R
 import com.lexora.app.utils.LocalSoundManager
 import com.lexora.app.utils.SoundManager
 
@@ -51,11 +53,11 @@ fun LexoraMainContainer() {
     val soundManager = LocalSoundManager.current
 
     val bottomNavItems = listOf(
-        BottomNavItem(Screen.Home, "Home", Icons.Filled.Home, Icons.Outlined.Home),
-        BottomNavItem(Screen.Learn, "Learn", Icons.AutoMirrored.Filled.MenuBook, Icons.AutoMirrored.Outlined.MenuBook),
-        BottomNavItem(Screen.Add, "Add", Icons.Filled.AddCircle, Icons.Outlined.AddCircle),
-        BottomNavItem(Screen.Statistics, "Stats", Icons.Filled.BarChart, Icons.Outlined.BarChart),
-        BottomNavItem(Screen.Settings, "Settings", Icons.Filled.Settings, Icons.Outlined.Settings),
+        BottomNavItem(Screen.Home, stringResource(R.string.home), Icons.Filled.Home, Icons.Outlined.Home),
+        BottomNavItem(Screen.Learn, stringResource(R.string.learn), Icons.AutoMirrored.Filled.MenuBook, Icons.AutoMirrored.Outlined.MenuBook),
+        BottomNavItem(Screen.Add, stringResource(R.string.add), Icons.Filled.AddCircle, Icons.Outlined.AddCircle),
+        BottomNavItem(Screen.Statistics, stringResource(R.string.statistics), Icons.Filled.BarChart, Icons.Outlined.BarChart),
+        BottomNavItem(Screen.Settings, stringResource(R.string.settings), Icons.Filled.Settings, Icons.Outlined.Settings),
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()

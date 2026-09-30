@@ -2,6 +2,7 @@ package com.lexora.app
 
 import android.app.Application
 import android.app.NotificationChannel
+import android.content.Context
 import android.app.NotificationManager
 import android.os.Build
 import com.lexora.app.data.repository.DictionaryDataSeeder
@@ -21,6 +22,10 @@ class LexoraApp : Application() {
 
     @Inject
     lateinit var reviewScheduleManager: ReviewScheduleManager
+
+    override fun attachBaseContext(base: Context) {
+        super.attachBaseContext(com.lexora.app.utils.LanguageManager.wrap(base))
+    }
 
     override fun onCreate() {
         super.onCreate()

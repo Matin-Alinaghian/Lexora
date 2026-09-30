@@ -6,8 +6,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import java.util.Locale
+import com.lexora.app.R
 import com.lexora.app.ui.theme.DarkCard
 import com.lexora.app.ui.theme.DarkBackground
 import com.lexora.app.ui.theme.LightCard
@@ -42,7 +44,7 @@ fun ReminderTimePicker(
         modifier = modifier,
         title = {
             Text(
-                text = "Set Reminder Time",
+                text = stringResource(R.string.reminder_picker_title),
                 color = textColor,
                 style = MaterialTheme.typography.titleLarge
             )
@@ -81,7 +83,7 @@ fun ReminderTimePicker(
                 onClick = onDismiss,
                 colors = ButtonDefaults.textButtonColors(contentColor = subTextColor)
             ) {
-                Text("Cancel")
+                Text(stringResource(R.string.cancel))
             }
         }
     )
@@ -105,7 +107,7 @@ private fun TimePicker(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(
-            text = "Select a time for your daily study reminder",
+            text = stringResource(R.string.reminder_picker_msg),
             color = subTextColor,
             style = MaterialTheme.typography.bodyMedium
         )
@@ -116,7 +118,7 @@ private fun TimePicker(
         ) {
                         Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "Hour",
+                    text = stringResource(R.string.reminder_picker_hour),
                     color = subTextColor,
                     style = MaterialTheme.typography.labelMedium
                 )
@@ -142,7 +144,7 @@ private fun TimePicker(
 
                         Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "Minute",
+                    text = stringResource(R.string.reminder_picker_minute),
                     color = subTextColor,
                     style = MaterialTheme.typography.labelMedium
                 )

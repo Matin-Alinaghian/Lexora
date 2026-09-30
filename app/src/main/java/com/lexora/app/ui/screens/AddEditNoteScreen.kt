@@ -10,11 +10,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.ListPicker
 import com.lexora.app.ui.theme.*
 import com.lexora.app.utils.LocalSoundManager
@@ -54,26 +56,26 @@ fun AddEditNoteScreen(
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
             Text(
-                if (uiState.isEditing) "Edit Note" else "Add Note",
+                if (uiState.isEditing) stringResource(R.string.edit_note_title) else stringResource(R.string.add_note),
                 style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f)
             )
             TextButton(
                 onClick = { viewModel.saveNote() },
                 enabled = uiState.title.isNotBlank() && uiState.content.isNotBlank()
             ) {
-                Text("Save", color = Cyan, fontWeight = FontWeight.Bold)
+                Text(stringResource(R.string.form_save), color = Cyan, fontWeight = FontWeight.Bold)
             }
         }
 
                     FormField(
-                label = "Title *",
+                label = stringResource(R.string.form_title_req),
                 value = uiState.title,
                 onValueChange = { viewModel.updateField("title", it) },
                 placeholder = ""
             )
 
             ListPicker(
-                label = "List / Category",
+                label = stringResource(R.string.form_list_category),
                 selectedList = uiState.category,
                 onListSelected = { viewModel.updateField("category", it) },
                 existingLists = uiState.existingLists,
@@ -82,7 +84,7 @@ fun AddEditNoteScreen(
             )
 
             FormField(
-                label = "Content *",
+                label = stringResource(R.string.form_content_req),
                 value = uiState.content,
                 onValueChange = { viewModel.updateField("content", it) },
                 placeholder = "",
@@ -90,7 +92,7 @@ fun AddEditNoteScreen(
             )
 
             FormField(
-                label = "Bullet Points (separate with |)",
+                label = stringResource(R.string.form_bullets),
                 value = uiState.bulletPoints,
                 onValueChange = { viewModel.updateField("bulletPoints", it) },
                 placeholder = "",

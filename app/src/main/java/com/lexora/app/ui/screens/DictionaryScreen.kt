@@ -18,6 +18,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -28,6 +29,7 @@ import androidx.navigation.NavController
 import com.lexora.app.data.repository.SeedStatus
 import com.lexora.app.data.remote.dictionary.DefinitionItem
 import com.lexora.app.data.remote.dictionary.DictionaryResult
+import com.lexora.app.R
 import com.lexora.app.ui.components.GlassCard
 import com.lexora.app.ui.theme.*
 import com.lexora.app.utils.LocalSoundManager
@@ -59,7 +61,7 @@ fun DictionaryScreen(
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
-            Text("Dictionary", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.dictionary_title), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
         }
 
                 Column(
@@ -71,7 +73,7 @@ fun DictionaryScreen(
                 modifier = Modifier.fillMaxWidth(),
                 placeholder = {
                     Text(
-                        "Search English word...",
+                        stringResource(R.string.dict_search_hint),
                         color = MaterialTheme.colorScheme.outline
                     )
                 },
@@ -119,7 +121,7 @@ fun DictionaryScreen(
                             color = MaterialTheme.colorScheme.primary
                         )
                         Text(
-                            "Searching...",
+                            stringResource(R.string.dict_searching),
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -210,7 +212,7 @@ fun DictionaryScreen(
                     contentAlignment = Alignment.Center
                 ) {
                     Text(
-                        "Type at least 2 characters to search",
+                        stringResource(R.string.dict_min_chars),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -369,7 +371,7 @@ private fun DictionaryResultCard(
                     Spacer(modifier = Modifier.height(12.dp))
 
                                         if (result.definitions.isNotEmpty()) {
-                        SectionHeader(icon = Icons.Filled.MenuBook, title = "Definitions")
+                        SectionHeader(icon = Icons.Filled.MenuBook, title = stringResource(R.string.dict_definitions))
                         result.definitions.forEachIndexed { index, def ->
                             DefinitionItem(
                                 index = index + 1,
@@ -381,13 +383,13 @@ private fun DictionaryResultCard(
                     }
 
                                         if (result.persianMeanings.size > 1) {
-                        SectionHeader(icon = Icons.Filled.Translate, title = "معانی فارسی")
+                        SectionHeader(icon = Icons.Filled.Translate, title = stringResource(R.string.dict_persian_meanings))
                         WordChipGroup(words = result.persianMeanings, color = Cyan)
                         Spacer(modifier = Modifier.height(12.dp))
                     }
 
                                         if (result.examples.isNotEmpty()) {
-                        SectionHeader(icon = Icons.Filled.FormatQuote, title = "Examples")
+                        SectionHeader(icon = Icons.Filled.FormatQuote, title = stringResource(R.string.dict_examples))
                         result.examples.forEach { example ->
                             ExampleItem(text = example)
                         }
@@ -395,13 +397,13 @@ private fun DictionaryResultCard(
                     }
 
                                         if (result.synonyms.isNotEmpty()) {
-                        SectionHeader(icon = Icons.Filled.ThumbUp, title = "Synonyms")
+                        SectionHeader(icon = Icons.Filled.ThumbUp, title = stringResource(R.string.synonyms))
                         WordChipGroup(words = result.synonyms, color = Mint)
                         Spacer(modifier = Modifier.height(12.dp))
                     }
 
                                         if (result.antonyms.isNotEmpty()) {
-                        SectionHeader(icon = Icons.Filled.ThumbDown, title = "Antonyms")
+                        SectionHeader(icon = Icons.Filled.ThumbDown, title = stringResource(R.string.antonyms))
                         WordChipGroup(words = result.antonyms, color = Coral)
                         Spacer(modifier = Modifier.height(12.dp))
                     }
@@ -414,7 +416,7 @@ private fun DictionaryResultCard(
                         groupedMeanings.forEach { (pos, definitions) ->
                             SectionHeader(
                                 icon = Icons.Filled.Category,
-                                title = "Other meanings ($pos)"
+                                title = stringResource(R.string.dict_other_meanings, pos)
                             )
                             definitions.take(2).forEach { def ->
                                 DefinitionItem(
@@ -447,9 +449,9 @@ private fun DictionaryStatusBanner(status: SeedStatus) {
                     Spacer(modifier = Modifier.width(6.dp))
                     Text(
                         text = if (status.expected > 0) {
-                            "Loading offline dictionary… ${status.inserted} / ${status.expected}"
+                            "${stringResource(R.string.dict_loading)} ${status.inserted} / ${status.expected}"
                         } else {
-                            status.message.ifBlank { "Loading offline dictionary…" }
+                            status.message.ifBlank { stringResource(R.string.dict_loading) }
                         },
                         style = MaterialTheme.typography.labelMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
@@ -478,7 +480,7 @@ private fun DictionaryStatusBanner(status: SeedStatus) {
                 )
                 Spacer(modifier = Modifier.width(6.dp))
                 Text(
-                    text = "${status.totalWords} words available offline",
+                    text = stringResource(R.string.dict_offline_count, status.totalWords),
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

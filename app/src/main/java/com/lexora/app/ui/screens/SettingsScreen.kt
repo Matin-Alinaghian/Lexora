@@ -19,6 +19,7 @@ import androidx.compose.ui.graphics.Shadow
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 
@@ -26,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.lexora.app.R
 import com.lexora.app.ui.components.GlassCard
 
 import com.lexora.app.ui.navigation.Screen
@@ -75,14 +77,14 @@ fun SettingsScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Settings",
+            text = stringResource(R.string.settings_title),
             style = MaterialTheme.typography.headlineLarge,
             fontWeight = FontWeight.Bold,
             color = textColor
         )
         Spacer(modifier = Modifier.height(20.dp))
 
-        SettingsSection(title = "Theme", titleColor = sectionTitleColor) {
+        SettingsSection(title = stringResource(R.string.settings_theme), titleColor = sectionTitleColor) {
             ThemeSelector(
                 currentTheme = themeType,
                 onThemeSelected = { themeType = it },
@@ -91,8 +93,8 @@ fun SettingsScreen(navController: NavController) {
             )
             SettingsToggleItem(
                 icon = Icons.Filled.Animation,
-                title = "Animations",
-                subtitle = "Enable smooth animations",
+                title = stringResource(R.string.settings_animations),
+                subtitle = stringResource(R.string.settings_animations_subtitle),
                 checked = uiState.animationEnabled,
                 onCheckedChange = { viewModel.updateAnimationEnabled(it) },
                 textColor = textColor,
@@ -101,8 +103,8 @@ fun SettingsScreen(navController: NavController) {
             )
             SettingsToggleItem(
                 icon = Icons.Filled.VolumeUp,
-                title = "Sound Effects",
-                subtitle = "Play sounds on interactions",
+                title = stringResource(R.string.settings_sound),
+                subtitle = stringResource(R.string.settings_sound_subtitle),
                 checked = uiState.soundEnabled,
                 onCheckedChange = { viewModel.updateSoundEnabled(it) },
                 textColor = textColor,
@@ -111,8 +113,8 @@ fun SettingsScreen(navController: NavController) {
             )
             SettingsToggleItem(
                 icon = Icons.Filled.MusicNote,
-                title = "Background Music",
-                subtitle = "Play relaxing ambient music",
+                title = stringResource(R.string.settings_music),
+                subtitle = stringResource(R.string.settings_music_subtitle),
                 checked = uiState.musicEnabled,
                 onCheckedChange = { viewModel.updateMusicEnabled(it) },
                 textColor = textColor,
@@ -134,7 +136,7 @@ fun SettingsScreen(navController: NavController) {
                     )
                     Spacer(modifier = Modifier.width(12.dp))
                     Column(modifier = Modifier.weight(1f)) {
-                        Text("Music Volume", style = MaterialTheme.typography.bodyLarge, color = textColor)
+                        Text(stringResource(R.string.settings_music_volume), style = MaterialTheme.typography.bodyLarge, color = textColor)
                         Slider(
                             value = uiState.musicVolume,
                             onValueChange = { viewModel.updateMusicVolume(it) },
@@ -147,6 +149,19 @@ fun SettingsScreen(navController: NavController) {
                     }
                 }
             }
+        }
+
+        SettingsSection(title = stringResource(R.string.settings_language), titleColor = sectionTitleColor) {
+            LanguageSelector(
+                currentLanguage = com.lexora.app.utils.LanguageManager.getLanguage(context),
+                textColor = textColor,
+                subTextColor = subTextColor,
+                onLanguageSelected = { lang ->
+                    soundManager.playSound(SoundManager.SoundType.CLICK)
+                    com.lexora.app.utils.LanguageManager.setLanguage(context, lang)
+                    (context as? android.app.Activity)?.recreate()
+                }
+            )
         }
 
         if (!uiState.notificationPermissionGranted) {
@@ -172,13 +187,13 @@ fun SettingsScreen(navController: NavController) {
                 Spacer(modifier = Modifier.width(12.dp))
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        "Notifications are blocked",
+                        stringResource(R.string.settings_notifications_blocked_title),
                         style = MaterialTheme.typography.titleSmall,
                         fontWeight = FontWeight.Bold,
                         color = textColor
                     )
                     Text(
-                        "Study reminders can't reach you. Tap to allow notifications in system settings.",
+                        stringResource(R.string.settings_notifications_blocked_subtitle),
                         style = MaterialTheme.typography.bodySmall,
                         color = subTextColor
                     )
@@ -191,17 +206,17 @@ fun SettingsScreen(navController: NavController) {
                     },
                     shape = RoundedCornerShape(12.dp)
                 ) {
-                    Text("Allow")
+                    Text(stringResource(R.string.settings_notifications_blocked_allow))
                 }
             }
             Spacer(modifier = Modifier.height(16.dp))
         }
 
-        SettingsSection(title = "Notifications", titleColor = sectionTitleColor) {
+        SettingsSection(title = stringResource(R.string.settings_section_notifications), titleColor = sectionTitleColor) {
             SettingsToggleItem(
                 icon = Icons.Filled.Notifications,
-                title = "Daily Reminders",
-                subtitle = "Get a daily reminder to practice",
+                title = stringResource(R.string.settings_reminders),
+                subtitle = stringResource(R.string.settings_reminders_subtitle),
                 checked = uiState.notificationsEnabled,
                 onCheckedChange = { viewModel.updateNotificationsEnabled(it) },
                 textColor = textColor,
@@ -210,11 +225,11 @@ fun SettingsScreen(navController: NavController) {
             )
         }
 
-        SettingsSection(title = "Smart Review Reminder", titleColor = sectionTitleColor) {
+        SettingsSection(title = stringResource(R.string.settings_section_review), titleColor = sectionTitleColor) {
             SettingsToggleItem(
                 icon = Icons.Filled.FlashOn,
-                title = "Review Reminder",
-                subtitle = "Reminder when your words are ready for review",
+                title = stringResource(R.string.settings_review_reminder),
+                subtitle = stringResource(R.string.settings_review_reminder_subtitle),
                 checked = uiState.leitnerReminderEnabled,
                 onCheckedChange = { viewModel.updateLeitnerReminderEnabled(it) },
                 textColor = textColor,
@@ -225,11 +240,11 @@ fun SettingsScreen(navController: NavController) {
 
         var showAboutDialog by remember { mutableStateOf(false) }
 
-        SettingsSection(title = "About", titleColor = sectionTitleColor) {
+        SettingsSection(title = stringResource(R.string.settings_section_about), titleColor = sectionTitleColor) {
             SettingsClickItem(
                 icon = Icons.Filled.Info,
-                title = "About Lexora",
-                subtitle = "Version 1.0.0",
+                title = stringResource(R.string.settings_about),
+                subtitle = stringResource(R.string.settings_about_version),
                 onClick = { showAboutDialog = true },
                 textColor = textColor,
                 subTextColor = subTextColor
@@ -243,7 +258,7 @@ fun SettingsScreen(navController: NavController) {
                 title = {
                     Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
                         Text(
-                            text = "About Lexora",
+                            text = stringResource(R.string.settings_about),
                             style = MaterialTheme.typography.titleLarge.copy(fontWeight = FontWeight.Bold),
                             color = textColor
                         )
@@ -265,14 +280,14 @@ fun SettingsScreen(navController: NavController) {
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
-                            text = "Learn. Practice. Become Fluent.",
+                            text = stringResource(R.string.home_tagline),
                             style = MaterialTheme.typography.bodyMedium,
                             color = subTextColor
                         )
                         Spacer(modifier = Modifier.height(16.dp))
 
                         Text(
-                            text = "A professional English learning app with an offline bilingual dictionary, quick review, quizzes, and a beautiful modern design.",
+                            text = stringResource(R.string.about_desc),
                             style = MaterialTheme.typography.bodyMedium,
                             color = textColor,
                             modifier = Modifier.fillMaxWidth()
@@ -280,35 +295,19 @@ fun SettingsScreen(navController: NavController) {
 
                         Spacer(modifier = Modifier.height(12.dp))
 
-                        val features = listOf(
-                            "\uD83D\uDCE6 Offline Dictionary \u2014 300,000+ bilingual entries with phonetics",
-                            "\uD83E\uDDE0 Quick Review \u2014 Practice random words or a single list, any time",
-                            "\uD83D\uDD01 Review Reminder \u2014 We notify you when words are ready to revisit",
-                            "\uD83D\uDCDA Vocabulary, Grammar & Notes \u2014 Your full learning library",
-                            "\u2753 Quiz \u2014 Test yourself with 4-choice questions",
-                            "\uD83D\uDD01 Mistakes \u2014 Re-practice the words you got wrong",
-                            "\u2B50 Favorites \u2014 Star and revisit your important words",
-                            "\uD83D\uDCCA Statistics \u2014 Streaks, accuracy breakdown and progress tracking",
-                            "\uD83D\uDD14 Smart Reminders \u2014 Daily study plus timely review notifications",
-                            "\uD83D\uDD0A Text-to-Speech & Sound Effects \u2014 Pronunciation and interactive sounds",
-                            "\uD83C\uDFA8 Light & Dark Themes \u2014 A clean, modern look"
+                        Text(
+                            text = stringResource(R.string.about_features),
+                            style = MaterialTheme.typography.bodySmall,
+                            color = subTextColor,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = 2.dp)
                         )
-
-                        features.forEach { feature ->
-                            Text(
-                                text = feature,
-                                style = MaterialTheme.typography.bodySmall,
-                                color = subTextColor,
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(vertical = 2.dp)
-                            )
-                        }
 
                         Spacer(modifier = Modifier.height(24.dp))
 
                         Text(
-                            text = "Version 1.0.0",
+                            text = stringResource(R.string.about_version),
                             style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.outline
                         )
@@ -316,7 +315,7 @@ fun SettingsScreen(navController: NavController) {
                         Spacer(modifier = Modifier.height(16.dp))
 
                         Text(
-                            text = "Created by Matin Alinaghian",
+                            text = stringResource(R.string.settings_about_creator),
                             style = MaterialTheme.typography.bodySmall.copy(
                                 fontWeight = FontWeight.Bold,
                                 letterSpacing = 0.5.sp
@@ -333,7 +332,7 @@ fun SettingsScreen(navController: NavController) {
                             onClick = { showAboutDialog = false },
                             colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.primary)
                         ) {
-                            Text("Close", style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold))
+                            Text(stringResource(R.string.settings_about_close), style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold))
                         }
                     }
                 }
@@ -354,7 +353,7 @@ fun SettingsScreen(navController: NavController) {
             )
             Spacer(modifier = Modifier.height(4.dp))
             Text(
-                text = "Learn. Practice. Become Fluent.",
+                text = stringResource(R.string.home_tagline),
                 style = MaterialTheme.typography.bodySmall,
                 color = subTextColor
             )
@@ -364,15 +363,15 @@ fun SettingsScreen(navController: NavController) {
 
         if (isLight) {
             Text(
-                text = "Created by Matin Alinaghian",
+                text = stringResource(R.string.settings_about_creator),
                 style = MaterialTheme.typography.bodySmall,
-                color = PrimaryBlue.copy(alpha = 0.8f),
+                color = CoffeeBronze.copy(alpha = 0.8f),
                 modifier = Modifier.fillMaxWidth(),
                 textAlign = TextAlign.Center
             )
         } else {
             Text(
-                text = "Created by Matin Alinaghian",
+                text = stringResource(R.string.settings_about_creator),
                 style = MaterialTheme.typography.bodySmall.copy(
                     fontSize = 12.sp,
                     shadow = Shadow(
@@ -462,14 +461,14 @@ private fun ThemeSelector(
         Icon(Icons.Filled.Palette, contentDescription = null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(24.dp))
         Spacer(modifier = Modifier.width(12.dp))
         Column(modifier = Modifier.weight(1f)) {
-            Text("Theme Mode", style = MaterialTheme.typography.bodyLarge, color = textColor)
-            Text("Select light or dark theme", style = MaterialTheme.typography.bodySmall, color = subTextColor)
+            Text(stringResource(R.string.theme_mode), style = MaterialTheme.typography.bodyLarge, color = textColor)
+            Text(stringResource(R.string.theme_mode_subtitle), style = MaterialTheme.typography.bodySmall, color = subTextColor)
         }
         Row {
             FilterChip(
                 selected = currentTheme == ThemeType.LIGHT,
                 onClick = { onThemeSelected(ThemeType.LIGHT) },
-                label = { Text("Light", color = textColor) },
+                label = { Text(stringResource(R.string.theme_light), color = textColor) },
                 colors = FilterChipDefaults.filterChipColors(
                     selectedContainerColor = MaterialTheme.colorScheme.primary,
                     selectedLabelColor = Color.White
@@ -479,10 +478,53 @@ private fun ThemeSelector(
             FilterChip(
                 selected = currentTheme == ThemeType.DARK,
                 onClick = { onThemeSelected(ThemeType.DARK) },
-                label = { Text("Dark", color = textColor) },
+                label = { Text(stringResource(R.string.theme_dark), color = textColor) },
                 colors = FilterChipDefaults.filterChipColors(
                     selectedContainerColor = NavyBlue,
                     selectedLabelColor = LightBlue
+                )
+            )
+        }
+    }
+}
+
+@Composable
+private fun LanguageSelector(
+    currentLanguage: String,
+    onLanguageSelected: (String) -> Unit,
+    textColor: Color = TextPrimary,
+    subTextColor: Color = TextSecondary
+) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 8.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Icon(Icons.Filled.Language, contentDescription = null, tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(24.dp))
+        Spacer(modifier = Modifier.width(12.dp))
+        Column(modifier = Modifier.weight(1f)) {
+            Text(stringResource(R.string.settings_language), style = MaterialTheme.typography.bodyLarge, color = textColor)
+            Text(stringResource(R.string.settings_language_subtitle), style = MaterialTheme.typography.bodySmall, color = subTextColor)
+        }
+        Row {
+            FilterChip(
+                selected = currentLanguage == com.lexora.app.utils.LanguageManager.LANG_ENGLISH,
+                onClick = { onLanguageSelected(com.lexora.app.utils.LanguageManager.LANG_ENGLISH) },
+                label = { Text(stringResource(R.string.settings_language_english), color = textColor) },
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = MaterialTheme.colorScheme.primary,
+                    selectedLabelColor = Color.White
+                )
+            )
+            Spacer(modifier = Modifier.width(8.dp))
+            FilterChip(
+                selected = currentLanguage == com.lexora.app.utils.LanguageManager.LANG_PERSIAN,
+                onClick = { onLanguageSelected(com.lexora.app.utils.LanguageManager.LANG_PERSIAN) },
+                label = { Text(stringResource(R.string.settings_language_persian), color = textColor) },
+                colors = FilterChipDefaults.filterChipColors(
+                    selectedContainerColor = MaterialTheme.colorScheme.primary,
+                    selectedLabelColor = Color.White
                 )
             )
         }

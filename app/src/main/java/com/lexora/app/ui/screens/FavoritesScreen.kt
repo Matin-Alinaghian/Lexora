@@ -10,11 +10,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -39,7 +41,7 @@ fun FavoritesScreen(
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
-            Text("Favorites", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.favorites), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
         }
 
         TabRow(
@@ -48,13 +50,13 @@ fun FavoritesScreen(
             contentColor = Gold
         ) {
             Tab(selected = selectedTab == 0, onClick = { selectedTab = 0 }) {
-                Text("Words", modifier = Modifier.padding(12.dp))
+                Text(stringResource(R.string.words), modifier = Modifier.padding(12.dp))
             }
             Tab(selected = selectedTab == 1, onClick = { selectedTab = 1 }) {
-                Text("Grammar", modifier = Modifier.padding(12.dp))
+                Text(stringResource(R.string.grammar), modifier = Modifier.padding(12.dp))
             }
             Tab(selected = selectedTab == 2, onClick = { selectedTab = 2 }) {
-                Text("Notes", modifier = Modifier.padding(12.dp))
+                Text(stringResource(R.string.notes), modifier = Modifier.padding(12.dp))
             }
         }
 
@@ -63,8 +65,8 @@ fun FavoritesScreen(
                 if (uiState.favoriteWords.isEmpty()) {
                     EmptyState(
                         icon = Icons.Outlined.Star,
-                        title = "No favorite words",
-                        message = "Star words to add them here",
+                        title = stringResource(R.string.no_fav_words),
+                        message = stringResource(R.string.star_words_msg),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -88,8 +90,8 @@ fun FavoritesScreen(
                 if (uiState.favoriteGrammar.isEmpty()) {
                     EmptyState(
                         icon = Icons.Outlined.Star,
-                        title = "No favorite grammar",
-                        message = "Star grammar rules to add them here",
+                        title = stringResource(R.string.no_fav_grammar),
+                        message = stringResource(R.string.star_grammar_msg),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -113,7 +115,7 @@ fun FavoritesScreen(
                                 TextButton(onClick = {
                                     navController.navigate(Screen.GrammarDetail.createRoute(grammar.id))
                                 }) {
-                                    Text("View", color = PurpleAccent)
+                                    Text(stringResource(R.string.view), color = PurpleAccent)
                                 }
                             }
                         }
@@ -124,8 +126,8 @@ fun FavoritesScreen(
                 if (uiState.favoriteNotes.isEmpty()) {
                     EmptyState(
                         icon = Icons.Outlined.Star,
-                        title = "No favorite notes",
-                        message = "Star notes to add them here",
+                        title = stringResource(R.string.no_fav_notes),
+                        message = stringResource(R.string.star_notes_msg),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -149,7 +151,7 @@ fun FavoritesScreen(
                                 TextButton(onClick = {
                                     navController.navigate(Screen.NoteDetail.createRoute(note.id))
                                 }) {
-                                    Text("View", color = Cyan)
+                                    Text(stringResource(R.string.view), color = Cyan)
                                 }
                             }
                         }

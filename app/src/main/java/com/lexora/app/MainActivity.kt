@@ -1,6 +1,7 @@
 package com.lexora.app
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
@@ -25,6 +26,7 @@ import com.lexora.app.utils.LocalSoundManager
 import com.lexora.app.utils.SoundManager
 import com.lexora.app.utils.LocalMusicManager
 import com.lexora.app.utils.BackgroundMusicManager
+import com.lexora.app.utils.LanguageManager
 import com.lexora.app.utils.LiveStudyTimer
 import com.lexora.app.utils.StudyTimeTracker
 import dagger.hilt.android.AndroidEntryPoint
@@ -58,6 +60,10 @@ class MainActivity : ComponentActivity() {
                 notificationPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
             }
         }
+    }
+
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(LanguageManager.wrap(newBase))
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

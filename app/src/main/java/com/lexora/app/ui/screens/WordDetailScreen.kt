@@ -15,6 +15,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
@@ -23,6 +24,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -136,7 +138,7 @@ fun WordDetailScreen(
 
                                 if (word.persianMeaning.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Meaning", style = MaterialTheme.typography.titleMedium, color = PrimaryBlue)
+                        Text(stringResource(R.string.detail_meaning), style = MaterialTheme.typography.titleMedium, color = PrimaryBlue)
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(word.persianMeaning, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onBackground)
                     }
@@ -147,14 +149,14 @@ fun WordDetailScreen(
                     Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                         if (word.wordType.isNotBlank()) {
                             GlassCard(modifier = Modifier.weight(1f)) {
-                                Text("Type", style = MaterialTheme.typography.titleMedium, color = Cyan)
+                                Text(stringResource(R.string.detail_type), style = MaterialTheme.typography.titleMedium, color = Cyan)
                                 Spacer(modifier = Modifier.height(4.dp))
                                 Text(word.wordType, color = MaterialTheme.colorScheme.onBackground)
                             }
                         }
                         if (word.category.isNotBlank()) {
                             GlassCard(modifier = Modifier.weight(1f)) {
-                                Text("Category", style = MaterialTheme.typography.titleMedium, color = PurpleAccent)
+                                Text(stringResource(R.string.category), style = MaterialTheme.typography.titleMedium, color = PurpleAccent)
                                 Spacer(modifier = Modifier.height(4.dp))
                                 Text(word.category, color = MaterialTheme.colorScheme.onBackground)
                             }
@@ -165,7 +167,7 @@ fun WordDetailScreen(
 
                                 if (word.example.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Example", style = MaterialTheme.typography.titleMedium, color = Mint)
+                        Text(stringResource(R.string.example), style = MaterialTheme.typography.titleMedium, color = Mint)
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(word.example, style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onBackground)
                         if (word.exampleTranslation.isNotBlank()) {
@@ -183,7 +185,7 @@ fun WordDetailScreen(
 
                                 if (word.synonyms.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Synonyms", style = MaterialTheme.typography.titleMedium, color = Success)
+                        Text(stringResource(R.string.synonyms), style = MaterialTheme.typography.titleMedium, color = Success)
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             word.synonyms.split(",").map { it.trim() }.filter { it.isNotBlank() }.forEach { synonym ->
@@ -196,7 +198,7 @@ fun WordDetailScreen(
 
                                 if (word.antonyms.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Antonyms", style = MaterialTheme.typography.titleMedium, color = Coral)
+                        Text(stringResource(R.string.antonyms), style = MaterialTheme.typography.titleMedium, color = Coral)
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             word.antonyms.split(",").map { it.trim() }.filter { it.isNotBlank() }.forEach { antonym ->
@@ -209,7 +211,7 @@ fun WordDetailScreen(
 
                                 if (word.wordFamily.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Word Family", style = MaterialTheme.typography.titleMedium, color = WarmOrange)
+                        Text(stringResource(R.string.word_family), style = MaterialTheme.typography.titleMedium, color = WarmOrange)
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             word.wordFamily.split(",").map { it.trim() }.filter { it.isNotBlank() }.forEach { family ->
@@ -222,7 +224,7 @@ fun WordDetailScreen(
 
                                 if (word.level.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Level", style = MaterialTheme.typography.titleMedium, color = LightPurple)
+                        Text(stringResource(R.string.level), style = MaterialTheme.typography.titleMedium, color = LightPurple)
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(word.level, color = MaterialTheme.colorScheme.onBackground)
                     }
@@ -238,7 +240,7 @@ fun WordDetailScreen(
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Filled.FlashOn, contentDescription = null, tint = SunsetGradientStart)
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Leitner Review", style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
+                            Text(stringResource(R.string.leitner_review), style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
                         }
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -258,7 +260,7 @@ fun WordDetailScreen(
                             }
                             Spacer(modifier = Modifier.width(12.dp))
                             Text(
-                                text = "Currently in Box ${word.leitnerBox}",
+                                text = stringResource(R.string.detail_leitner_box, word.leitnerBox),
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onBackground
                             )
@@ -269,7 +271,7 @@ fun WordDetailScreen(
 
                                 if (word.personalNote.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Personal Note", style = MaterialTheme.typography.titleMedium, color = Gold)
+                        Text(stringResource(R.string.personal_note), style = MaterialTheme.typography.titleMedium, color = Gold)
                         Spacer(modifier = Modifier.height(8.dp))
                         Text(word.personalNote, style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onBackground)
                     }
@@ -278,7 +280,7 @@ fun WordDetailScreen(
 
                                 if (word.tags.isNotBlank()) {
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
-                        Text("Tags", style = MaterialTheme.typography.titleMedium, color = LightCyan)
+                        Text(stringResource(R.string.tags), style = MaterialTheme.typography.titleMedium, color = LightCyan)
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                             word.tags.split(",").map { it.trim() }.filter { it.isNotBlank() }.forEach { tag ->

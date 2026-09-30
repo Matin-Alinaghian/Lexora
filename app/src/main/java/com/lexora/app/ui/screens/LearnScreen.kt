@@ -17,6 +17,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import com.lexora.app.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
@@ -39,14 +41,14 @@ fun LearnScreen(navController: NavController) {
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Learn",
+            text = stringResource(R.string.learn_title),
             style = MaterialTheme.typography.headlineLarge,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onBackground
         )
         Spacer(modifier = Modifier.height(4.dp))
         Text(
-            text = "Master English step by step",
+            text = stringResource(R.string.learn_subtitle),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant
         )
@@ -55,8 +57,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.MenuBook,
-            title = "Vocabulary",
-            subtitle = "Build your word bank",
+            title = stringResource(R.string.learn_vocabulary),
+            subtitle = stringResource(R.string.learn_vocabulary_subtitle),
             gradient = Brush.linearGradient(listOf(BlueGradientStart, BlueGradientEnd)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -68,8 +70,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.School,
-            title = "Grammar",
-            subtitle = "Learn grammar rules",
+            title = stringResource(R.string.learn_grammar),
+            subtitle = stringResource(R.string.learn_grammar_subtitle),
             gradient = Brush.linearGradient(listOf(PurpleGradientStart, PurpleGradientEnd)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -81,8 +83,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.StickyNote2,
-            title = "Teacher Notes",
-            subtitle = "Class notes & tips",
+            title = stringResource(R.string.learn_notes),
+            subtitle = stringResource(R.string.learn_notes_subtitle),
             gradient = Brush.linearGradient(listOf(CyanGradientStart, CyanGradientEnd)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -94,8 +96,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.Favorite,
-            title = "Favorites",
-            subtitle = "Your starred words",
+            title = stringResource(R.string.learn_favorites),
+            subtitle = stringResource(R.string.learn_favorites_subtitle),
             gradient = Brush.linearGradient(listOf(WarmOrange, Gold)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -107,8 +109,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.Collections,
-            title = "Quick Review",
-            subtitle = "Random mix of your library",
+            title = stringResource(R.string.learn_quick_review),
+            subtitle = stringResource(R.string.learn_quick_review_subtitle),
             gradient = Brush.linearGradient(listOf(WarmOrange, Coral)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -120,8 +122,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.ErrorOutline,
-            title = "Review Mistakes",
-            subtitle = "Practice what you got wrong",
+            title = stringResource(R.string.learn_review_mistakes),
+            subtitle = stringResource(R.string.learn_review_mistakes_subtitle),
             gradient = Brush.linearGradient(listOf(MintGradientStart, MintGradientEnd)),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -133,8 +135,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.Filled.Quiz,
-            title = "Quiz",
-            subtitle = "Test your knowledge (4 options)",
+            title = stringResource(R.string.learn_quiz),
+            subtitle = stringResource(R.string.learn_quiz_subtitle),
             gradient = Brush.linearGradient(listOf(Color(0xFF6366F1), Color(0xFF8B5CF6))),
             onClick = {
                 soundManager.playSound(SoundManager.SoundType.POPUP)
@@ -146,8 +148,8 @@ fun LearnScreen(navController: NavController) {
 
         LearnMenuItem(
             icon = Icons.AutoMirrored.Filled.MenuBook,
-            title = "Offline Dictionary",
-            subtitle = "300,000+ bilingual entries",
+            title = stringResource(R.string.learn_dictionary),
+            subtitle = stringResource(R.string.learn_dictionary_subtitle),
             gradient = Brush.linearGradient(listOf(
                 Color(0xFFFFD700),
                 Color(0xFFFF9800)

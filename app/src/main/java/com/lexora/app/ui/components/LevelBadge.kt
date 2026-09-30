@@ -13,8 +13,10 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.lexora.app.R
 import com.lexora.app.ui.theme.*
 
 data class LevelInfo(
@@ -183,7 +185,7 @@ fun LevelBadge(
                     )
                 } else {
                     Text(
-                        text = "Max Level! 👑",
+                        text = stringResource(R.string.max_level),
                         style = MaterialTheme.typography.bodySmall,
                         color = Gold
                     )

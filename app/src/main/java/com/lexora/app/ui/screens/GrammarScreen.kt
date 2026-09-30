@@ -15,9 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -62,7 +64,7 @@ fun GrammarScreen(
                 IconButton(onClick = { navController.popBackStack() }) {
                     Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
                 }
-                Text("Grammar", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+                Text(stringResource(R.string.grammar), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
                 IconButton(onClick = { navController.navigate(Screen.Search.route) }) {
                     Icon(Icons.Outlined.Search, contentDescription = "Search", tint = MaterialTheme.colorScheme.onBackground)
                 }
@@ -77,7 +79,7 @@ fun GrammarScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp),
-                placeholder = { Text("Search grammar…", color = MaterialTheme.colorScheme.outline) },
+                placeholder = { Text(stringResource(R.string.search_grammar_hint), color = MaterialTheme.colorScheme.outline) },
                 leadingIcon = { Icon(Icons.Outlined.Search, contentDescription = null, tint = MaterialTheme.colorScheme.outline) },
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = PurpleAccent,
@@ -103,7 +105,7 @@ fun GrammarScreen(
                         FilterChip(
                             selected = uiState.selectedCategory == null,
                             onClick = { viewModel.selectCategory(null) },
-                            label = { Text("All") },
+                            label = { Text(stringResource(R.string.chip_all)) },
                             leadingIcon = if (uiState.selectedCategory == null) {
                                 { Icon(Icons.Filled.Check, contentDescription = null, modifier = Modifier.size(18.dp)) }
                             } else null
@@ -131,7 +133,7 @@ fun GrammarScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "${uiState.grammarItems.size} items",
+                    text = stringResource(R.string.count_items, uiState.grammarItems.size),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -144,9 +146,9 @@ fun GrammarScreen(
                 uiState.grammarItems.isEmpty() -> {
                     EmptyState(
                         icon = Icons.Outlined.MenuBook,
-                        title = "No grammar rules yet",
-                        message = "Add your first grammar rule",
-                        actionText = "Add Grammar",
+                        title = stringResource(R.string.empty_no_grammar_title),
+                        message = stringResource(R.string.empty_no_grammar_msg),
+                        actionText = stringResource(R.string.add_grammar),
                         onActionClick = { navController.navigate(Screen.AddGrammar.route) },
                         modifier = Modifier.weight(1f)
                     )
@@ -194,18 +196,18 @@ fun GrammarScreen(
                                     TextButton(onClick = {
                                         navController.navigate(Screen.GrammarDetail.createRoute(grammar.id))
                                     }) {
-                                        Text("View", color = PurpleAccent)
+                                        Text(stringResource(R.string.view), color = PurpleAccent)
                                     }
                                     TextButton(onClick = {
                                         navController.navigate(Screen.EditGrammar.createRoute(grammar.id))
                                     }) {
-                                        Text("Edit", color = PrimaryBlue)
+                                        Text(stringResource(R.string.edit), color = PrimaryBlue)
                                     }
                                     TextButton(onClick = {
                                         grammarToDelete = grammar.id
                                         showDeleteDialog = true
                                     }) {
-                                        Text("Delete", color = MaterialTheme.colorScheme.error)
+                                        Text(stringResource(R.string.delete), color = MaterialTheme.colorScheme.error)
                                     }
                                 }
                             }

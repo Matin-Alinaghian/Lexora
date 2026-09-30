@@ -12,11 +12,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -42,7 +44,7 @@ fun SearchScreen(
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
-            Text("Search", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.search), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
         }
 
         OutlinedTextField(
@@ -54,7 +56,7 @@ fun SearchScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp),
-            placeholder = { Text("Search words, grammar, notes…", color = MaterialTheme.colorScheme.outline) },
+            placeholder = { Text(stringResource(R.string.search_all_hint), color = MaterialTheme.colorScheme.outline) },
             leadingIcon = { Icon(Icons.Outlined.Search, contentDescription = null, tint = MaterialTheme.colorScheme.outline) },
             trailingIcon = {
                 if (searchQuery.isNotEmpty()) {
@@ -86,13 +88,13 @@ fun SearchScreen(
             contentColor = PrimaryBlue
         ) {
             Tab(selected = selectedTab == 0, onClick = { selectedTab = 0 }) {
-                Text("Words (${uiState.words.size})", modifier = Modifier.padding(12.dp))
+                Text("${stringResource(R.string.words)} (${uiState.words.size})", modifier = Modifier.padding(12.dp))
             }
             Tab(selected = selectedTab == 1, onClick = { selectedTab = 1 }) {
-                Text("Grammar (${uiState.grammar.size})", modifier = Modifier.padding(12.dp))
+                Text("${stringResource(R.string.grammar)} (${uiState.grammar.size})", modifier = Modifier.padding(12.dp))
             }
             Tab(selected = selectedTab == 2, onClick = { selectedTab = 2 }) {
-                Text("Notes (${uiState.notes.size})", modifier = Modifier.padding(12.dp))
+                Text("${stringResource(R.string.notes)} (${uiState.notes.size})", modifier = Modifier.padding(12.dp))
             }
         }
 
@@ -101,8 +103,8 @@ fun SearchScreen(
                 if (uiState.words.isEmpty() && searchQuery.isNotBlank()) {
                     EmptyState(
                         icon = Icons.Outlined.SearchOff,
-                        title = "No words found",
-                        message = "Try a different search term",
+                        title = stringResource(R.string.no_words_found),
+                        message = stringResource(R.string.try_different_search),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -126,8 +128,8 @@ fun SearchScreen(
                 if (uiState.grammar.isEmpty() && searchQuery.isNotBlank()) {
                     EmptyState(
                         icon = Icons.Outlined.SearchOff,
-                        title = "No grammar found",
-                        message = "Try a different search term",
+                        title = stringResource(R.string.no_grammar_found),
+                        message = stringResource(R.string.try_different_search),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -154,7 +156,7 @@ fun SearchScreen(
                                 TextButton(onClick = {
                                     navController.navigate(Screen.GrammarDetail.createRoute(grammar.id))
                                 }) {
-                                    Text("View", color = PurpleAccent)
+                                    Text(stringResource(R.string.view), color = PurpleAccent)
                                 }
                             }
                         }
@@ -165,8 +167,8 @@ fun SearchScreen(
                 if (uiState.notes.isEmpty() && searchQuery.isNotBlank()) {
                     EmptyState(
                         icon = Icons.Outlined.SearchOff,
-                        title = "No notes found",
-                        message = "Try a different search term",
+                        title = stringResource(R.string.no_notes_found),
+                        message = stringResource(R.string.try_different_search),
                         modifier = Modifier.weight(1f)
                     )
                 } else {
@@ -195,7 +197,7 @@ fun SearchScreen(
                                 TextButton(onClick = {
                                     navController.navigate(Screen.NoteDetail.createRoute(note.id))
                                 }) {
-                                    Text("View", color = Cyan)
+                                    Text(stringResource(R.string.view), color = Cyan)
                                 }
                             }
                         }

@@ -15,9 +15,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -62,7 +64,7 @@ fun NotesScreen(
                 IconButton(onClick = { navController.popBackStack() }) {
                     Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
                 }
-                Text("Teacher Notes", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+                Text(stringResource(R.string.teacher_notes), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
                 IconButton(onClick = { navController.navigate(Screen.Search.route) }) {
                     Icon(Icons.Outlined.Search, contentDescription = "Search", tint = MaterialTheme.colorScheme.onBackground)
                 }
@@ -77,7 +79,7 @@ fun NotesScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp),
-                placeholder = { Text("Search notes…", color = MaterialTheme.colorScheme.outline) },
+                placeholder = { Text(stringResource(R.string.search_notes_hint), color = MaterialTheme.colorScheme.outline) },
                 leadingIcon = { Icon(Icons.Outlined.Search, contentDescription = null, tint = MaterialTheme.colorScheme.outline) },
                 colors = OutlinedTextFieldDefaults.colors(
                     focusedBorderColor = Cyan,
@@ -103,7 +105,7 @@ fun NotesScreen(
                         FilterChip(
                             selected = uiState.selectedCategory == null,
                             onClick = { viewModel.selectCategory(null) },
-                            label = { Text("All") },
+                            label = { Text(stringResource(R.string.chip_all)) },
                             leadingIcon = if (uiState.selectedCategory == null) {
                                 { Icon(Icons.Filled.Check, contentDescription = null, modifier = Modifier.size(18.dp)) }
                             } else null
@@ -131,7 +133,7 @@ fun NotesScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "${uiState.notes.size} notes",
+                    text = stringResource(R.string.count_notes, uiState.notes.size),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -144,9 +146,9 @@ fun NotesScreen(
                 uiState.notes.isEmpty() -> {
                     EmptyState(
                         icon = Icons.Outlined.StickyNote2,
-                        title = "No notes yet",
-                        message = "Add your first teacher note",
-                        actionText = "Add Note",
+                        title = stringResource(R.string.empty_no_notes_title),
+                        message = stringResource(R.string.empty_no_notes_msg),
+                        actionText = stringResource(R.string.add_note),
                         onActionClick = { navController.navigate(Screen.AddNote.route) },
                         modifier = Modifier.weight(1f)
                     )
@@ -197,18 +199,18 @@ fun NotesScreen(
                                     TextButton(onClick = {
                                         navController.navigate(Screen.NoteDetail.createRoute(note.id))
                                     }) {
-                                        Text("View", color = Cyan)
+                                        Text(stringResource(R.string.view), color = Cyan)
                                     }
                                     TextButton(onClick = {
                                         navController.navigate(Screen.EditNote.createRoute(note.id))
                                     }) {
-                                        Text("Edit", color = PrimaryBlue)
+                                        Text(stringResource(R.string.edit), color = PrimaryBlue)
                                     }
                                     TextButton(onClick = {
                                         noteToDelete = note.id
                                         showDeleteDialog = true
                                     }) {
-                                        Text("Delete", color = MaterialTheme.colorScheme.error)
+                                        Text(stringResource(R.string.delete), color = MaterialTheme.colorScheme.error)
                                     }
                                 }
                             }

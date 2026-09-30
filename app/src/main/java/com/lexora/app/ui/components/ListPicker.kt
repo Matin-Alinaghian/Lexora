@@ -13,8 +13,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.lexora.app.R
 import com.lexora.app.ui.theme.*
 
 @Composable
@@ -56,7 +58,7 @@ fun ListPicker(
                 )
                 Spacer(modifier = Modifier.width(12.dp))
                 Text(
-                    text = selectedList.ifBlank { "Uncategorized (Tap to select)" },
+                    text = selectedList.ifBlank { stringResource(R.string.list_untapped) },
                     style = MaterialTheme.typography.bodyLarge,
                     color = if (selectedList.isBlank()) MaterialTheme.colorScheme.outline else MaterialTheme.colorScheme.onSurface,
                     modifier = Modifier.weight(1f)
@@ -73,7 +75,7 @@ fun ListPicker(
     if (showDialog) {
         AlertDialog(
             onDismissRequest = { showDialog = false },
-            title = { Text("Select List") },
+            title = { Text(stringResource(R.string.list_select)) },
             text = {
                 Column {
                     Button(
@@ -86,14 +88,14 @@ fun ListPicker(
                     ) {
                         Icon(Icons.Filled.Add, contentDescription = null)
                         Spacer(modifier = Modifier.width(8.dp))
-                        Text("Create New List")
+                        Text(stringResource(R.string.list_create_new))
                     }
                     
                     Spacer(modifier = Modifier.height(16.dp))
                     
                     if (existingLists.isEmpty()) {
                         Text(
-                            "No lists created yet.",
+                            stringResource(R.string.list_none_yet),
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.outline,
                             modifier = Modifier.padding(vertical = 16.dp)
@@ -102,7 +104,7 @@ fun ListPicker(
                         LazyColumn(modifier = Modifier.heightIn(max = 300.dp)) {
                             item {
                                 ListOptionItem(
-                                    name = "Uncategorized",
+                                    name = stringResource(R.string.list_uncategorized),
                                     isSelected = selectedList.isBlank(),
                                     onClick = {
                                         onListSelected("")
@@ -131,7 +133,7 @@ fun ListPicker(
             },
             confirmButton = {
                 TextButton(onClick = { showDialog = false }) {
-                    Text("Close")
+                    Text(stringResource(R.string.close))
                 }
             }
         )
@@ -141,12 +143,12 @@ fun ListPicker(
         var newListName by remember { mutableStateOf("") }
         AlertDialog(
             onDismissRequest = { showCreateDialog = false },
-            title = { Text("New List") },
+            title = { Text(stringResource(R.string.list_new)) },
             text = {
                 OutlinedTextField(
                     value = newListName,
                     onValueChange = { newListName = it },
-                    label = { Text("List Name") },
+                    label = { Text(stringResource(R.string.list_name)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -161,12 +163,12 @@ fun ListPicker(
                     },
                     enabled = newListName.isNotBlank()
                 ) {
-                    Text("Create")
+                    Text(stringResource(R.string.list_create))
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showCreateDialog = false }) {
-                    Text("Cancel")
+                    Text(stringResource(R.string.cancel))
                 }
             }
         )
@@ -176,12 +178,12 @@ fun ListPicker(
         var newName by remember { mutableStateOf(oldName) }
         AlertDialog(
             onDismissRequest = { showRenameDialog = null },
-            title = { Text("Rename List") },
+            title = { Text(stringResource(R.string.list_rename)) },
             text = {
                 OutlinedTextField(
                     value = newName,
                     onValueChange = { newName = it },
-                    label = { Text("New Name") },
+                    label = { Text(stringResource(R.string.list_new_name)) },
                     singleLine = true,
                     modifier = Modifier.fillMaxWidth()
                 )
@@ -199,12 +201,12 @@ fun ListPicker(
                     },
                     enabled = newName.isNotBlank() && newName != oldName
                 ) {
-                    Text("Rename")
+                    Text(stringResource(R.string.list_rename_action))
                 }
             },
             dismissButton = {
                 TextButton(onClick = { showRenameDialog = null }) {
-                    Text("Cancel")
+                    Text(stringResource(R.string.cancel))
                 }
             }
         )

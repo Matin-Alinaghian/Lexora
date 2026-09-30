@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -36,6 +37,8 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import com.lexora.app.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -98,7 +101,7 @@ fun HomeScreen(
         )
         Spacer(modifier = Modifier.height(2.dp))
         Text(
-            text = "Learn. Practice. Become fluent.",
+            text = stringResource(R.string.home_tagline),
             style = MaterialTheme.typography.bodyMedium,
             color = subTextColor,
         )
@@ -117,7 +120,7 @@ fun HomeScreen(
             }
         ) {
             Text(
-                text = "Today's progress",
+                text = stringResource(R.string.home_progress),
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
                 color = textColor,
@@ -130,21 +133,21 @@ fun HomeScreen(
             ) {
                 StatItem(
                     icon = Icons.Filled.Timer,
-                    label = "Minutes",
+                    label = stringResource(R.string.home_minutes),
                     value = uiState.studyTimeMinutes.toString(),
                     color = if (isLight) CoffeeMocha else LightCyan,
                     modifier = Modifier.weight(1f)
                 )
                 StatItem(
                     icon = Icons.AutoMirrored.Filled.MenuBook,
-                    label = "Words",
+                    label = stringResource(R.string.home_words),
                     value = uiState.wordsStudied.toString(),
                     color = if (isLight) CoffeeLatte else Mint,
                     modifier = Modifier.weight(1f)
                 )
                 StatItem(
                     icon = Icons.Filled.Quiz,
-                    label = "Reviewed",
+                    label = stringResource(R.string.home_reviewed),
                     value = uiState.testsTaken.toString(),
                     color = if (isLight) CoffeeBronze else WarmOrange,
                     modifier = Modifier.weight(1f)
@@ -182,13 +185,13 @@ fun HomeScreen(
                 Spacer(modifier = Modifier.width(14.dp))
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = "${uiState.currentStreak} day streak",
+                        text = stringResource(R.string.home_streak_title, uiState.currentStreak),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold,
                         color = textColor,
                     )
                     Text(
-                        text = "${uiState.streakPercent}% active \u2022 ${uiState.totalActiveDays} days total",
+                        text = stringResource(R.string.home_streak_active, uiState.streakPercent, uiState.totalActiveDays),
                         style = MaterialTheme.typography.bodySmall,
                         color = subTextColor
                     )
@@ -204,8 +207,8 @@ fun HomeScreen(
         ) {
             QuickActionCard(
                 icon = Icons.Filled.Collections,
-                title = "Quick Review",
-                subtitle = "Random words",
+                title = stringResource(R.string.home_quick_review),
+                subtitle = stringResource(R.string.home_quick_review_subtitle),
                 color = if (isLight) CoffeeMocha else PrimaryBlue,
                 modifier = Modifier.weight(1f),
             ) {
@@ -214,8 +217,8 @@ fun HomeScreen(
             }
             QuickActionCard(
                 icon = Icons.AutoMirrored.Filled.MenuBook,
-                title = "Dictionary",
-                subtitle = "Bilingual search",
+                title = stringResource(R.string.home_dictionary),
+                subtitle = stringResource(R.string.home_dictionary_subtitle),
                 color = if (isLight) CoffeeBronze else Gold,
                 modifier = Modifier.weight(1f),
             ) {
@@ -232,8 +235,8 @@ fun HomeScreen(
         ) {
             QuickActionCard(
                 icon = Icons.Filled.Quiz,
-                title = "Quiz",
-                subtitle = "Test yourself",
+                title = stringResource(R.string.home_quiz),
+                subtitle = stringResource(R.string.home_quiz_subtitle),
                 color = if (isLight) CoffeeLatte else WarmOrange,
                 modifier = Modifier.weight(1f),
             ) {
@@ -242,8 +245,8 @@ fun HomeScreen(
             }
             QuickActionCard(
                 icon = Icons.Filled.ErrorOutline,
-                title = "Mistakes",
-                subtitle = "Fix weak spots",
+                title = stringResource(R.string.home_mistakes),
+                subtitle = stringResource(R.string.home_mistakes_subtitle),
                 color = if (isLight) CoffeeBronze else Coral,
                 modifier = Modifier.weight(1f),
             ) {
@@ -303,7 +306,7 @@ private fun QuickActionCard(
     val soundManager = LocalSoundManager.current
     GlassCard(
         modifier = modifier
-            .height(116.dp)
+            .heightIn(min = 116.dp)
             .clickable {
                 soundManager.playSound(SoundManager.SoundType.CLICK)
                 onClick()
@@ -334,7 +337,8 @@ private fun QuickActionCard(
                 style = MaterialTheme.typography.titleSmall,
                 fontWeight = FontWeight.SemiBold,
                 color = MaterialTheme.colorScheme.onBackground,
-                maxLines = 1
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis
             )
             Spacer(modifier = Modifier.height(2.dp))
             Text(

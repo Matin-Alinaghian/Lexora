@@ -70,6 +70,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.text.TextMeasurer
 import androidx.compose.ui.text.TextStyle
@@ -85,6 +86,7 @@ import androidx.compose.ui.window.Dialog
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.data.local.entity.GrammarEntity
 import com.lexora.app.data.local.entity.NoteEntity
 import com.lexora.app.data.local.entity.WordEntity
@@ -171,7 +173,7 @@ fun LeitnerReviewScreen(
             GlassCard {
                 Column(modifier = Modifier.fillMaxWidth()) {
                     Text(
-                        text = "Select a list",
+                        text = stringResource(R.string.qr_select_list),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground
@@ -191,7 +193,7 @@ fun LeitnerReviewScreen(
                                 modifier = Modifier.fillMaxWidth(),
                                 shape = RoundedCornerShape(12.dp)
                             ) {
-                                Text("All words (random mix)")
+                                Text(stringResource(R.string.qr_all_random))
                             }
                         }
                         items(allCategories) { category ->
@@ -220,7 +222,7 @@ fun LeitnerReviewScreen(
                         onClick = { showCategoryPicker = false },
                         modifier = Modifier.align(Alignment.End)
                     ) {
-                        Text("Cancel", color = Coral)
+                        Text(stringResource(R.string.cancel), color = Coral)
                     }
                 }
             }
@@ -249,8 +251,8 @@ fun LeitnerReviewScreen(
                 Text(
                     text = when {
                         uiState.categoryName.isNotBlank() -> uiState.categoryName
-                        viewModel.mode == "mistakes" -> "Mistakes Review"
-                        else -> "Quick Review"
+                        viewModel.mode == "mistakes" -> stringResource(R.string.qr_mistakes_review)
+                        else -> stringResource(R.string.home_quick_review)
                     },
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold,
@@ -259,7 +261,7 @@ fun LeitnerReviewScreen(
                 )
                 if (uiState.categoryName.isNotBlank()) {
                     Text(
-                        text = "List review",
+                        text = stringResource(R.string.qr_list_review),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -313,21 +315,21 @@ fun LeitnerReviewScreen(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "${uiState.currentIndex + 1} of ${uiState.totalItems}",
+                        text = stringResource(R.string.qr_position, uiState.currentIndex + 1, uiState.totalItems),
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.onBackground,
                         modifier = Modifier.weight(1f)
                     )
                     Text(
-                        text = "Knew ${uiState.correctCount}",
+                        text = stringResource(R.string.qr_knew_count, uiState.correctCount),
                         style = MaterialTheme.typography.labelLarge,
                         color = Mint,
                         fontWeight = FontWeight.SemiBold
                     )
                     Spacer(modifier = Modifier.width(12.dp))
                     Text(
-                        text = "Missed ${uiState.incorrectCount}",
+                        text = stringResource(R.string.qr_missed_count, uiState.incorrectCount),
                         style = MaterialTheme.typography.labelLarge,
                         color = Coral,
                         fontWeight = FontWeight.SemiBold
@@ -474,7 +476,7 @@ fun LeitnerReviewScreen(
                             horizontalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
                             AnswerButton(
-                                label = "Missed it",
+                                label = stringResource(R.string.qr_missed_it),
                                 icon = Icons.Filled.Close,
                                 tint = Coral,
                                 isLight = isLight,
@@ -482,7 +484,7 @@ fun LeitnerReviewScreen(
                                 onClick = { answer(false) }
                             )
                             AnswerButton(
-                                label = "Knew it",
+                                label = stringResource(R.string.qr_knew_it),
                                 icon = Icons.Filled.Check,
                                 tint = Mint,
                                 isLight = isLight,
@@ -569,14 +571,14 @@ private fun FlipCard(
         is LeitnerItem.Note -> if (isLight) CoffeeBronze else Cyan
     }
     val typeLabel = when (item) {
-        is LeitnerItem.Word -> "WORD"
-        is LeitnerItem.Grammar -> "GRAMMAR"
-        is LeitnerItem.Note -> "NOTE"
+        is LeitnerItem.Word -> stringResource(R.string.qr_word)
+        is LeitnerItem.Grammar -> stringResource(R.string.qr_grammar)
+        is LeitnerItem.Note -> stringResource(R.string.qr_note)
     }
     val backLabel = when (item) {
-        is LeitnerItem.Word -> "MEANING"
-        is LeitnerItem.Grammar -> "EXPLANATION"
-        is LeitnerItem.Note -> "CONTENT"
+        is LeitnerItem.Word -> stringResource(R.string.qr_meaning)
+        is LeitnerItem.Grammar -> stringResource(R.string.qr_explanation)
+        is LeitnerItem.Note -> stringResource(R.string.qr_content)
     }
     val typeIcon = when (item) {
         is LeitnerItem.Word -> Icons.AutoMirrored.Outlined.MenuBook
@@ -697,7 +699,7 @@ private fun FlipCard(
                 )
 
                 Text(
-                    text = "Tap to reveal",
+                    text = stringResource(R.string.qr_tap_reveal),
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                     letterSpacing = 0.8.sp
@@ -736,7 +738,7 @@ private fun FlipCard(
                 )
 
                 Text(
-                    text = "Tap to flip back",
+                    text = stringResource(R.string.qr_tap_flip),
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
                     letterSpacing = 0.8.sp
@@ -853,7 +855,7 @@ private fun EmptyReviewState() {
         )
         Spacer(modifier = Modifier.height(20.dp))
         Text(
-            text = "Nothing to review",
+            text = stringResource(R.string.qr_nothing_title),
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onBackground,
@@ -861,7 +863,7 @@ private fun EmptyReviewState() {
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Add a few words and come back for a quick review session.",
+            text = stringResource(R.string.qr_nothing_msg),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center
@@ -918,9 +920,9 @@ private fun LeitnerResult(
 
             Text(
                 text = when {
-                    accuracy >= 80 -> "Perfect!"
-                    accuracy >= 60 -> "Well done!"
-                    else -> "Keep practicing!"
+                    accuracy >= 80 -> stringResource(R.string.qr_perfect)
+                    accuracy >= 60 -> stringResource(R.string.qr_well_done)
+                    else -> stringResource(R.string.qr_keep_practicing)
                 },
                 style = MaterialTheme.typography.headlineSmall,
                 fontWeight = FontWeight.Bold,
@@ -938,7 +940,7 @@ private fun LeitnerResult(
                         fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = "Knew it",
+                        text = stringResource(R.string.qr_knew_it),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -951,7 +953,7 @@ private fun LeitnerResult(
                         fontWeight = FontWeight.Bold
                     )
                     Text(
-                        text = "Missed",
+                        text = stringResource(R.string.qr_missed_it),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
@@ -976,7 +978,7 @@ private fun LeitnerResult(
                         modifier = Modifier.size(20.dp)
                     )
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Retry", color = MaterialTheme.colorScheme.onBackground)
+                    Text(stringResource(R.string.common_retry), color = MaterialTheme.colorScheme.onBackground)
                 }
                 Button(
                     onClick = onDone,
@@ -987,7 +989,7 @@ private fun LeitnerResult(
                 ) {
                     Icon(Icons.Filled.Home, contentDescription = null, modifier = Modifier.size(20.dp))
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Done")
+                    Text(stringResource(R.string.quiz_done))
                 }
             }
         }

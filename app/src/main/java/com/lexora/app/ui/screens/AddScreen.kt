@@ -15,6 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
+import com.lexora.app.R
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -44,14 +46,14 @@ fun AddScreen(navController: NavController) {
         )
         Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Add new",
+            text = stringResource(R.string.add_screen_title),
             style = MaterialTheme.typography.headlineLarge,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onBackground,
             textAlign = TextAlign.Center
         )
         Text(
-            text = "Choose what you want to add",
+            text = stringResource(R.string.add_screen_subtitle),
             style = MaterialTheme.typography.bodyMedium,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             textAlign = TextAlign.Center
@@ -61,8 +63,8 @@ fun AddScreen(navController: NavController) {
 
         AddOptionCard(
             icon = Icons.Filled.MenuBook,
-            title = "Add Word",
-            subtitle = "Add a new vocabulary word with meanings, examples, and more",
+            title = stringResource(R.string.add_word_add),
+            subtitle = stringResource(R.string.add_word_add_subtitle),
             gradient = Brush.linearGradient(listOf(BlueGradientStart, BlueGradientEnd)),
             onClick = { navController.navigate(Screen.AddWord.route) }
         )
@@ -71,8 +73,8 @@ fun AddScreen(navController: NavController) {
 
         AddOptionCard(
             icon = Icons.Filled.School,
-            title = "Add Grammar",
-            subtitle = "Add grammar rules, formulas, and examples",
+            title = stringResource(R.string.add_grammar_add),
+            subtitle = stringResource(R.string.add_grammar_add_subtitle),
             gradient = Brush.linearGradient(listOf(PurpleGradientStart, PurpleGradientEnd)),
             onClick = { navController.navigate(Screen.AddGrammar.route) }
         )
@@ -81,8 +83,8 @@ fun AddScreen(navController: NavController) {
 
         AddOptionCard(
             icon = Icons.Filled.StickyNote2,
-            title = "Add Note",
-            subtitle = "Add teacher notes and class tips",
+            title = stringResource(R.string.add_note_add),
+            subtitle = stringResource(R.string.add_note_add_subtitle),
             gradient = Brush.linearGradient(listOf(CyanGradientStart, CyanGradientEnd)),
             onClick = { navController.navigate(Screen.AddNote.route) }
         )

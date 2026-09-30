@@ -14,11 +14,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -128,7 +130,7 @@ fun NoteDetailScreen(
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Icon(Icons.Filled.FlashOn, contentDescription = null, tint = SunsetGradientStart)
                             Spacer(modifier = Modifier.width(8.dp))
-                            Text("Leitner Review", style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
+                            Text(stringResource(R.string.leitner_review), style = MaterialTheme.typography.titleMedium, color = SunsetGradientStart)
                         }
                         Spacer(modifier = Modifier.height(8.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
@@ -148,7 +150,7 @@ fun NoteDetailScreen(
                             }
                             Spacer(modifier = Modifier.width(12.dp))
                             Text(
-                                text = "Currently in Box ${note.leitnerBox}",
+                                text = stringResource(R.string.detail_leitner_box, note.leitnerBox),
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onBackground
                             )
@@ -169,7 +171,7 @@ fun NoteDetailScreen(
                             IconButton(onClick = { viewModel.speakText(note.content) }) {
                                 Icon(Icons.Filled.VolumeUp, contentDescription = "Listen", tint = PrimaryBlue, modifier = Modifier.size(20.dp))
                             }
-                            Text("Tap to listen", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(stringResource(R.string.detail_tap_listen), style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                     }
                 }
@@ -178,7 +180,7 @@ fun NoteDetailScreen(
                     Spacer(modifier = Modifier.height(12.dp))
                     GlassCard(modifier = Modifier.fillMaxWidth()) {
                         Text(
-                            text = "Key Points",
+                            text = stringResource(R.string.detail_key_points),
                             style = MaterialTheme.typography.titleMedium,
                             color = Cyan
                         )

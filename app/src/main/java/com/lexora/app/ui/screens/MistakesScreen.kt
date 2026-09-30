@@ -14,11 +14,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -42,14 +44,14 @@ fun MistakesScreen(
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
-            Text("Mistakes", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.mistakes), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
         }
 
         if (uiState.mistakeWords.isEmpty()) {
             EmptyState(
                 icon = Icons.Outlined.CheckCircle,
-                title = "No mistakes yet!",
-                message = "You're doing great! Keep reviewing to improve.",
+                title = stringResource(R.string.no_mistakes_title),
+                message = stringResource(R.string.no_mistakes_msg),
                 modifier = Modifier.weight(1f)
             )
         } else {
@@ -64,7 +66,7 @@ fun MistakesScreen(
                 ) {
                     Icon(Icons.Filled.FlashOn, contentDescription = null)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Review Mistakes")
+                    Text(stringResource(R.string.review_mistakes))
                 }
 
                 LazyColumn(

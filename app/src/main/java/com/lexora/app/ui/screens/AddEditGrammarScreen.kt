@@ -10,11 +10,13 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.ListPicker
 import com.lexora.app.ui.theme.*
 import com.lexora.app.utils.LocalSoundManager
@@ -61,26 +63,26 @@ fun AddEditGrammarScreen(
                     Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
                 }
                 Text(
-                    if (uiState.isEditing) "Edit Grammar" else "Add Grammar",
+                    if (uiState.isEditing) stringResource(R.string.edit_grammar_title) else stringResource(R.string.add_grammar),
                     style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f)
                 )
                 TextButton(
                     onClick = { viewModel.saveGrammar() },
                     enabled = uiState.title.isNotBlank()
                 ) {
-                    Text("Save", color = PurpleAccent, fontWeight = FontWeight.Bold)
+                    Text(stringResource(R.string.form_save), color = PurpleAccent, fontWeight = FontWeight.Bold)
                 }
             }
 
                                     Text(
-                text = "The basics (mandatory)",
+                text = stringResource(R.string.form_basics),
                 style = MaterialTheme.typography.titleMedium,
                 color = PurpleAccent,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
 
             FormField(
-                label = "Title *",
+                label = stringResource(R.string.form_title_req),
                 value = uiState.title,
                 onValueChange = { viewModel.updateField("title", it) },
                 placeholder = "",
@@ -88,7 +90,7 @@ fun AddEditGrammarScreen(
             )
 
             ListPicker(
-                label = "List / Category",
+                label = stringResource(R.string.form_list_category),
                 selectedList = uiState.category,
                 onListSelected = { viewModel.updateField("category", it) },
                 existingLists = uiState.existingLists,
@@ -100,14 +102,14 @@ fun AddEditGrammarScreen(
 
                         if (showDetails) {
                 Text(
-                    text = "Additional details",
+                    text = stringResource(R.string.form_details),
                     style = MaterialTheme.typography.titleMedium,
                     color = Cyan,
                     modifier = Modifier.padding(bottom = 8.dp)
                 )
 
                 FormField(
-                    label = "Explanation",
+                    label = stringResource(R.string.explanation),
                     value = uiState.explanation,
                     onValueChange = { viewModel.updateField("explanation", it) },
                     placeholder = "",
@@ -115,28 +117,28 @@ fun AddEditGrammarScreen(
                 )
 
                                 FormField(
-                    label = "✅ Positive Form",
+                    label = stringResource(R.string.form_positive),
                     value = uiState.positiveForm,
                     onValueChange = { viewModel.updateField("positiveForm", it) },
                     placeholder = ""
                 )
 
                                 FormField(
-                    label = "❌ Negative Form",
+                    label = stringResource(R.string.form_negative),
                     value = uiState.negativeForm,
                     onValueChange = { viewModel.updateField("negativeForm", it) },
                     placeholder = ""
                 )
 
                                 FormField(
-                    label = "❓ Question Form",
+                    label = stringResource(R.string.form_question),
                     value = uiState.questionForm,
                     onValueChange = { viewModel.updateField("questionForm", it) },
                     placeholder = ""
                 )
 
                                 FormField(
-                    label = "Examples (separate with |)",
+                    label = stringResource(R.string.form_examples_sep),
                     value = uiState.examples,
                     onValueChange = { viewModel.updateField("examples", it) },
                     placeholder = "",
@@ -144,10 +146,10 @@ fun AddEditGrammarScreen(
                 )
 
                                 FormField(
-                    label = "Tips",
+                    label = stringResource(R.string.form_tips),
                     value = uiState.tips,
                     onValueChange = { viewModel.updateField("tips", it) },
-                    placeholder = "Add useful tips…",
+                    placeholder = stringResource(R.string.form_tips_hint),
                     minLines = 2
                 )
             } else {
@@ -155,7 +157,7 @@ fun AddEditGrammarScreen(
                     onClick = { isDetailsExpanded = true },
                     modifier = Modifier.fillMaxWidth()
                 ) {
-                    Text("Show more fields")
+                    Text(stringResource(R.string.form_show_more))
                     Icon(Icons.Filled.ExpandMore, contentDescription = null)
                 }
             }

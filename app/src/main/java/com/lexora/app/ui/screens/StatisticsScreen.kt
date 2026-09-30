@@ -15,11 +15,13 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.GlassCard
 import com.lexora.app.ui.theme.*
 
@@ -40,7 +42,7 @@ fun StatisticsScreen(
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Statistics",
+            text = stringResource(R.string.statistics),
             style = MaterialTheme.typography.headlineLarge,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onBackground
@@ -57,7 +59,7 @@ fun StatisticsScreen(
             }
         ) {
             Text(
-                text = "This Week",
+                text = stringResource(R.string.stats_week),
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = MaterialTheme.colorScheme.onBackground
@@ -67,9 +69,9 @@ fun StatisticsScreen(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
-                StatItem(Icons.Filled.Timer, "${uiState.weekStudyTime} min", "Study Time", if (isLight) CoffeeMocha else LightCyan, MaterialTheme.colorScheme.onBackground)
-                StatItem(Icons.Filled.MenuBook, "${uiState.weekWords}", "Words", if (isLight) CoffeeLatte else Mint, MaterialTheme.colorScheme.onBackground)
-                StatItem(Icons.Filled.Quiz, "${uiState.weekTests}", "Tests", if (isLight) CoffeeBronze else WarmOrange, MaterialTheme.colorScheme.onBackground)
+                StatItem(Icons.Filled.Timer, stringResource(R.string.minutes_format, uiState.weekStudyTime), stringResource(R.string.study_time), if (isLight) CoffeeMocha else LightCyan, MaterialTheme.colorScheme.onBackground)
+                StatItem(Icons.Filled.MenuBook, "${uiState.weekWords}", stringResource(R.string.words), if (isLight) CoffeeLatte else Mint, MaterialTheme.colorScheme.onBackground)
+                StatItem(Icons.Filled.Quiz, "${uiState.weekTests}", stringResource(R.string.tests), if (isLight) CoffeeBronze else WarmOrange, MaterialTheme.colorScheme.onBackground)
             }
         }
 
@@ -92,14 +94,14 @@ fun StatisticsScreen(
                 Spacer(modifier = Modifier.width(14.dp))
                 Column {
                     Text(
-                        text = "${uiState.currentStreak} Day Streak",
+                        text = stringResource(R.string.stats_day_streak, uiState.currentStreak),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground
                     )
                     Spacer(modifier = Modifier.height(4.dp))
                     Text(
-                        text = "Best: ${uiState.bestStreak} days \u2022 Active: ${uiState.activeDays} days",
+                        text = stringResource(R.string.stats_best_active, uiState.bestStreak, uiState.activeDays),
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.8f)
                     )
@@ -111,7 +113,7 @@ fun StatisticsScreen(
 
         GlassCard(modifier = Modifier.fillMaxWidth()) {
             Text(
-                text = "Overall",
+                text = stringResource(R.string.stats_overall),
                 style = MaterialTheme.typography.titleMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
@@ -121,9 +123,9 @@ fun StatisticsScreen(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
-                OverallStatItem("Words", "${uiState.totalWords}", PrimaryBlue)
-                OverallStatItem("Active Days", "${uiState.activeDays}", Cyan)
-                OverallStatItem("Mistakes", "${uiState.mistakeCount}", Coral)
+                OverallStatItem(stringResource(R.string.words), "${uiState.totalWords}", PrimaryBlue)
+                OverallStatItem(stringResource(R.string.active_days), "${uiState.activeDays}", Cyan)
+                OverallStatItem(stringResource(R.string.mistakes), "${uiState.mistakeCount}", Coral)
             }
         }
 

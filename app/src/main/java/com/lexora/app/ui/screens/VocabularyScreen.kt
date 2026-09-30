@@ -16,9 +16,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.*
 import com.lexora.app.ui.navigation.Screen
 import com.lexora.app.ui.theme.*
@@ -63,7 +65,7 @@ fun VocabularyScreen(
                 IconButton(onClick = { navController.popBackStack() }) {
                     Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
                 }
-                Text("Vocabulary", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+                Text(stringResource(R.string.vocabulary), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
                 IconButton(onClick = { navController.navigate(Screen.Search.route) }) {
                     Icon(Icons.Outlined.Search, contentDescription = "Search", tint = MaterialTheme.colorScheme.onBackground)
                 }
@@ -78,7 +80,7 @@ fun VocabularyScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp),
-                placeholder = { Text("Search words…", color = MaterialTheme.colorScheme.outline) },
+                placeholder = { Text(stringResource(R.string.search_words_hint), color = MaterialTheme.colorScheme.outline) },
                 leadingIcon = { Icon(Icons.Outlined.Search, contentDescription = null, tint = MaterialTheme.colorScheme.outline) },
                 trailingIcon = {
                     if (searchQuery.isNotEmpty()) {
@@ -114,7 +116,7 @@ fun VocabularyScreen(
                     FilterChip(
                         selected = uiState.selectedCategory == null,
                         onClick = { viewModel.selectCategory(null) },
-                        label = { Text("All") },
+                        label = { Text(stringResource(R.string.chip_all)) },
                         leadingIcon = if (uiState.selectedCategory == null) {
                             { Icon(Icons.Filled.Check, contentDescription = null, modifier = Modifier.size(18.dp)) }
                         } else null
@@ -142,7 +144,7 @@ fun VocabularyScreen(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "${uiState.words.size} words",
+                    text = stringResource(R.string.count_words, uiState.words.size),
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -155,9 +157,9 @@ fun VocabularyScreen(
                 uiState.words.isEmpty() -> {
                     EmptyState(
                         icon = Icons.Outlined.MenuBook,
-                        title = "No words yet",
-                        message = "Start building your vocabulary",
-                        actionText = "Add First Word",
+                        title = stringResource(R.string.empty_no_words_title),
+                        message = stringResource(R.string.empty_no_words_msg),
+                        actionText = stringResource(R.string.add_first_word),
                         onActionClick = { navController.navigate(Screen.AddWord.route) },
                         modifier = Modifier.weight(1f)
                     )

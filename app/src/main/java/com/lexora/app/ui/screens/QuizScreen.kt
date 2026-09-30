@@ -20,6 +20,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -27,6 +28,7 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
+import com.lexora.app.R
 import com.lexora.app.ui.components.ConfettiEffect
 import com.lexora.app.ui.components.GlassCard
 import com.lexora.app.ui.theme.*
@@ -51,7 +53,7 @@ fun QuizScreen(
                     modifier = Modifier.padding(24.dp).fillMaxWidth()
                 ) {
                     Text(
-                        "Select Quiz Source",
+                        stringResource(R.string.quiz_select_source),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground
@@ -65,7 +67,7 @@ fun QuizScreen(
                         },
                         modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(12.dp)
-                    ) { Text("All Words (Random)") }
+                    ) { Text(stringResource(R.string.quiz_all_words)) }
 
                     Spacer(modifier = Modifier.height(8.dp))
 
@@ -77,7 +79,7 @@ fun QuizScreen(
                         modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(12.dp),
                         colors = ButtonDefaults.buttonColors(containerColor = PrimaryBlue)
-                    ) { Text("Due Words", color = Color.White) }
+                    ) { Text(stringResource(R.string.quiz_due_words), color = Color.White) }
 
                     Spacer(modifier = Modifier.height(8.dp))
 
@@ -97,7 +99,7 @@ fun QuizScreen(
                     TextButton(
                         onClick = { showCategoryPicker = false },
                         modifier = Modifier.align(Alignment.End)
-                    ) { Text("Cancel", color = Coral) }
+                    ) { Text(stringResource(R.string.cancel), color = Coral) }
                 }
             }
         }
@@ -118,7 +120,7 @@ fun QuizScreen(
             IconButton(onClick = { navController.popBackStack() }) {
                 Icon(Icons.Filled.ArrowBack, contentDescription = "Back", tint = MaterialTheme.colorScheme.onBackground)
             }
-            Text("Quiz", style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.quiz_title), style = MaterialTheme.typography.headlineSmall, fontWeight = FontWeight.Bold, color = MaterialTheme.colorScheme.onBackground, modifier = Modifier.weight(1f))
             IconButton(onClick = { showCategoryPicker = true }) {
                 Icon(Icons.Filled.FilterList, contentDescription = "Filter", tint = MaterialTheme.colorScheme.onBackground)
             }
@@ -145,7 +147,7 @@ fun QuizScreen(
                         Column(horizontalAlignment = Alignment.CenterHorizontally) {
                             CircularProgressIndicator(color = MaterialTheme.colorScheme.primary)
                             Spacer(modifier = Modifier.height(16.dp))
-                            Text("Preparing questions...", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                            Text(stringResource(R.string.quiz_preparing), color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                     }
                 }
@@ -161,7 +163,7 @@ fun QuizScreen(
                             )
                             Spacer(modifier = Modifier.height(16.dp))
                             Text(
-                                "Add at least 4 words to start a quiz!",
+                                stringResource(R.string.quiz_need_words),
                                 style = MaterialTheme.typography.bodyLarge,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 textAlign = TextAlign.Center
@@ -275,8 +277,8 @@ private fun QuizContent(
             }
     ) {
                 val typeLabel = when (question.questionType) {
-            QuestionType.EN_TO_FA -> "🌐 English → Persian"
-            QuestionType.FA_TO_EN -> "🇮🇷 Persian → English"
+            QuestionType.EN_TO_FA -> stringResource(R.string.quiz_en_fa)
+            QuestionType.FA_TO_EN -> stringResource(R.string.quiz_fa_en)
         }
         Text(
             text = typeLabel,
@@ -353,7 +355,7 @@ private fun QuizContent(
             )
             Spacer(modifier = Modifier.width(8.dp))
             Text(
-                if (isCorrect) "Correct! Tap for next" else "Wrong! Tap for next",
+                if (isCorrect) stringResource(R.string.quiz_correct_next) else stringResource(R.string.quiz_wrong_next),
                 color = Color.White,
                 fontWeight = FontWeight.Bold,
                 fontSize = 16.sp
@@ -575,10 +577,10 @@ private fun QuizResult(
             ) {
                 Text(
                     text = when {
-                        accuracy >= 90 -> "Perfect! 🌟"
-                        accuracy >= 70 -> "Well Done! 👍"
-                        accuracy >= 50 -> "Good Effort! 💪"
-                        else -> "Keep Practicing! 📚"
+                        accuracy >= 90 -> stringResource(R.string.quiz_perfect)
+                        accuracy >= 70 -> stringResource(R.string.quiz_well_done)
+                        accuracy >= 50 -> stringResource(R.string.quiz_good_effort)
+                        else -> stringResource(R.string.quiz_keep_practicing)
                     },
                     style = MaterialTheme.typography.headlineMedium,
                     fontWeight = FontWeight.Bold,
@@ -588,10 +590,10 @@ private fun QuizResult(
                 Spacer(modifier = Modifier.height(24.dp))
 
                 Row(horizontalArrangement = Arrangement.spacedBy(32.dp)) {
-                    StatColumn(value = "$correct", label = "Correct", color = Mint)
-                    StatColumn(value = "$incorrect", label = "Wrong", color = Coral)
+                    StatColumn(value = "$correct", label = stringResource(R.string.correct), color = Mint)
+                    StatColumn(value = "$incorrect", label = stringResource(R.string.quiz_wrong), color = Coral)
                     if (bestStreak > 0) {
-                        StatColumn(value = "$bestStreak", label = "Best Streak", color = WarmOrange)
+                        StatColumn(value = "$bestStreak", label = stringResource(R.string.best_streak), color = WarmOrange)
                     }
                 }
             }
@@ -609,7 +611,7 @@ private fun QuizResult(
                 ) {
                     Icon(Icons.Filled.Refresh, contentDescription = null)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Retry")
+                    Text(stringResource(R.string.quiz_retry))
                 }
                 Button(
                     onClick = onDone,
@@ -619,7 +621,7 @@ private fun QuizResult(
                 ) {
                     Icon(Icons.Filled.Home, contentDescription = null)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Done")
+                    Text(stringResource(R.string.quiz_done))
                 }
             }
         }
